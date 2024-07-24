@@ -1,0 +1,85 @@
+html {
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #222;
+    color: #eee;
+}
+
+/* MAP */
+#map {
+    margin: auto;
+    height: 600px;
+  }
+  
+  @media screen and (max-width: 1000px) {
+    #map {
+      width: 95%;
+    }
+  }
+  
+  @media screen and (min-width: 1001px) {
+    #map {
+      width: 980px;
+    }
+  }
+
+/* Map Legend ================================ */
+.legend {
+  /* color: #EEE;
+  font-family: Arial, Helvetica, sans-serif; */
+  font-size: 0.9em;
+  padding: 2px 8px;
+  background: #111;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  border: 1px solid #aaa;
+}
+
+h3.legend_title {
+  text-align: center;
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+}
+
+.legend_row {
+  padding: 4px, 2px;
+}
+
+.legend_color {
+  float: left;
+  width: 15px;
+  height: 15px;
+}
+
+.legend_text {
+  padding: 0px 2px 0px 20px;
+}
+
+/* Other page css */
+header {
+  text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #18cdff, 0 0 30px #18cdff, 0 0 40px #18cdff, 0 0 55px #18cdff, 0 0 75px #18cdff;
+  font-size: 3em;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 0.5em;
+  -webkit-text-stroke: 1px #222;
+}
+
+.checkbox-item {
+  margin-right: 2em;
+  margin-bottom: 2em;
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-item label {
+  margin-left: 0.25em; /* Adjust spacing between checkbox and label */
+}
+
+footer {
+  justify-content: center;
+  text-align: center;
+  font-size: 1.2em;
+  padding: 1em 0em;
+}
