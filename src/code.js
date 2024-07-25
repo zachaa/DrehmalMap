@@ -14,14 +14,16 @@ const mapConfig = {
         url: 'images/maps/true_end/tiles/zoom.{z}/tile.{x}.{y}.png',
         zoomMin: -6,
     },
-    // lohdar: {
-    //     bounds: ,
-    //     url: ,
-    // },
-    // space: {
-    //     bounds: ,
-    //     url: ,
-    // }
+    lodahr: {
+        bounds: [[-3072, -2560], [2559, 27647]],
+        url: 'images/maps/lodahr/tiles/zoom.{z}/tile.{x}.{y}.png',
+        zoomMin: -6,
+    },
+    space: {
+        bounds: [[-512, -512], [511, 511]],
+        url: 'images/maps/space/tiles/zoom.{z}/tile.{x}.{y}.png',
+        zoomMin: -3,
+    }
 }
 
 async function start() {
