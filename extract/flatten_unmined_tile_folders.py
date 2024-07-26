@@ -1,5 +1,6 @@
 from pathlib import Path
 import shutil
+import subprocess
 
 top_level_paths = [
     Path(r"C:\Users\Zachary\Coding\VSCode\DrehmalMap\src\images\maps\overworld\tiles\zoom.2"),
@@ -68,5 +69,22 @@ def move_all_png_files(path_list):
         move_png_files(top_dir)
     print("Remember to delete folders and metadata.")
 
+
+def optimize_pngs(path: Path):
+    oxi_png_path = Path(__file__).parents[1] / "tools/oxipng-9.1.2-x86_64-pc-windows-msvc/oxipng.exe"
+    if not oxi_png_path.exists():
+        print("oxipng not found")
+        return
+    
+    command = f"{oxi_png_path} -o 3 --alpha --recursive {path}"
+    subprocess.run(command, capture_output=True)
+
+
 if __name__ == "__main__":
-    move_all_png_files(top_level_paths)
+    # move_all_png_files(top_level_paths)
+    # optimize_pngs(Path(r"C:\Users\Zachary\Coding\VSCode\DrehmalMap\src\images\maps\end\tiles"))
+    # optimize_pngs(Path(r"C:\Users\Zachary\Coding\VSCode\DrehmalMap\src\images\maps\space\tiles"))
+    # optimize_pngs(Path(r"C:\Users\Zachary\Coding\VSCode\DrehmalMap\src\images\maps\true_end\tiles"))
+    # optimize_pngs(Path(r"C:\Users\Zachary\Coding\VSCode\DrehmalMap\src\images\maps\lodahr\tiles"))
+    # optimize_pngs(Path(r"C:\Users\Zachary\Coding\VSCode\DrehmalMap\src\images\maps\overworld\tiles"))
+    pass
