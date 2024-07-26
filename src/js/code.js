@@ -55,6 +55,12 @@ async function start() {
         layers: [layer_tiles],
         crs: crs
     });
+    L.control.mousePosition({
+        separator: ' z: ',
+        lngFirst: true,
+        numDigits: 0,
+        prefix: "x:"
+    }).addTo(map);
 
     L.marker(L.latLng([1, 1])).addTo(map);
     L.marker(L.latLng([256, 128])).addTo(map);

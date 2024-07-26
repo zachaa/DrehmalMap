@@ -32,6 +32,11 @@ Todo:
 - Interesting Mobs?
 
 ---
+[Leaflet](https://leafletjs.com/)
+
+[Leaflet Mouse Position](https://github.com/ardhi/Leaflet.MousePosition)
+
+---
 Drehmal: APOTHEOSIS by Keeko100, Rift and team. [https://www.drehmal.net/](https://www.drehmal.net/)
 
 Map Tiles generated with **[uNmINeD](https://unmined.net/)**
