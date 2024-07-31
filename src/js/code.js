@@ -24,14 +24,71 @@ const mapConfig = {
         url: 'images/maps/space/tiles/zoom.{z}/tile.{x}.{y}.png',
         zoomMin: -3,
     }
+};
+
+async function readAndDimensionFilter(dimension, filepath) {
+    let data = await d3.json(filepath);
+    return data.filter(d => d.dimension === dimension);
+};
+
+function createMarker(element, customIcon) {
+    let detail_text = element.detail ? element.detail : "";
+    return L.marker([element.z, element.x], {icon: customIcon})
+        .bindPopup(`<strong>${element.name}</strong><hr>
+                  ${element.x}, ${element.y}, ${element.z}<br>
+                  ${detail_text}`);
 }
+
+function layerTowers(towerData) {
+    let towerLayer = L.layerGroup();
+    towerData.forEach(element => {
+        let marker = createMarker(element, TowerIcon);
+        towerLayer.addLayer(marker);
+    });
+    return towerLayer;
+}
+
+function layerPortals(portalData) {
+    let portalLayer = L.layerGroup();
+    portalData.forEach(element => {
+        let marker = createMarker(element, LodahrPortalIcon);
+        portalLayer.addLayer(marker);
+    });
+    return portalLayer;
+}
+
+async function createOverlays(dimension) {
+    overlayLayers = {};
+
+    let towers = await readAndDimensionFilter(dimension, "data/towers.json");
+    console.log(`Towers: ${towers.length}`);
+    if (towers.length > 0) {
+        overlayLayers["Towers"] = layerTowers(towers);
+    }
+
+    let portals = await readAndDimensionFilter(dimension, "data/lodahr_portals.json");
+    console.log(`Portals: ${portals.length}`);
+    if (portals.length > 0) {
+        overlayLayers["Portals"] = layerPortals(portals)
+    };
+
+
+    // locations = readAndDimensionFilter(dimension, "data/locations.json");
+    // mythics = readAndDimensionFilter(dimension, "data/mythics.json");
+    // legendaries
+    // devotion = readAndDimensionFilter(dimension, ".data/devotion.json");
+    // items
+    // lore (books, paper)
+    // entities?
+    return overlayLayers;
+};
 
 async function start() {
     const mapElement = document.getElementById('map');
-    const mapType = mapElement.getAttribute('data-map');
-    const config = mapConfig[mapType];
+    const mapDimension = mapElement.getAttribute('data-map');
+    const config = mapConfig[mapDimension];
     if (!config) {
-        console.error(`No configuration found for map type: ${mapType}`);
+        console.error(`No configuration found for map type: ${mapDimension}`);
         return;
     }
 
@@ -39,7 +96,7 @@ async function start() {
         transformation: new L.Transformation(1, 0, 1, 0)
     });
 
-    let layer_tiles = L.tileLayer(config.url, {
+    let baseTiles = L.tileLayer(config.url, {
         errorTileUrl: "images/maps/null_tile.png",
         attribution: '&copy; Drehmal map creators, Unmined',
         minZoom: config.zoomMin,
@@ -49,12 +106,27 @@ async function start() {
         maxBounds: config.bounds
     });
 
+    // let canvasRenderer = L.canvas({ padding: 0.1 });
+
+    // Overlays
+    const overlays = await createOverlays(mapDimension);
+
+    // Check if overlays are empty
+    const mapLayers = overlays && Object.keys(overlays).length > 0 ? overlays : {};
+
     let map = L.map("map", {
         center: [0, 0],
         zoom: 0,
-        layers: [layer_tiles],
+        layers: [baseTiles],
         crs: crs
     });
+
+    L.control.layers(
+        null,
+        mapLayers,
+        {collapsed: false}
+    ).addTo(map);
+    
     L.control.mousePosition({
         separator: ' z: ',
         lngFirst: true,
@@ -62,14 +134,52 @@ async function start() {
         prefix: "x:"
     }).addTo(map);
 
-    L.marker(L.latLng([1, 1])).addTo(map);
-    L.marker(L.latLng([256, 128])).addTo(map);
-    L.marker(L.latLng([-64, -64])).addTo(map);
-
     // Set the map view to the center and zoom level
     map.setView([0, 0], 0);
 
     console.log("Start complete")
-}
+};
+
+
+function createLocationCircleMarker(renderer, locationData) {
+    let circleMarker = L.circleMarker(
+        L.latLng(locationData.z, locationData.x), {
+        color: colorMarker(locationData.type),
+        fillOpacity: 0.8,
+        radius: 10,
+        stroke: false,
+        renderer: renderer
+    }).bindPopup(`<strong>${locationData.name}</strong>
+                  <hr>
+                  ${locationData.x}, ${locationData.y}, ${locationData.z}<br>
+                  ${locationData.detail}`)
+
+    // Store the type for use with filtering
+    circleMarker.options.type = locationData.type;
+    
+    return circleMarker;
+};
+
+function colorMarker(value) {
+    switch (value) {
+        case "town":
+            return "#298DFF";
+        case "small_town":
+            return "#15568B";
+        case "abandoned_town":
+            return "#7F5321";
+        case "avsohm_facility":
+            return "#B301E9";
+        case "building":
+            return "#00E1E1";
+        case "boos":
+            return "#D00000";
+        case "other_location":
+            return "#FF6FDD";
+        default:
+            return "#aaaaaa";
+    }
+};
+
 
 start();
