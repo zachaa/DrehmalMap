@@ -33,19 +33,49 @@ async function readAndDimensionFilter(dimension, filepath) {
 
 function createMarker(element, customIcon) {
     let detail_text = element.detail ? element.detail : "";
-    return L.marker([element.z, element.x], {icon: customIcon})
+    return L.marker([element.z+0.5, element.x+0.5], {icon: customIcon})
         .bindPopup(`<span class=popup_title>${element.name}</span><hr>
-                  <span class=popup_xyz>${element.x}, ${element.y}, ${element.z}</span><br>
+                  <span class=popup_xyz>${element.x} ${element.y} ${element.z}</span><br>
                   ${detail_text}`);
 }
+
+function createLocationCircleMarker(renderer, locationData) {
+    let circleMarker = L.circleMarker(
+        [locationData.z+0.5, locationData.x+0.5], {
+        fillColor: colorMarker(locationData.type),
+        fillOpacity: 0.8,
+        radius: 10,
+        stroke: true,
+        color: "#000",
+        weight: 2,
+        renderer: renderer
+    }).bindPopup(`<span class=popup_title>${locationData.name}</span>
+                  <hr>
+                  <span class=popup_xyz>${locationData.x} ${locationData.y} ${locationData.z}</span><br>
+                  ${locationData.type}<br>
+                  ${locationData.detail}`)
+
+    // Store the type for use with filtering
+    circleMarker.options.type = locationData.type;
+    
+    return circleMarker;
+};
 
 function createDevotionMarker(element) {
     let detail_text = element.detail ? element.detail : "";
     let devotion_icon = new Icon32({iconUrl: element.icon});
-    return L.marker([element.z, element.x], {icon: devotion_icon})
+    return L.marker([element.z+0.5, element.x+0.5], {icon: devotion_icon})
         .bindPopup(`<span class=popup_title>Devotion: ${element.name}</span><hr>
-                  <span class=popup_xyz>${element.x}, ${element.y}, ${element.z}</span><br>
+                  <span class=popup_xyz>${element.x} ${element.y} ${element.z}</span><br>
                   ${detail_text}`);
+}
+
+function createMythicalMarker(element) {
+    let mythical_icon = new Icon32({iconUrl: element.icon});
+    return L.marker([element.z+0.5, element.x+0.5], {icon: mythical_icon})
+        .bindPopup(`<span class=popup_title>${element.name}</span><hr>
+                  <span class=popup_xyz>${element.x} ${element.y} ${element.z}</span><br>
+                  ${element.lore}`);
 }
 
 function layerTowers(towerData) {
@@ -84,6 +114,15 @@ function layerDevotion(devotionData) {
     return devotionLayer;
 }
 
+function layerMythical(mythicalData) {
+    let mythicalLayer = L.layerGroup();
+    mythicalData.forEach(element => {
+        let marker = createMythicalMarker(element);
+        mythicalLayer.addLayer(marker);
+    });
+    return mythicalLayer;
+}
+
 async function createOverlays(dimension, renderer) {
     overlayLayers = {};
 
@@ -108,10 +147,15 @@ async function createOverlays(dimension, renderer) {
     let devotion = await readAndDimensionFilter(dimension, "data/devotion.json");
     console.log(`Devotion: ${devotion.length}`);
     if (devotion.length > 0) {
-        overlayLayers["Devotion"] = layerDevotion(devotion, renderer);
+        overlayLayers["Devotion"] = layerDevotion(devotion);
     }
 
-    // mythics = readAndDimensionFilter(dimension, "data/mythics.json");
+    let mythical = await readAndDimensionFilter(dimension, "data/mythical.json");
+    console.log(`Mythical: ${mythical.length}`);
+    if (mythical.length > 0) {
+        overlayLayers["Mythical"] = layerMythical(mythical);
+    }
+
     // legendaries
     // items
     // lore (books, paper)
@@ -176,28 +220,6 @@ async function start() {
     console.log("Start complete")
 };
 
-
-function createLocationCircleMarker(renderer, locationData) {
-    let circleMarker = L.circleMarker(
-        [locationData.z, locationData.x], {
-        fillColor: colorMarker(locationData.type),
-        fillOpacity: 0.8,
-        radius: 10,
-        stroke: true,
-        color: "#000",
-        weight: 2,
-        renderer: renderer
-    }).bindPopup(`<span class=popup_title>${locationData.name}</span>
-                  <hr>
-                  <span class=popup_xyz>${locationData.x}, ${locationData.y}, ${locationData.z}</span><br>
-                  ${locationData.type}<br>
-                  ${locationData.detail}`)
-
-    // Store the type for use with filtering
-    circleMarker.options.type = locationData.type;
-    
-    return circleMarker;
-};
 
 function colorMarker(value) {
     switch (value) {
