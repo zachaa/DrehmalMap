@@ -23,6 +23,21 @@ html {
     }
   }
 
+/* Popup */
+.popup_title {
+  text-align: center;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+
+.popup_xyz {
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  margin: 0;
+  padding: 0;
+}
+
 /* Map Legend ================================ */
 .legend {
   /* color: #EEE;

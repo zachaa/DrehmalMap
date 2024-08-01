@@ -34,8 +34,8 @@ async function readAndDimensionFilter(dimension, filepath) {
 function createMarker(element, customIcon) {
     let detail_text = element.detail ? element.detail : "";
     return L.marker([element.z, element.x], {icon: customIcon})
-        .bindPopup(`<strong>${element.name}</strong><hr>
-                  ${element.x}, ${element.y}, ${element.z}<br>
+        .bindPopup(`<span class=popup_title>${element.name}</span><hr>
+                  <span class=popup_xyz>${element.x}, ${element.y}, ${element.z}</span><br>
                   ${detail_text}`);
 }
 
@@ -57,7 +57,16 @@ function layerPortals(portalData) {
     return portalLayer;
 }
 
-async function createOverlays(dimension) {
+function layerLocations(locationData, renderer) {
+    let locationLayer = L.layerGroup();
+    locationData.forEach(element => {
+        let marker = createLocationCircleMarker(renderer, element);
+        locationLayer.addLayer(marker);
+    });
+    return locationLayer;
+}
+
+async function createOverlays(dimension, renderer) {
     overlayLayers = {};
 
     let towers = await readAndDimensionFilter(dimension, "data/towers.json");
@@ -70,10 +79,14 @@ async function createOverlays(dimension) {
     console.log(`Portals: ${portals.length}`);
     if (portals.length > 0) {
         overlayLayers["Portals"] = layerPortals(portals)
-    };
+    }
 
+    let locations = await readAndDimensionFilter(dimension, "data/locations.json");
+    console.log(`Locations: ${locations.length}`);
+    if (locations.length > 0) {
+        overlayLayers["Locations"] = layerLocations(locations, renderer);
+    }
 
-    // locations = readAndDimensionFilter(dimension, "data/locations.json");
     // mythics = readAndDimensionFilter(dimension, "data/mythics.json");
     // legendaries
     // devotion = readAndDimensionFilter(dimension, ".data/devotion.json");
@@ -106,10 +119,10 @@ async function start() {
         maxBounds: config.bounds
     });
 
-    // let canvasRenderer = L.canvas({ padding: 0.1 });
+    let canvasRenderer = L.canvas({ padding: 0.1 });
 
     // Overlays
-    const overlays = await createOverlays(mapDimension);
+    const overlays = await createOverlays(mapDimension, canvasRenderer);
 
     // Check if overlays are empty
     const mapLayers = overlays && Object.keys(overlays).length > 0 ? overlays : {};
@@ -143,15 +156,18 @@ async function start() {
 
 function createLocationCircleMarker(renderer, locationData) {
     let circleMarker = L.circleMarker(
-        L.latLng(locationData.z, locationData.x), {
-        color: colorMarker(locationData.type),
+        [locationData.z, locationData.x], {
+        fillColor: colorMarker(locationData.type),
         fillOpacity: 0.8,
         radius: 10,
-        stroke: false,
+        stroke: true,
+        color: "#000",
+        weight: 2,
         renderer: renderer
-    }).bindPopup(`<strong>${locationData.name}</strong>
+    }).bindPopup(`<span class=popup_title>${locationData.name}</span>
                   <hr>
-                  ${locationData.x}, ${locationData.y}, ${locationData.z}<br>
+                  <span class=popup_xyz>${locationData.x}, ${locationData.y}, ${locationData.z}</span><br>
+                  ${locationData.type}<br>
                   ${locationData.detail}`)
 
     // Store the type for use with filtering
@@ -163,19 +179,19 @@ function createLocationCircleMarker(renderer, locationData) {
 function colorMarker(value) {
     switch (value) {
         case "town":
-            return "#298DFF";
+            return "#FFEE00";
         case "small_town":
-            return "#15568B";
+            return "#FFB700";
         case "abandoned_town":
-            return "#7F5321";
+            return "#814C0F";
         case "avsohm_facility":
-            return "#B301E9";
+            return "#9C01E9";
         case "building":
-            return "#00E1E1";
-        case "boos":
+            return "#00B8E1";
+        case "boss":
             return "#D00000";
         case "other_location":
-            return "#FF6FDD";
+            return "#E803DC";
         default:
             return "#aaaaaa";
     }
