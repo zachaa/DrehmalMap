@@ -39,6 +39,15 @@ function createMarker(element, customIcon) {
                   ${detail_text}`);
 }
 
+function createDevotionMarker(element) {
+    let detail_text = element.detail ? element.detail : "";
+    let devotion_icon = new Icon32({iconUrl: element.icon});
+    return L.marker([element.z, element.x], {icon: devotion_icon})
+        .bindPopup(`<span class=popup_title>Devotion: ${element.name}</span><hr>
+                  <span class=popup_xyz>${element.x}, ${element.y}, ${element.z}</span><br>
+                  ${detail_text}`);
+}
+
 function layerTowers(towerData) {
     let towerLayer = L.layerGroup();
     towerData.forEach(element => {
@@ -66,6 +75,15 @@ function layerLocations(locationData, renderer) {
     return locationLayer;
 }
 
+function layerDevotion(devotionData) {
+    let devotionLayer = L.layerGroup();
+    devotionData.forEach(element => {
+        let marker = createDevotionMarker(element);
+        devotionLayer.addLayer(marker);
+    });
+    return devotionLayer;
+}
+
 async function createOverlays(dimension, renderer) {
     overlayLayers = {};
 
@@ -87,9 +105,14 @@ async function createOverlays(dimension, renderer) {
         overlayLayers["Locations"] = layerLocations(locations, renderer);
     }
 
+    let devotion = await readAndDimensionFilter(dimension, "data/devotion.json");
+    console.log(`Devotion: ${devotion.length}`);
+    if (devotion.length > 0) {
+        overlayLayers["Devotion"] = layerDevotion(devotion, renderer);
+    }
+
     // mythics = readAndDimensionFilter(dimension, "data/mythics.json");
     // legendaries
-    // devotion = readAndDimensionFilter(dimension, ".data/devotion.json");
     // items
     // lore (books, paper)
     // entities?
@@ -130,7 +153,7 @@ async function start() {
     let map = L.map("map", {
         center: [0, 0],
         zoom: 0,
-        layers: [baseTiles],
+        layers: [baseTiles, mapLayers["Locations"]],
         crs: crs
     });
 

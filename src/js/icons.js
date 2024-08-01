@@ -1,4 +1,4 @@
-var MythicIcon = L.Icon.extend({
+var Icon64 = L.Icon.extend({
     options: {
         iconSize:     [64, 64],
         iconAnchor:   [32, 32],
@@ -6,7 +6,7 @@ var MythicIcon = L.Icon.extend({
     }
 });
 
-var BlockIcon = L.Icon.extend({
+var Icon32 = L.Icon.extend({
     options: {
         iconSize:     [32, 32],
         iconAnchor:   [16, 16],
@@ -14,7 +14,7 @@ var BlockIcon = L.Icon.extend({
     }
 });
 
-var ItemIcon = L.Icon.extend({
+var Icon16 = L.Icon.extend({
     options: {
         iconSize:     [16, 16],
         iconAnchor:   [8, 8],
