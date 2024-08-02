@@ -63,7 +63,7 @@ function createLocationCircleMarker(renderer, locationData) {
 
 function createDevotionMarker(element) {
     let detail_text = element.detail ? element.detail : "";
-    let devotion_icon = new Icon32({iconUrl: element.icon});
+    let devotion_icon = new IconDevotion({iconUrl: element.icon});
     return L.marker([element.z+0.5, element.x+0.5], {icon: devotion_icon})
         .bindPopup(`<span class=popup_title>Devotion: ${element.name}</span><hr>
                   <span class=popup_xyz>${element.x} ${element.y} ${element.z}</span><br>
@@ -71,7 +71,7 @@ function createDevotionMarker(element) {
 }
 
 function createMythicalMarker(element) {
-    let mythical_icon = new Icon32({iconUrl: element.icon});
+    let mythical_icon = new IconMythic({iconUrl: element.icon});
     return L.marker([element.z+0.5, element.x+0.5], {icon: mythical_icon})
         .bindPopup(`<span class=popup_title>${element.name}</span><hr>
                   <span class=popup_xyz>${element.x} ${element.y} ${element.z}</span><br>
@@ -178,7 +178,7 @@ async function start() {
 
     let baseTiles = L.tileLayer(config.url, {
         errorTileUrl: "images/maps/null_tile.png",
-        attribution: '&copy; Drehmal map creators, Unmined',
+        attribution: '&copy; Drehmal map creators, uNmINeD, M',
         minZoom: config.zoomMin,
         maxZoom: 4,
         maxNativeZoom: 2,  // Last tile zoom level
@@ -237,6 +237,8 @@ function colorMarker(value) {
             return "#D00000";
         case "other_location":
             return "#E803DC";
+        case "meta":
+            return "#00FF00"
         default:
             return "#aaaaaa";
     }

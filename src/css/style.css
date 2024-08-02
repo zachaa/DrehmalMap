@@ -8,10 +8,10 @@ html {
 /* MAP */
 #map {
     margin: auto;
-    height: 600px;
+    height: 1200px;
   }
   
-  @media screen and (max-width: 1000px) {
+  /* @media screen and (max-width: 1000px) {
     #map {
       width: 95%;
     }
@@ -21,7 +21,36 @@ html {
     #map {
       width: 980px;
     }
-  }
+  } */
+
+/* Pixel Art Image Scaling */
+.mc-icon {
+  image-rendering: pixelated;
+}
+
+.mc-icon-glow {
+  image-rendering: pixelated;
+  filter:
+    drop-shadow(0 0 8px white)
+    drop-shadow(0 0 8px white);
+}
+
+.mc-icon-mythic {
+  image-rendering: pixelated;
+  box-shadow: 0 0 2px 2px rgb(255, 174, 0);
+  filter:
+    drop-shadow(0 0 8px rgb(255, 201, 131))
+    drop-shadow(0 0 8px rgb(255, 201, 131))
+    drop-shadow(0 0 8px rgb(255, 201, 131));
+}
+
+.mc-icon-legendary {
+  image-rendering: pixelated;
+  box-shadow: 0 0 2px 2px rgb(140, 0, 255);
+  filter:
+    drop-shadow(0 0 8px rgb(184, 98, 255))
+    drop-shadow(0 0 8px rgb(184, 98, 255));
+}
 
 /* Popup */
 .popup_title {
