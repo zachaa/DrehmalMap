@@ -36,6 +36,8 @@ Todo:
 
 [Leaflet Mouse Position](https://github.com/ardhi/Leaflet.MousePosition)
 
+[minecraft-data](https://github.com/PrismarineJS/minecraft-data)
+- For the raw json file of 1.17 names and displayNames
 ---
 Drehmal: APOTHEOSIS by Keeko100, Rift and team. [https://www.drehmal.net/](https://www.drehmal.net/)
 
