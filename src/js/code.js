@@ -26,6 +26,12 @@ const mapConfig = {
     }
 };
 
+/**
+ * Load and filter a json file to a given dimension.
+ * @param {String} dimension name of dimension to filter to
+ * @param {String} filepath path to JSON file
+ * @returns Array of objects
+ */
 async function readAndDimensionFilter(dimension, filepath) {
     let data = await d3.json(filepath);
     return data.filter(d => d.dim === dimension);
@@ -126,6 +132,12 @@ function layerMythical(mythicalData) {
     return mythicalLayer;
 }
 
+/**
+ * Create a list of overlay layers to use with Leaflet
+ * @param {String} dimension current dimension
+ * @param {*} renderer canvasRenderer for markers
+ * @returns Array of overlay layers
+ */
 async function createOverlays(dimension, renderer) {
     overlayLayers = {};
 
@@ -169,6 +181,11 @@ async function createOverlays(dimension, renderer) {
 // ====================================================================================================================
 // Entity Overlays
 
+/**
+ * Create HTML for use with Leaflet popup of Minecraft items
+ * @param {Array} items array of MCItems with counts, optional lore
+ * @returns unordered list HTML
+ */
 function storageHtml(items) {
     // put all items into an unordered list with bullet point replaced by image
     const itemList = document.createElement('ul');
@@ -177,11 +194,7 @@ function storageHtml(items) {
     items.forEach(item => {
         const li = document.createElement('li');
         
-        // // Set the custom bullet point using the image
-        // li.style.setProperty('--bullet-url', `url(images/icons/${item.name}.png)`);
-        // li.style.backgroundImage = `var(--bullet-url)`;
-        
-        // Create an img element for the custom bullet
+        // Create an img element to act like a custom bullet point
         const bulletImage = document.createElement('img');
         bulletImage.src = `images/icons/${item.name}.png`;
         bulletImage.style.width = '16px';
@@ -200,7 +213,6 @@ function storageHtml(items) {
             loreText.innerHTML = item.lore.replace(/\n/g, '<br>');
             li.appendChild(loreText);
         }
-        console.log(li)
         // Add to ul
         itemList.appendChild(li);
     });
@@ -229,6 +241,11 @@ function groupFilter(group, entity_array) {
     return entity_array.filter(d => d.group === group);
 };
 
+/**
+ * Create a list of overlay layers to use with Leaflet from entity data (may contain storage/trades)
+ * @param {String} dimension current dimension
+ * @returns Array of overlay layers
+ */
 async function createEntityOverlays(dimension) {
     let tiles_and_entities = await readAndDimensionFilter(dimension, "data/all_entity_data.json");
     console.log(`Tiles and Entities: ${tiles_and_entities.length}`);
@@ -243,22 +260,22 @@ async function createEntityOverlays(dimension) {
     if (storage_ent.length > 0) {
         entityLayers["Storage"] = layerEntStorage(storage_ent);
     }
-    // let lectern_ent = groupFilter("lectern", tiles_and_entities);
-    // if (lectern_ent.length > 0) {
-    //     entityLayers["Lecterns"] = layerStorage(lectern_ent);
-    // }
-    // let itemFrame_ent = groupFilter("item_frame", tiles_and_entities);
-    // if (itemFrame_ent.length > 0) {
-    //     entityLayers["Item Frames"] = layerStorage(itemFrame_ent);
-    // }
+    let lectern_ent = groupFilter("lectern", tiles_and_entities);
+    if (lectern_ent.length > 0) {
+        entityLayers["Lecterns"] = layerEntStorage(lectern_ent);
+    }
+    let itemFrame_ent = groupFilter("item_frame", tiles_and_entities);
+    if (itemFrame_ent.length > 0) {
+        entityLayers["Item Frames"] = layerEntStorage(itemFrame_ent);
+    }
     // let traders_ent = groupFilter("trader", tiles_and_entities);
     // if (traders_ent.length > 0) {
     //     entityLayers["Named Traders"] = layerStorage(traders_ent);
     // }
-    // let armorStand_ent = groupFilter("armor_stand", tiles_and_entities);
-    // if (armorStand_ent.length > 0) {
-    //     entityLayers["Armor Stands"] = layerStorage(armorStand_ent);
-    // }
+    let armorStand_ent = groupFilter("armor_stand", tiles_and_entities);
+    if (armorStand_ent.length > 0) {
+        entityLayers["Armor Stands"] = layerEntStorage(armorStand_ent);
+    }
     // let entity_ent = groupFilter("entity", tiles_and_entities);
     // if (entity_ent.length > 0) {
     //     entityLayers["Other Entities"] = layerStorage(entity_ent);
