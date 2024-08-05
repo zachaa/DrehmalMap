@@ -72,6 +72,11 @@ html {
   color: rgb(0, 191, 255);
 }
 
+.lore_text {
+  font-size: smaller;
+  margin-left: 2em;
+}
+
 .storageList {
   padding-inline-start: 0.2em; /*Indent space*/
 }
