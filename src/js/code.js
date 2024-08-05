@@ -28,7 +28,7 @@ const mapConfig = {
 
 async function readAndDimensionFilter(dimension, filepath) {
     let data = await d3.json(filepath);
-    return data.filter(d => d.dimension === dimension);
+    return data.filter(d => d.dim === dimension);
 };
 
 function createMarker(element, customIcon) {
@@ -38,6 +38,9 @@ function createMarker(element, customIcon) {
                   <span class=popup_xyz>${element.x} ${element.y} ${element.z}</span><br>
                   ${detail_text}`);
 }
+
+// ====================================================================================================================
+// Overlay Layers (not Entities)
 
 function createLocationCircleMarker(renderer, locationData) {
     let circleMarker = L.circleMarker(
@@ -163,6 +166,114 @@ async function createOverlays(dimension, renderer) {
     return overlayLayers;
 };
 
+// ====================================================================================================================
+// Entity Overlays
+
+function storageHtml(items) {
+    // put all items into an unordered list with bullet point replaced by image
+    const itemList = document.createElement('ul');
+    itemList.classList.add('storageList');
+
+    items.forEach(item => {
+        const li = document.createElement('li');
+        
+        // // Set the custom bullet point using the image
+        // li.style.setProperty('--bullet-url', `url(images/icons/${item.name}.png)`);
+        // li.style.backgroundImage = `var(--bullet-url)`;
+        
+        // Create an img element for the custom bullet
+        const bulletImage = document.createElement('img');
+        bulletImage.src = `images/icons/${item.name}.png`;
+        bulletImage.style.width = '16px';
+        bulletImage.style.height = '16px';
+        bulletImage.style.verticalAlign = 'middle';
+
+        li.appendChild(bulletImage);
+
+        // Main line of text
+        li.innerHTML += `${item.count}× <span class="${item.enchanted ? 'enchanted' : ''}">${item.displayName}</span>`;
+
+        // If the item has lore, add it below the main text
+        if (item.lore) {
+            const loreText = document.createElement('div');
+            loreText.classList.add('lore_text');
+            loreText.innerHTML = item.lore.replace(/\n/g, '<br>');
+            li.appendChild(loreText);
+        }
+        console.log(li)
+        // Add to ul
+        itemList.appendChild(li);
+    });
+    return itemList;
+}
+
+function createStorageMarker(element) {
+    let icon = new Icon32({iconUrl: `images/icons/${element.name}.png`});
+    let items_html = storageHtml(element.items).outerHTML;
+    return L.marker([element.z+0.5, element.x+0.5], {icon: icon})
+        .bindPopup(`<span class=popup_title>${element.displayName}</span><hr>
+                  <span class=popup_xyz>${element.x} ${element.y} ${element.z}</span><br>
+                  ${items_html}`);
+}
+
+function layerEntStorage(storageData) {
+    let storageLayer = L.layerGroup();
+    storageData.forEach(element => {
+        let marker = createStorageMarker(element);
+        storageLayer.addLayer(marker);
+    });
+    return storageLayer;
+}
+
+function groupFilter(group, entity_array) {
+    return entity_array.filter(d => d.group === group);
+};
+
+async function createEntityOverlays(dimension) {
+    let tiles_and_entities = await readAndDimensionFilter(dimension, "data/all_entity_data.json");
+    console.log(`Tiles and Entities: ${tiles_and_entities.length}`);
+
+    // Options:
+    // "storage", "lectern", "item_frame", "trader", "armor_stand", "entity", "tile_entity"
+
+    let entityLayers = {};
+
+    let storage_ent = groupFilter("storage", tiles_and_entities);
+    console.log(`Storage Entities: ${storage_ent.length}`);
+    if (storage_ent.length > 0) {
+        entityLayers["Storage"] = layerEntStorage(storage_ent);
+    }
+    // let lectern_ent = groupFilter("lectern", tiles_and_entities);
+    // if (lectern_ent.length > 0) {
+    //     entityLayers["Lecterns"] = layerStorage(lectern_ent);
+    // }
+    // let itemFrame_ent = groupFilter("item_frame", tiles_and_entities);
+    // if (itemFrame_ent.length > 0) {
+    //     entityLayers["Item Frames"] = layerStorage(itemFrame_ent);
+    // }
+    // let traders_ent = groupFilter("trader", tiles_and_entities);
+    // if (traders_ent.length > 0) {
+    //     entityLayers["Named Traders"] = layerStorage(traders_ent);
+    // }
+    // let armorStand_ent = groupFilter("armor_stand", tiles_and_entities);
+    // if (armorStand_ent.length > 0) {
+    //     entityLayers["Armor Stands"] = layerStorage(armorStand_ent);
+    // }
+    // let entity_ent = groupFilter("entity", tiles_and_entities);
+    // if (entity_ent.length > 0) {
+    //     entityLayers["Other Entities"] = layerStorage(entity_ent);
+    // }
+    // let tileEntity_ent = groupFilter("tile_entity", tiles_and_entities);
+    // if (tileEntity_ent.length > 0) {
+    //     entityLayers["Other Tile Entities"] = layerStorage(tileEntity_ent);
+    // }
+
+    return entityLayers;
+};
+
+// ====================================================================================================================
+// Main Function
+
 async function start() {
     const mapElement = document.getElementById('map');
     const mapDimension = mapElement.getAttribute('data-map');
@@ -190,9 +301,11 @@ async function start() {
 
     // Overlays
     const overlays = await createOverlays(mapDimension, canvasRenderer);
+    const overlaysEntity = await createEntityOverlays(mapDimension)
 
     // Check if overlays are empty
     const mapLayers = overlays && Object.keys(overlays).length > 0 ? overlays : {};
+    const mapEntityLayers = overlaysEntity && Object.keys(overlaysEntity).length > 0 ? overlaysEntity : {};
 
     let map = L.map("map", {
         center: [0, 0],
@@ -204,6 +317,13 @@ async function start() {
     L.control.layers(
         null,
         mapLayers,
+        {collapsed: false}
+    ).addTo(map);
+    
+    // Entity control is separate overlay section
+    L.control.layers(
+        null,
+        mapEntityLayers,
         {collapsed: false}
     ).addTo(map);
     
