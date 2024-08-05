@@ -38,6 +38,10 @@ Todo:
 
 [minecraft-data](https://github.com/PrismarineJS/minecraft-data)
 - For the raw json file of 1.17 names and displayNames
+
+[1.21 inventory images](https://www.okamisquadron.com/downloads/1-21-images)
+- resized to 32x32 for non existing inventory images
+- Remake: Shulker Box, Trapped Chest, Netherite Scrap, Block of Netherite
 ---
 Drehmal: APOTHEOSIS by Keeko100, Rift and team. [https://www.drehmal.net/](https://www.drehmal.net/)
 
