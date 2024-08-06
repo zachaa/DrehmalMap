@@ -67,3 +67,21 @@ let LodahrPortalIcon = new L.Icon({
         popupAnchor:  [0, -8],
         className: "mc-icon"
 });
+
+var IconTrader = L.Icon.extend({
+    options: {
+        iconSize:     [32, 32],
+        iconAnchor:   [16, 16],
+        popupAnchor:  [0, -16],
+        className: "mc-icon-trader"
+    }
+});
+
+var IconEntity = L.Icon.extend({
+    options: {
+        iconSize:     [32, 32],
+        iconAnchor:   [16, 16],
+        popupAnchor:  [0, -16],
+        className: "mc-icon-entity"
+    }
+});

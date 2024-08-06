@@ -52,6 +52,19 @@ html {
     drop-shadow(0 0 8px rgb(184, 98, 255));
 }
 
+.mc-icon-trader {
+  image-rendering: pixelated;
+  box-shadow: 0 0 2px 2px rgb(59, 213, 255);
+  filter:
+    drop-shadow(0 0 8px rgb(59, 213, 255))
+    drop-shadow(0 0 8px rgb(59, 213, 255));
+}
+
+.mc-icon-entity {
+  image-rendering: pixelated;
+  box-shadow: 0 0 2px 2px rgb(104, 255, 114);
+}
+
 /* Popup */
 .popup_title {
   text-align: center;
@@ -90,6 +103,20 @@ ul.storageList li {
 
 ul.storageList li img {
   margin-right: 0.5em; /*Space after image and before text*/
+}
+
+ul.tradeList li {
+  list-style-type: none;
+  margin-bottom: 0.5em;
+}
+
+ul.tradeList li img {
+  margin-right: 0.5em; /*Space after image and before text*/
+}
+
+.tradeList {
+  margin-top: 0.1em;
+  padding-inline-start: 0.2em; /*Indent space*/
 }
 
 /* Map Legend ================================ */

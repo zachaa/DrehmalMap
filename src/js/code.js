@@ -181,6 +181,15 @@ async function createOverlays(dimension, renderer) {
 // ====================================================================================================================
 // Entity Overlays
 
+function imgSmallElement(icon_name) {
+    const itemImage = document.createElement('img');
+    itemImage.src = `images/icons/${icon_name}.png`;
+    itemImage.style.width = '16px';
+    itemImage.style.height = '16px';
+    itemImage.style.verticalAlign = 'middle';
+    return itemImage;
+}
+
 /**
  * Create HTML for use with Leaflet popup of Minecraft items
  * @param {Array} items array of MCItems with counts, optional lore
@@ -195,11 +204,7 @@ function storageHtml(items) {
         const li = document.createElement('li');
         
         // Create an img element to act like a custom bullet point
-        const bulletImage = document.createElement('img');
-        bulletImage.src = `images/icons/${item.name}.png`;
-        bulletImage.style.width = '16px';
-        bulletImage.style.height = '16px';
-        bulletImage.style.verticalAlign = 'middle';
+        const bulletImage = imgSmallElement(item.name)
 
         li.appendChild(bulletImage);
 
@@ -219,6 +224,45 @@ function storageHtml(items) {
     return itemList;
 }
 
+function tradeHtml(trades) {
+    // put all items into an unordered list with bullet point replaced by image
+    const itemList = document.createElement('ul');
+    itemList.classList.add('tradeList');
+
+    trades.forEach(trade => {
+        const li = document.createElement('li');
+        
+        const buyImage = imgSmallElement(trade.buy.name)
+        li.appendChild(buyImage);
+        li.innerHTML += `${trade.buy.count}× <span class="${trade.buy.enchanted ? 'enchanted' : ''}">${trade.buy.displayName}</span>`;
+
+        if (trade.buyB) {
+            li.innerHTML += " <strong>+</strong> "
+
+            const buyBImage = imgSmallElement(trade.buyB.name)
+            li.appendChild(buyBImage);
+            li.innerHTML += `${trade.buyB.count}× <span class="${trade.buyB.enchanted ? 'enchanted' : ''}">${trade.buyB.displayName}</span>`;
+        }
+
+        li.innerHTML += " <strong>→</strong> "
+
+        const sellImage = imgSmallElement(trade.sell.name)
+        li.appendChild(sellImage);
+        li.innerHTML += `${trade.sell.count}× <span class="${trade.sell.enchanted ? 'enchanted' : ''}">${trade.sell.displayName}</span>`;
+
+        // If the sold item has lore, add it below the main text
+        if (trade.sell.lore) {
+            const loreText = document.createElement('div');
+            loreText.classList.add('lore_text');
+            loreText.innerHTML = trade.sell.lore.replace(/\n/g, '<br>');
+            li.appendChild(loreText);
+        }
+        // Add to ul
+        itemList.appendChild(li);
+    });
+    return itemList;
+}
+
 function createStorageMarker(element) {
     let icon = new Icon32({iconUrl: `images/icons/${element.name}.png`});
     let items_html = storageHtml(element.items).outerHTML;
@@ -228,6 +272,29 @@ function createStorageMarker(element) {
                   ${items_html}`);
 }
 
+function createTraderMarker(element) {
+    let icon = new IconTrader({iconUrl: `images/icons/entity/${element.name}.png`});
+    let trade_html = tradeHtml(element.trades).outerHTML;
+    return L.marker([element.z+0.5, element.x+0.5], {icon: icon})
+        .bindPopup(`<span class=popup_title>${element.displayName}</span><hr>
+                  <span class=popup_xyz>${element.x} ${element.y} ${element.z}</span><br>
+                  ${trade_html}`, {'maxWidth':'500','maxHeight':'500'});
+}
+
+function createEntityMarker(element) {
+    let icon = new IconEntity({iconUrl: `images/icons/entity/${element.name}.png`});
+    return L.marker([element.z+0.5, element.x+0.5], {icon: icon})
+        .bindPopup(`<span class=popup_title>${element.displayName}</span><hr>
+                  <span class=popup_xyz>${element.x} ${element.y} ${element.z}</span>`);
+}
+
+function createTileEntityMarker(element) {
+    let icon = new Icon32({iconUrl: `images/icons/${element.name}.png`});
+    return L.marker([element.z+0.5, element.x+0.5], {icon: icon})
+        .bindPopup(`<span class=popup_title>${element.displayName}</span><hr>
+                  <span class=popup_xyz>${element.x} ${element.y} ${element.z}</span>`);
+}
+
 function layerEntStorage(storageData) {
     let storageLayer = L.layerGroup();
     storageData.forEach(element => {
@@ -235,6 +302,33 @@ function layerEntStorage(storageData) {
         storageLayer.addLayer(marker);
     });
     return storageLayer;
+}
+
+function layerEntTrader(traderData) {
+    let traderLayer = L.layerGroup();
+    traderData.forEach(element => {
+        let marker = createTraderMarker(element);
+        traderLayer.addLayer(marker);
+    });
+    return traderLayer;
+}
+
+function layerEntity(entityData) {
+    let entityLayer = L.layerGroup();
+    entityData.forEach(element => {
+        let marker = createEntityMarker(element);
+        entityLayer.addLayer(marker);
+    });
+    return entityLayer;
+}
+
+function layerTileEntity(tileEntityData) {
+    let tileEntityLayer = L.layerGroup();
+    tileEntityData.forEach(element => {
+        let marker = createTileEntityMarker(element);
+        tileEntityLayer.addLayer(marker);
+    });
+    return tileEntityLayer;
 }
 
 function groupFilter(group, entity_array) {
@@ -261,29 +355,35 @@ async function createEntityOverlays(dimension) {
         entityLayers["Storage"] = layerEntStorage(storage_ent);
     }
     let lectern_ent = groupFilter("lectern", tiles_and_entities);
+    console.log(`Lecterns with Book: ${lectern_ent.length}`);
     if (lectern_ent.length > 0) {
         entityLayers["Lecterns"] = layerEntStorage(lectern_ent);
     }
     let itemFrame_ent = groupFilter("item_frame", tiles_and_entities);
+    console.log(`Item Frames: ${itemFrame_ent.length}`);
     if (itemFrame_ent.length > 0) {
         entityLayers["Item Frames"] = layerEntStorage(itemFrame_ent);
     }
-    // let traders_ent = groupFilter("trader", tiles_and_entities);
-    // if (traders_ent.length > 0) {
-    //     entityLayers["Named Traders"] = layerStorage(traders_ent);
-    // }
+    let traders_ent = groupFilter("trader", tiles_and_entities);
+    console.log(`Named Traders: ${traders_ent.length}`);
+    if (traders_ent.length > 0) {
+        entityLayers["Named Traders"] = layerEntTrader(traders_ent);
+    }
     let armorStand_ent = groupFilter("armor_stand", tiles_and_entities);
+    console.log(`Armor Stands with Items: ${armorStand_ent.length}`);
     if (armorStand_ent.length > 0) {
         entityLayers["Armor Stands"] = layerEntStorage(armorStand_ent);
     }
-    // let entity_ent = groupFilter("entity", tiles_and_entities);
-    // if (entity_ent.length > 0) {
-    //     entityLayers["Other Entities"] = layerStorage(entity_ent);
-    // }
-    // let tileEntity_ent = groupFilter("tile_entity", tiles_and_entities);
-    // if (tileEntity_ent.length > 0) {
-    //     entityLayers["Other Tile Entities"] = layerStorage(tileEntity_ent);
-    // }
+    let entity_ent = groupFilter("entity", tiles_and_entities);
+    console.log(`Named Entities: ${entity_ent.length}`);
+    if (entity_ent.length > 0) {
+        entityLayers["Other Entities"] = layerEntity(entity_ent);
+    }
+    let tileEntity_ent = groupFilter("tile_entity", tiles_and_entities);
+    console.log(`Tile Entities: ${tileEntity_ent.length}`);
+    if (tileEntity_ent.length > 0) {
+        entityLayers["Other Tile Entities"] = layerTileEntity(tileEntity_ent);
+    }
 
     return entityLayers;
 };
