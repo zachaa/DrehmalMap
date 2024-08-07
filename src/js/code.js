@@ -428,8 +428,24 @@ async function start() {
         center: [0, 0],
         zoom: 0,
         layers: [baseTiles, mapLayers["Locations"]],
-        crs: crs
+        crs: crs,
+        drawControl: true // Leaflet Draw to create geoJSON polygons
     });
+
+    /* Draw with leaflet geoman */
+    map.pm.addControls({
+        position: 'topleft',
+        drawMarker: false,
+        drawCircleMarker: false,
+        drawText: false,
+        drawPolygon: true,
+        editMode: true,
+        dragMode: false,
+        rotateMode: false,
+        cutPolygon: true,
+        removalMode: true,
+    });
+    map.pm.setGlobalOptions({snappable: true , snapDistance: 10});
 
     L.control.layers(
         null,
@@ -444,6 +460,17 @@ async function start() {
         {collapsed: false}
     ).addTo(map);
     
+
+    var drawnItems = new L.FeatureGroup();
+    map.addLayer(drawnItems);
+
+    // Listen for when a polygon is created and add it to drawnItems
+    map.on('pm:create', function(e) {
+        var layer = e.layer;
+        drawnItems.addLayer(layer);
+    });
+
+    // Display mouse position
     L.control.mousePosition({
         separator: ' z: ',
         lngFirst: true,
