@@ -36,6 +36,8 @@ Todo:
 
 [Leaflet Mouse Position](https://github.com/ardhi/Leaflet.MousePosition)
 
+[Leaflet Zoom Display](https://github.com/azavea/Leaflet.zoomdisplay)
+
 [minecraft-data](https://github.com/PrismarineJS/minecraft-data)
 - For the raw json file of 1.17 names and displayNames
 
