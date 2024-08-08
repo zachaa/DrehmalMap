@@ -438,6 +438,7 @@ async function start() {
         drawMarker: false,
         drawCircleMarker: false,
         drawText: false,
+        drawRectangle: false,
         drawPolygon: true,
         editMode: true,
         dragMode: false,
@@ -445,7 +446,7 @@ async function start() {
         cutPolygon: true,
         removalMode: true,
     });
-    map.pm.setGlobalOptions({snappable: true , snapDistance: 10});
+    map.pm.setGlobalOptions({snappable: true , snapDistance: 10, tooltips: false});
 
     L.control.layers(
         null,
