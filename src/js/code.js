@@ -26,6 +26,22 @@ const mapConfig = {
     }
 };
 
+// ====================================================================================================================
+async function createGeoJsonLayer(filepath) {
+    let geoJsonData = await d3.json(filepath);
+    let geoJsonLayer = L.geoJSON(geoJsonData, {
+        style: function(feature) {
+            return {color: feature.properties.color,
+                fillOpacity: 0.8
+            }
+        },
+        onEachFeature: function onEachFeature(feature, layer) {
+            layer.bindPopup(`<span class=popup_title>${feature.properties.name}</span>`)
+        }
+    });
+    return geoJsonLayer;
+};
+
 /**
  * Load and filter a json file to a given dimension.
  * @param {String} dimension name of dimension to filter to
@@ -140,6 +156,14 @@ function layerMythical(mythicalData) {
  */
 async function createOverlays(dimension, renderer) {
     overlayLayers = {};
+
+    if (dimension === "overworld") {
+        overlayLayers["Regions"] = await createGeoJsonLayer("data/regions.geojson");
+    }
+
+    // if (dimension === "lodahr") {
+    //     overlayLayers["Domains"] = createGeoJsonLayer("data/domains.geojson");
+    // }
 
     let towers = await readAndDimensionFilter(dimension, "data/towers.json");
     console.log(`Towers: ${towers.length}`);
@@ -406,7 +430,7 @@ async function start() {
 
     let baseTiles = L.tileLayer(config.url, {
         errorTileUrl: "images/maps/null_tile.png",
-        attribution: '&copy; Drehmal map creators, uNmINeD, M',
+        attribution: '&copy; Drehmal map creators, uNmINeD, Mojang',
         minZoom: config.zoomMin,
         maxZoom: 4,
         maxNativeZoom: 2,  // Last tile zoom level
