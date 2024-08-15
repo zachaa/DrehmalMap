@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drehmal Map</title>
+    <!-- <link rel="icon" href="images/favicon.svg"> -->
+
+    <!-- D3  -->
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+
+    <!-- Leaflet-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+    <!-- Geoman drawing -->
+    <link rel="stylesheet" href="https://unpkg.com/@geoman-io/leaflet-geoman-free@latest/dist/leaflet-geoman.css" />
+    <script src="https://unpkg.com/@geoman-io/leaflet-geoman-free@latest/dist/leaflet-geoman.js"></script>
+
+    <!-- Leaflet Cluster Library -->
+    <!-- <link rel="stylesheet" type="text/css" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css">
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css">
+    <script type="text/javascript" src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script> -->
+
+    <!-- Leaflet Mouse Position-->
+    <link rel="stylesheet" type="text/css" href="css/L.Control.MousePosition.css">
+    <script type="text/javascript" src="js/L.Control.MousePosition.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/L.Control.ZoomDisplay.css">
+    <script type="text/javascript" src="js/L.Control.ZoomDisplay.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <div>
+        <header>Space</header>
+        <nav>
+            <div class="menu_h_bar">
+                <a class="menu_link hvr-underline-from-left" href="index.html">
+                    Home
+                </a>
+                <a class="menu_link hvr-underline-from-left" href="map_overworld.html">
+                    Drehmal Map
+                </a>
+                <a class="menu_link hvr-underline-from-left" href="map_lodahr.html">
+                    Lo'Dahr Map
+                </a>
+                <a class="menu_link hvr-underline-from-left" id="current_page" href="map_space.html">
+                    Space Map
+                </a>
+                <a class="menu_link hvr-underline-from-left" href="map_end.html">
+                    End Map
+                </a>
+                <a class="menu_link hvr-underline-from-left" href="map_true_end.html">
+                    True End Map
+                </a>
+            </div>
+        </nav>
+        <div id="map" data-map="space"></div>
+        <hr>
+        <button id="export">Export GeoJSON</button>
+        <footer>zachaa, 2024</footer>
+    </div>
+    <script src="js/icons.js"></script>
+    <script type="text/javascript" src="js/code.js"></script>
+</body>
+
+</html>
