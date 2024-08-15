@@ -484,7 +484,7 @@ async function start() {
         mapEntityLayers,
         {collapsed: false}
     ).addTo(map);
-    
+
 
     var drawnItems = new L.FeatureGroup();
     map.addLayer(drawnItems);
@@ -506,6 +506,21 @@ async function start() {
     // Set the map view to the center and zoom level
     map.setView([0, 0], 0);
 
+    // Is this ok here???
+    document.getElementById('export').onclick = function () {
+        var data = drawnItems.toGeoJSON();
+        var convertedData = 'text/json;charset=utf-8,' + encodeURIComponent(JSON.stringify(data));
+        
+        var a = document.createElement('a');
+        a.href = 'data:' + convertedData;
+        a.download = 'data.geojson';
+        a.innerHTML = 'Export GeoJSON';
+        
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+    }
+
     console.log("Start complete")
 };
 
@@ -524,6 +539,8 @@ function colorMarker(value) {
             return "#00B8E1";
         case "boss":
             return "#D00000";
+        case "trial":
+            return "#000DC3";
         case "other_location":
             return "#E803DC";
         case "meta":
