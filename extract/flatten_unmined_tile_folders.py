@@ -3,57 +3,57 @@ import shutil
 import subprocess
 
 top_level_paths = [
-    Path(r"C:\Users\Zachary\Coding\VSCode\DrehmalMap\src\images\maps\overworld\tiles\zoom.2"),
-    Path(r"C:\Users\Zachary\Coding\VSCode\DrehmalMap\src\images\maps\overworld\tiles\zoom.1"),
-    Path(r"C:\Users\Zachary\Coding\VSCode\DrehmalMap\src\images\maps\overworld\tiles\zoom.0"),
-    Path(r"C:\Users\Zachary\Coding\VSCode\DrehmalMap\src\images\maps\overworld\tiles\zoom.-1"),
-    Path(r"C:\Users\Zachary\Coding\VSCode\DrehmalMap\src\images\maps\overworld\tiles\zoom.-2"),
-    Path(r"C:\Users\Zachary\Coding\VSCode\DrehmalMap\src\images\maps\overworld\tiles\zoom.-3"),
-    Path(r"C:\Users\Zachary\Coding\VSCode\DrehmalMap\src\images\maps\overworld\tiles\zoom.-4"),
-    Path(r"C:\Users\Zachary\Coding\VSCode\DrehmalMap\src\images\maps\overworld\tiles\zoom.-5"),
-    Path(r"C:\Users\Zachary\Coding\VSCode\DrehmalMap\src\images\maps\overworld\tiles\zoom.-6")
+    Path(r"C:\Users\Zachary\Coding\VSCode\DrehmalMap\images\maps\overworld\tiles\zoom.2"),
+    Path(r"C:\Users\Zachary\Coding\VSCode\DrehmalMap\images\maps\overworld\tiles\zoom.1"),
+    Path(r"C:\Users\Zachary\Coding\VSCode\DrehmalMap\images\maps\overworld\tiles\zoom.0"),
+    Path(r"C:\Users\Zachary\Coding\VSCode\DrehmalMap\images\maps\overworld\tiles\zoom.-1"),
+    Path(r"C:\Users\Zachary\Coding\VSCode\DrehmalMap\images\maps\overworld\tiles\zoom.-2"),
+    Path(r"C:\Users\Zachary\Coding\VSCode\DrehmalMap\images\maps\overworld\tiles\zoom.-3"),
+    Path(r"C:\Users\Zachary\Coding\VSCode\DrehmalMap\images\maps\overworld\tiles\zoom.-4"),
+    Path(r"C:\Users\Zachary\Coding\VSCode\DrehmalMap\images\maps\overworld\tiles\zoom.-5"),
+    Path(r"C:\Users\Zachary\Coding\VSCode\DrehmalMap\images\maps\overworld\tiles\zoom.-6")
 ]
 
 top_level_paths_end = [
-    Path(r"C:\Users\Zachary\Coding\VSCode\DrehmalMap\src\images\maps\end\tiles\zoom.2"),
-    Path(r"C:\Users\Zachary\Coding\VSCode\DrehmalMap\src\images\maps\end\tiles\zoom.1"),
-    Path(r"C:\Users\Zachary\Coding\VSCode\DrehmalMap\src\images\maps\end\tiles\zoom.0"),
-    Path(r"C:\Users\Zachary\Coding\VSCode\DrehmalMap\src\images\maps\end\tiles\zoom.-1"),
-    Path(r"C:\Users\Zachary\Coding\VSCode\DrehmalMap\src\images\maps\end\tiles\zoom.-2"),
-    Path(r"C:\Users\Zachary\Coding\VSCode\DrehmalMap\src\images\maps\end\tiles\zoom.-3")
+    Path(r"C:\Users\Zachary\Coding\VSCode\DrehmalMap\images\maps\end\tiles\zoom.2"),
+    Path(r"C:\Users\Zachary\Coding\VSCode\DrehmalMap\images\maps\end\tiles\zoom.1"),
+    Path(r"C:\Users\Zachary\Coding\VSCode\DrehmalMap\images\maps\end\tiles\zoom.0"),
+    Path(r"C:\Users\Zachary\Coding\VSCode\DrehmalMap\images\maps\end\tiles\zoom.-1"),
+    Path(r"C:\Users\Zachary\Coding\VSCode\DrehmalMap\images\maps\end\tiles\zoom.-2"),
+    Path(r"C:\Users\Zachary\Coding\VSCode\DrehmalMap\images\maps\end\tiles\zoom.-3")
 ]
 
 top_level_paths_true_end = [
-    Path(r"C:\Users\Zachary\Coding\VSCode\DrehmalMap\src\images\maps\true_end\tiles\zoom.2"),
-    Path(r"C:\Users\Zachary\Coding\VSCode\DrehmalMap\src\images\maps\true_end\tiles\zoom.1"),
-    Path(r"C:\Users\Zachary\Coding\VSCode\DrehmalMap\src\images\maps\true_end\tiles\zoom.0"),
-    Path(r"C:\Users\Zachary\Coding\VSCode\DrehmalMap\src\images\maps\true_end\tiles\zoom.-1"),
-    Path(r"C:\Users\Zachary\Coding\VSCode\DrehmalMap\src\images\maps\true_end\tiles\zoom.-2"),
-    Path(r"C:\Users\Zachary\Coding\VSCode\DrehmalMap\src\images\maps\true_end\tiles\zoom.-3"),
-    Path(r"C:\Users\Zachary\Coding\VSCode\DrehmalMap\src\images\maps\true_end\tiles\zoom.-4"),
-    Path(r"C:\Users\Zachary\Coding\VSCode\DrehmalMap\src\images\maps\true_end\tiles\zoom.-5"),
-    Path(r"C:\Users\Zachary\Coding\VSCode\DrehmalMap\src\images\maps\true_end\tiles\zoom.-6")
+    Path(r"C:\Users\Zachary\Coding\VSCode\DrehmalMap\images\maps\true_end\tiles\zoom.2"),
+    Path(r"C:\Users\Zachary\Coding\VSCode\DrehmalMap\images\maps\true_end\tiles\zoom.1"),
+    Path(r"C:\Users\Zachary\Coding\VSCode\DrehmalMap\images\maps\true_end\tiles\zoom.0"),
+    Path(r"C:\Users\Zachary\Coding\VSCode\DrehmalMap\images\maps\true_end\tiles\zoom.-1"),
+    Path(r"C:\Users\Zachary\Coding\VSCode\DrehmalMap\images\maps\true_end\tiles\zoom.-2"),
+    Path(r"C:\Users\Zachary\Coding\VSCode\DrehmalMap\images\maps\true_end\tiles\zoom.-3"),
+    Path(r"C:\Users\Zachary\Coding\VSCode\DrehmalMap\images\maps\true_end\tiles\zoom.-4"),
+    Path(r"C:\Users\Zachary\Coding\VSCode\DrehmalMap\images\maps\true_end\tiles\zoom.-5"),
+    Path(r"C:\Users\Zachary\Coding\VSCode\DrehmalMap\images\maps\true_end\tiles\zoom.-6")
 ]
 
 top_level_paths_lodahr = [
-    Path(r"C:\Users\Zachary\Coding\VSCode\DrehmalMap\src\images\maps\lodahr\tiles\zoom.2"),
-    Path(r"C:\Users\Zachary\Coding\VSCode\DrehmalMap\src\images\maps\lodahr\tiles\zoom.1"),
-    Path(r"C:\Users\Zachary\Coding\VSCode\DrehmalMap\src\images\maps\lodahr\tiles\zoom.0"),
-    Path(r"C:\Users\Zachary\Coding\VSCode\DrehmalMap\src\images\maps\lodahr\tiles\zoom.-1"),
-    Path(r"C:\Users\Zachary\Coding\VSCode\DrehmalMap\src\images\maps\lodahr\tiles\zoom.-2"),
-    Path(r"C:\Users\Zachary\Coding\VSCode\DrehmalMap\src\images\maps\lodahr\tiles\zoom.-3"),
-    Path(r"C:\Users\Zachary\Coding\VSCode\DrehmalMap\src\images\maps\lodahr\tiles\zoom.-4"),
-    Path(r"C:\Users\Zachary\Coding\VSCode\DrehmalMap\src\images\maps\lodahr\tiles\zoom.-5"),
-    Path(r"C:\Users\Zachary\Coding\VSCode\DrehmalMap\src\images\maps\lodahr\tiles\zoom.-6")
+    Path(r"C:\Users\Zachary\Coding\VSCode\DrehmalMap\images\maps\lodahr\tiles\zoom.2"),
+    Path(r"C:\Users\Zachary\Coding\VSCode\DrehmalMap\images\maps\lodahr\tiles\zoom.1"),
+    Path(r"C:\Users\Zachary\Coding\VSCode\DrehmalMap\images\maps\lodahr\tiles\zoom.0"),
+    Path(r"C:\Users\Zachary\Coding\VSCode\DrehmalMap\images\maps\lodahr\tiles\zoom.-1"),
+    Path(r"C:\Users\Zachary\Coding\VSCode\DrehmalMap\images\maps\lodahr\tiles\zoom.-2"),
+    Path(r"C:\Users\Zachary\Coding\VSCode\DrehmalMap\images\maps\lodahr\tiles\zoom.-3"),
+    Path(r"C:\Users\Zachary\Coding\VSCode\DrehmalMap\images\maps\lodahr\tiles\zoom.-4"),
+    Path(r"C:\Users\Zachary\Coding\VSCode\DrehmalMap\images\maps\lodahr\tiles\zoom.-5"),
+    Path(r"C:\Users\Zachary\Coding\VSCode\DrehmalMap\images\maps\lodahr\tiles\zoom.-6")
 ]
 
 top_level_paths_space = [
-    Path(r"C:\Users\Zachary\Coding\VSCode\DrehmalMap\src\images\maps\space\tiles\zoom.2"),
-    Path(r"C:\Users\Zachary\Coding\VSCode\DrehmalMap\src\images\maps\space\tiles\zoom.1"),
-    Path(r"C:\Users\Zachary\Coding\VSCode\DrehmalMap\src\images\maps\space\tiles\zoom.0"),
-    Path(r"C:\Users\Zachary\Coding\VSCode\DrehmalMap\src\images\maps\space\tiles\zoom.-1"),
-    Path(r"C:\Users\Zachary\Coding\VSCode\DrehmalMap\src\images\maps\space\tiles\zoom.-2"),
-    Path(r"C:\Users\Zachary\Coding\VSCode\DrehmalMap\src\images\maps\space\tiles\zoom.-3")
+    Path(r"C:\Users\Zachary\Coding\VSCode\DrehmalMap\images\maps\space\tiles\zoom.2"),
+    Path(r"C:\Users\Zachary\Coding\VSCode\DrehmalMap\images\maps\space\tiles\zoom.1"),
+    Path(r"C:\Users\Zachary\Coding\VSCode\DrehmalMap\images\maps\space\tiles\zoom.0"),
+    Path(r"C:\Users\Zachary\Coding\VSCode\DrehmalMap\images\maps\space\tiles\zoom.-1"),
+    Path(r"C:\Users\Zachary\Coding\VSCode\DrehmalMap\images\maps\space\tiles\zoom.-2"),
+    Path(r"C:\Users\Zachary\Coding\VSCode\DrehmalMap\images\maps\space\tiles\zoom.-3")
 ]
 
 def move_png_files(top_level_dir: Path):
@@ -82,9 +82,9 @@ def optimize_pngs(path: Path):
 
 if __name__ == "__main__":
     # move_all_png_files(top_level_paths)
-    # optimize_pngs(Path(r"C:\Users\Zachary\Coding\VSCode\DrehmalMap\src\images\maps\end\tiles"))
-    # optimize_pngs(Path(r"C:\Users\Zachary\Coding\VSCode\DrehmalMap\src\images\maps\space\tiles"))
-    # optimize_pngs(Path(r"C:\Users\Zachary\Coding\VSCode\DrehmalMap\src\images\maps\true_end\tiles"))
-    # optimize_pngs(Path(r"C:\Users\Zachary\Coding\VSCode\DrehmalMap\src\images\maps\lodahr\tiles"))
-    # optimize_pngs(Path(r"C:\Users\Zachary\Coding\VSCode\DrehmalMap\src\images\maps\overworld\tiles"))
+    # optimize_pngs(Path(r"C:\Users\Zachary\Coding\VSCode\DrehmalMap\images\maps\end\tiles"))
+    # optimize_pngs(Path(r"C:\Users\Zachary\Coding\VSCode\DrehmalMap\images\maps\space\tiles"))
+    # optimize_pngs(Path(r"C:\Users\Zachary\Coding\VSCode\DrehmalMap\images\maps\true_end\tiles"))
+    # optimize_pngs(Path(r"C:\Users\Zachary\Coding\VSCode\DrehmalMap\images\maps\lodahr\tiles"))
+    # optimize_pngs(Path(r"C:\Users\Zachary\Coding\VSCode\DrehmalMap\images\maps\overworld\tiles"))
     pass
