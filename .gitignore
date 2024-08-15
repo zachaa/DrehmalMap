@@ -1,5 +1,5 @@
 .venv/
 data/
-src/images/
+images/
 tools/
 *.psd
