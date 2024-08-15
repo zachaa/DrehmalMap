@@ -1,26 +1,31 @@
 const mapConfig = {
     overworld: {
-        bounds: [[-5120, -5632], [7167, 7679]],
+        bounds: [[-5120, -5632], [7167, 7679]],  // y, x
+        startCenter: [690, 778],
         url: 'images/maps/overworld/tiles/zoom.{z}/tile.{x}.{y}.png',
         zoomMin: -6,
     },
     end: {
         bounds: [[-512, -512], [511, 511]],
+        startCenter: [0, 0],
         url: 'images/maps/end/tiles/zoom.{z}/tile.{x}.{y}.png',
         zoomMin: -3,
     },
     true_end: {
-        bounds: [[-512, 0], [10751, 10239]], // y, x
+        bounds: [[-512, 0], [10751, 10239]],
+        startCenter: [690, 778],
         url: 'images/maps/true_end/tiles/zoom.{z}/tile.{x}.{y}.png',
         zoomMin: -6,
     },
     lodahr: {
         bounds: [[-3072, -2560], [2559, 27647]],
+        startCenter: [-718, -64],
         url: 'images/maps/lodahr/tiles/zoom.{z}/tile.{x}.{y}.png',
         zoomMin: -6,
     },
     space: {
         bounds: [[-512, -512], [511, 511]],
+        startCenter: [122, -130],
         url: 'images/maps/space/tiles/zoom.{z}/tile.{x}.{y}.png',
         zoomMin: -3,
     }
@@ -504,7 +509,7 @@ async function start() {
     }).addTo(map);
 
     // Set the map view to the center and zoom level
-    map.setView([0, 0], 0);
+    map.setView(config.startCenter, 0);
 
     // Is this ok here???
     document.getElementById('export').onclick = function () {
