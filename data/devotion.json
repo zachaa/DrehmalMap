@@ -1,0 +1,222 @@
+[
+    {
+        "x": 1838,
+        "y": 70,
+        "z": 4252,
+        "dim": "overworld",
+        "name": "Dahr",
+        "icon": "images/icons/devotion_dahr.png",
+        "detail": "In Port Solitude.",
+        "items": ["ink_sack", "tropical_fish", "sea_pickle"]
+    },
+    {
+        "x": 3260,
+        "y": 86,
+        "z": 3371,
+        "dim": "overworld",
+        "name": "Virtuo",
+        "icon": "images/icons/devotion_virtuo.png",
+        "detail": "At the Kiln of Virtuo.",
+        "items": ["melon_slice", "glistering_melon_slice", "dried_kelp", "soul_lantern", "diamond"]
+    },
+    {
+        "x": 4274,
+        "y": 32,
+        "z": -921,
+        "dim": "overworld",
+        "name": "Taihgel",
+        "icon": "images/icons/devotion_taihgel.png",
+        "detail": "In abandond Wokonori in Grand Pike Canyon.",
+        "items": ["neather_quartz", "flint", "glowstone", "obsidian", "magma_block"]
+    },
+    {
+        "x": 1032,
+        "y": 101,
+        "z": -3002,
+        "dim": "overworld",
+        "name": "Loe",
+        "icon": "images/icons/devotion_loe.png",
+        "detail": "Next to Schlonko, occupied by a self proclamed Archduke.",
+        "items": ["glass", "leather", "glow_lichen"]
+    },
+    {
+        "x": 2324,
+        "y": 76,
+        "z": -1611,
+        "dim": "overworld",
+        "name": "Vayniklah",
+        "icon": "images/icons/devotion_vayniklah.png",
+        "detail": "At Marahza.",
+        "items": ["cactus", "egg", "sunflower"]
+    },
+    {
+        "x": 1114,
+        "y": 85,
+        "z": 1095,
+        "dim": "overworld",
+        "name": "Khive",
+        "icon": "images/icons/devotion_khive.png",
+        "detail": "On top of a ziggurat in Capital Valley.",
+        "items": ["book", "chiseled_stone_bricks", "chiseled_polished_blackstone", "ender_perl"]
+    },
+    {
+        "x": -131,
+        "y": 159,
+        "z": 2901,
+        "dim": "overworld",
+        "name": "Drehmal",
+        "icon": "images/icons/devotion_drehmal.png",
+        "detail": "At the Drehua Temple.",
+        "items": ["oak_sapling", "bucket_of_milk", "grass_block", "sweet_berries", "bed"]
+    },
+    {
+        "x": -1430,
+        "y": 86,
+        "z": -1637,
+        "dim": "overworld",
+        "name": "Lai",
+        "icon": "images/icons/devotion_lai.png",
+        "detail": "At the Sacred Flame temple.",
+        "items": ["gunpowder", "campfire", "lantern", "magma_cream"]
+    },
+    {
+        "x": -3137,
+        "y": 88,
+        "z": -1006,
+        "dim": "overworld",
+        "name": "Voynahla",
+        "icon": "images/icons/devotion_voynahla.png",
+        "detail": "At the Perishing Well",
+        "items": ["rotten_flesh", "bone", "dead_bush"]
+    },
+    {
+        "x": -2806,
+        "y": 39,
+        "z": 5321,
+        "dim": "overworld",
+        "name": "Maelihs",
+        "icon": "images/icons/devotion_maelihs.png",
+        "detail": "At Rhaveloth inside the Sepulchral Altar.",
+        "items": ["spider_eye", "bell", "redstone_block", "golden_carrot", "tnt"]
+    },
+    {
+        "x": -954,
+        "y": 190,
+        "z": -4154,
+        "dim": "overworld",
+        "name": "Rihelma",
+        "icon": "images/icons/devotion_rihelma.png",
+        "detail": "At the Starrise Bastion.",
+        "items": ["feather", "copper_ingot", "clock", "blaze_rod", "spectral_arrow"]
+    },
+    {
+        "x": -115,
+        "y": 31,
+        "z": -1539,
+        "dim": "lodahr",
+        "name": "Dahr",
+        "icon": "images/icons/devotion_dahr.png",
+        "detail": "",
+        "items": ["ink_sack", "tropical_fish", "sea_pickle"]
+    },
+    {
+        "x": -172,
+        "y": 54,
+        "z": -1528,
+        "dim": "lodahr",
+        "name": "Loe",
+        "icon": "images/icons/devotion_loe.png",
+        "detail": "",
+        "items": ["glass", "leather", "glow_lichen"]
+    },
+    {
+        "x": -180,
+        "y": 57,
+        "z": -1612,
+        "dim": "lodahr",
+        "name": "Khive",
+        "icon": "images/icons/devotion_khive.png",
+        "detail": "",
+        "items": ["book", "chiseled_stone_bricks", "chiseled_polished_blackstone", "ender_perl"]
+    },
+    {
+        "x": -183,
+        "y": 46,
+        "z": -1653,
+        "dim": "lodahr",
+        "name": "Vayniklah",
+        "icon": "images/icons/devotion_vayniklah.png",
+        "detail": "",
+        "items": ["cactus", "egg", "sunflower"]
+    },
+    {
+        "x": -147,
+        "y": 36,
+        "z": -1692,
+        "dim": "lodahr",
+        "name": "Maelihs",
+        "icon": "images/icons/devotion_maelihs.png",
+        "detail": "",
+        "items": ["spider_eye", "bell", "redstone_block", "golden_carrot", "tnt"]
+    },
+    {
+        "x": -50,
+        "y": 220,
+        "z": -1718,
+        "dim": "lodahr",
+        "name": "Drehmal",
+        "icon": "images/icons/devotion_drehmal.png",
+        "detail": "",
+        "items": ["oak_sapling", "bucket_of_milk", "grass_block", "sweet_berries", "bed"]
+    },
+    {
+        "x": 9,
+        "y": 65,
+        "z": -1710,
+        "dim": "lodahr",
+        "name": "Virtuo",
+        "icon": "images/icons/devotion_virtuo.png",
+        "detail": "",
+        "items": ["melon_slice", "glistering_melon_slice", "dried_kelp", "soul_lantern", "diamond"]
+    },
+    {
+        "x": -14,
+        "y": 72,
+        "z": -1655,
+        "dim": "lodahr",
+        "name": "Taihgel",
+        "icon": "images/icons/devotion_taihgel.png",
+        "detail": "",
+        "items": ["neather_quartz", "flint", "glowstone", "obsidian", "magma_block"]
+    },
+    {
+        "x": -13,
+        "y": 38,
+        "z": -1655,
+        "dim": "lodahr",
+        "name": "Lai",
+        "icon": "images/icons/devotion_lai.png",
+        "detail": ".",
+        "items": ["gunpowder", "campfire", "lantern", "magma_cream"]
+    },
+    {
+        "x": 5,
+        "y": 22,
+        "z": -1540,
+        "dim": "lodahr",
+        "name": "Voynahla",
+        "icon": "images/icons/devotion_voynahla.png",
+        "detail": "",
+        "items": ["rotten_flesh", "bone", "dead_bush"]
+    },
+    {
+        "x": 17,
+        "y": 82,
+        "z": -1569,
+        "dim": "lodahr",
+        "name": "Rihelma",
+        "icon": "images/icons/devotion_rihelma.png",
+        "detail": "",
+        "items": ["feather", "copper_ingot", "clock", "blaze_rod", "spectral_arrow"]
+    }
+]

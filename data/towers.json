@@ -1,0 +1,258 @@
+[
+    {
+        "x": 61,
+        "y": 69,
+        "z": -718,
+        "dim": "lodahr",
+        "name": "Lo'dahr",
+        "group": "Outer"
+    },
+    {
+        "x": -27,
+        "y": 142,
+        "z": 122,
+        "dim": "space",
+        "name": "Aphelion",
+        "group": "Outer"
+    },
+    {
+        "x": -256,
+        "y": 119,
+        "z": 1645,
+        "dim": "overworld",
+        "name": "Av'Sal",
+        "group": "Central"
+    },
+    {
+        "x": 557,
+        "y": 129,
+        "z": 1176,
+        "dim": "overworld",
+        "name": "Capital Valley",
+        "group": "Central"
+    },
+    {
+        "x": 1706,
+        "y": 232,
+        "z": 2370,
+        "dim": "overworld",
+        "name": "North Heartwood",
+        "group": "East"
+    },
+    {
+        "x": 1884,
+        "y": 76,
+        "z": 3731,
+        "dim": "overworld",
+        "name": "South Heartwood",
+        "group": "East"
+    },
+    {
+        "x": 4428,
+        "y": 154,
+        "z": 3273,
+        "dim": "overworld",
+        "name": "The Black Jungle",
+        "group": "East"
+    },
+    {
+        "x": 4125,
+        "y": 174,
+        "z": 1194,
+        "dim": "overworld",
+        "name": "Spearhead Forest",
+        "group": "East"
+    },
+    {
+        "x": 3855,
+        "y": 120,
+        "z": -676,
+        "dim": "overworld",
+        "name": "Grand Pike Canyon",
+        "group": "East"
+    },
+    {
+        "x": 5423,
+        "y": 154,
+        "z": -1391,
+        "dim": "overworld",
+        "name": "Highfall Tundra",
+        "group": "East"
+    },
+    {
+        "x": 5461,
+        "y": 105,
+        "z": -3028,
+        "dim": "overworld",
+        "name": "The Frozen Bite",
+        "group": "East"
+    },
+    {
+        "x": 2595,
+        "y": 98,
+        "z": -3332,
+        "dim": "overworld",
+        "name": "Faehrcyle",
+        "group": "East"
+    },
+    {
+        "x": 26907,
+        "y": 128,
+        "z": -69,
+        "dim": "overworld",
+        "name": "Mt. Yavhlix",
+        "group": "Outer"
+    },
+    {
+        "x": 3953,
+        "y": 245,
+        "z": -1885,
+        "dim": "overworld",
+        "name": "Veruhkt Plateau",
+        "group": "East"
+    },
+    {
+        "x": 1898,
+        "y": 161,
+        "z": -1281,
+        "dim": "overworld",
+        "name": "Akhlo'Rohma",
+        "group": "East"
+    },
+    {
+        "x": 2040,
+        "y": 116,
+        "z": 606,
+        "dim": "overworld",
+        "name": "Purity Peaks",
+        "group": "East"
+    },
+    {
+        "x": 5014,
+        "y": 186,
+        "z": 5626,
+        "dim": "overworld",
+        "name": "Sahd",
+        "group": "Outer"
+    },
+    {
+        "x": 460,
+        "y": 97,
+        "z": -393,
+        "dim": "overworld",
+        "name": "Gulf of Drehmal",
+        "group": "Central"
+    },
+    {
+        "x": -156,
+        "y": 101,
+        "z": 2547,
+        "dim": "overworld",
+        "name": "Palisade's Heath",
+        "group": "Central"
+    },
+    {
+        "x": -1022,
+        "y": 133,
+        "z": 4874,
+        "dim": "overworld",
+        "name": "Lorahn'Kahl",
+        "group": "West"
+    },
+    {
+        "x": -2454,
+        "y": 95,
+        "z": 3658,
+        "dim": "overworld",
+        "name": "South Tharxax",
+        "group": "West"
+    },
+    {
+        "x": -1302,
+        "y": 152,
+        "z": -945,
+        "dim": "overworld",
+        "name": "Merijool",
+        "group": "West"
+    },
+    {
+        "x": -2777,
+        "y": 144,
+        "z": -1324,
+        "dim": "overworld",
+        "name": "Casai",
+        "group": "West"
+    },
+    {
+        "x": -1357,
+        "y": 210,
+        "z": 1772,
+        "dim": "overworld",
+        "name": "North Tharxax",
+        "group": "West"
+    },
+    {
+        "x": -2158,
+        "y": 90,
+        "z": 1123,
+        "dim": "overworld",
+        "name": "The Ebony Veldt",
+        "group": "West"
+    },
+    {
+        "x": -2847,
+        "y": 179,
+        "z": 210,
+        "dim": "overworld",
+        "name": "Mt. Ebonfire",
+        "group": "West"
+    },
+    {
+        "x": -3351,
+        "y": 216,
+        "z": 2233,
+        "dim": "overworld",
+        "name": "Anyr'Nogur",
+        "group": "West"
+    },
+    {
+        "x": -2245,
+        "y": 214,
+        "z": 2007,
+        "dim": "overworld",
+        "name": "Nihmaj Swamp",
+        "group": "West"
+    },
+    {
+        "x": -2562,
+        "y": 145,
+        "z": 4838,
+        "dim": "overworld",
+        "name": "The Carmine",
+        "group": "West"
+    },
+    {
+        "x": -4269,
+        "y": 77,
+        "z": 6024,
+        "dim": "overworld",
+        "name": "Hellcrags",
+        "group": "West"
+    },
+    {
+        "x": -2099,
+        "y": 120,
+        "z": -3815,
+        "dim": "overworld",
+        "name": "Island of Dusk",
+        "group": "Outer"
+    },
+    {
+        "x": -1007,
+        "y": 136,
+        "z": -4038,
+        "dim": "overworld",
+        "name": "Island of Dawn",
+        "group": "Outer"
+    }
+]

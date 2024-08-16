@@ -1,0 +1,65 @@
+[
+    {
+        "x": 1923,
+        "y": 25,
+        "z": 1865,
+        "dim": "lodahr",
+        "name": "Syzygy",
+        "lore": "",
+        "icon": "images/icons/custom/render/syzygy.png"
+    },
+    {
+        "x": 1030,
+        "y": 60,
+        "z": 3833,
+        "dim": "overworld",
+        "name": "Calamity",
+        "lore": "",
+        "icon": "images/icons/custom/render/calamity.png"
+    },
+    {
+        "x": 1744,
+        "y": 15,
+        "z": -4119,
+        "dim": "overworld",
+        "name": "Oblivion",
+        "lore": "",
+        "icon": "images/icons/custom/render/oblivion.png"
+    },
+    {
+        "x": 4718,
+        "y": 150,
+        "z": 5325,
+        "dim": "overworld",
+        "name": "Frenzy",
+        "lore": "",
+        "icon": "images/icons/custom/render/frenzy.png"
+    },
+    {
+        "x": -618,
+        "y": 54,
+        "z": 5026,
+        "dim": "overworld",
+        "name": "Ascendance",
+        "lore": "",
+        "icon": "images/icons/custom/render/ascendance.png"
+    },
+    {
+        "x": -3187,
+        "y": 77,
+        "z": 1559,
+        "dim": "overworld",
+        "name": "Zenith",
+        "lore": "",
+        "icon": "images/icons/custom/render/zenith.png"
+    },
+    {
+        "x": -3983,
+        "y": 139,
+        "z": 5959,
+        "dim": "overworld",
+        "name": "Malevolentia",
+        "lore": "",
+        "icon": "images/icons/custom/render/malevolentia.png"
+    }
+]

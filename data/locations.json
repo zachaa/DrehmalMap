@@ -1,0 +1,2883 @@
+[
+    {
+        "x": -69,
+        "y": 30,
+        "z": -1569,
+        "dim": "lodahr",
+        "name": "Ytaj",
+        "detail": "City of the Aspects",
+        "type": "town"
+    },
+    {
+        "x": 263,
+        "y": 86,
+        "z": -852,
+        "dim": "lodahr",
+        "name": "Naharja",
+        "detail": "Tehrmari city that parties.",
+        "type": "town"
+    },
+    {
+        "x": -12,
+        "y": 103,
+        "z": 122,
+        "dim": "space",
+        "name": "Aphelion",
+        "detail": "Space Station, research vessel in orbit around Lo'dahr.",
+        "type": "avsohm_facility"
+    },
+    {
+        "x": -264,
+        "y": 130,
+        "z": 189,
+        "dim": "space",
+        "name": "Terminus",
+        "detail": "Teleportation Space Station",
+        "type": "avsohm_facility"
+    },
+    {
+        "x": 26475,
+        "y": 138,
+        "z": -105,
+        "dim": "overworld",
+        "name": "Terminus",
+        "detail": "Teleportation Center",
+        "type": "avsohm_facility"
+    },
+    {
+        "x": -215,
+        "y": 138,
+        "z": 1645,
+        "dim": "overworld",
+        "name": "Av'Sal",
+        "detail": "Capital of the Avsohm Empire",
+        "type": "abandoned_town"
+    },
+    {
+        "x": -171,
+        "y": 22,
+        "z": 1640,
+        "dim": "overworld",
+        "name": "Repository or whatever the name of the central place under Av'sal is",
+        "detail": "Main quest center, Mythbreaker hilt and reconstruction.",
+        "type": "avsohm_facility"
+    },
+    {
+        "x": 778,
+        "y": 31,
+        "z": 688,
+        "dim": "overworld",
+        "name": "Stasis Facility",
+        "detail": "A hidden research facility. Spawn point.",
+        "type": "avsohm_facility"
+    },
+    {
+        "x": 2392,
+        "y": 143,
+        "z": 1146,
+        "dim": "overworld",
+        "name": "Sal'Mevir",
+        "detail": "A large Avsohmic science facility experimenting with stasis, advanced flight, and temporal mechanics.",
+        "type": "avsohm_facility"
+    },
+    {
+        "x": 2392,
+        "y": 143,
+        "z": 1146,
+        "dim": "true_end",
+        "name": "Sal'Mevir",
+        "detail": "Sal'Mevir remains even after everything else has been lost to time.",
+        "type": "avsohm_facility"
+    },
+    {
+        "x": -2588,
+        "y": 71,
+        "z": 2317,
+        "dim": "overworld",
+        "name": "Exodus Citadel",
+        "detail": "Blue Exodus military base. Forging location of Mythbreaker",
+        "type": "avsohm_facility"
+    },
+    {
+        "x": -3276,
+        "y": 157,
+        "z": 1572,
+        "dim": "overworld",
+        "name": "The Foundry",
+        "detail": "A Red Dawn facility to create arms and vehicles. It also did alchemical R&D on soldiers.",
+        "type": "avsohm_facility"
+    },
+    {
+        "x": -921,
+        "y": 73,
+        "z": -240,
+        "dim": "lodahr",
+        "name": "Ring Research Installation",
+        "detail": "A hydroelectric facility turned research station used to study runic rings in Khive's domain.",
+        "type": "avsohm_facility"
+    },
+    {
+        "x": 1230,
+        "y": 153,
+        "z": 338,
+        "dim": "lodahr",
+        "name": "Resupply Depot",
+        "detail": "A small spaceport on a floating island in Rihelma's domain. Used to shuttle personnel between Lo'Dahr and the Aphelion and Terminus.",
+        "type": "avsohm_facility"
+    },
+    {
+        "x": -1007,
+        "y": 109,
+        "z": 1065,
+        "dim": "lodahr",
+        "name": "Inscription Complex",
+        "detail": "Manufacturing outpost in Loe's Domain where primal catalysts were inscribed due to the very low temperatures.",
+        "type": "avsohm_facility"
+    },
+    {
+        "x": 511,
+        "y": 38,
+        "z": -832,
+        "dim": "lodahr",
+        "name": "Core Facility",
+        "detail": "Entrance facility to the Numencore.",
+        "type": "avsohm_facility"
+    },
+    {
+        "x": 27334,
+        "y": 122,
+        "z": 55,
+        "dim": "lodahr",
+        "name": "Numencore",
+        "detail": "Facility build around the Numencore, a swirling orb of primal energy at the center of Lo'Dahr",
+        "type": "avsohm_facility"
+    },
+    {
+        "x": 1726,
+        "y": 1,
+        "z": -4345,
+        "dim": "overworld",
+        "name": "Primal Energy Collection Facility",
+        "detail": "Mt. Yavhlix facility for collecting primal energy used for the Avsohmic Empire.",
+        "type": "avsohm_facility"
+    },
+    {
+        "x": 3211,
+        "y": 88,
+        "z": -682,
+        "dim": "overworld",
+        "name": "Azimuth Labs",
+        "detail": "Underground alchemical laboratory of Red Dawn. Contains the God Machine, a device to created to use primal energy to ascend Emperor Anyr.",
+        "type": "avsohm_facility"
+    },
+    {
+        "x": 26930,
+        "y": 30,
+        "z": -132,
+        "dim": "overworld",
+        "name": "Resonant Halls",
+        "detail": "Beneath the Primary Collection Facility and involved in collecting primal energy and scientific study, it also contains the Resonant Eye",
+        "type": "avsohm_facility"
+    },
+    {
+        "x": -242,
+        "y": 27,
+        "z": 1613,
+        "dim": "overworld",
+        "name": "Administration Wing",
+        "detail": "Admin access required, Beneath Av'sal",
+        "type": "avsohm_facility"
+    },
+    {
+        "x": 873,
+        "y": 65,
+        "z": 491,
+        "dim": "overworld",
+        "name": "Primal Caverns",
+        "detail": "Resting place of Drehmal.",
+        "type": "other_location"
+    },
+    {
+        "x": 530,
+        "y": 70,
+        "z": 1848,
+        "dim": "overworld",
+        "name": "New Drabyel",
+        "detail": "Town in Capital Valley.",
+        "type": "town"
+    },
+    {
+        "x": 1090,
+        "y": 66,
+        "z": 1984,
+        "dim": "overworld",
+        "name": "Rhaverik Inn and Trading Post",
+        "detail": "Trading post in the Great Heartwood",
+        "type": "building"
+    },
+    {
+        "x": 1078,
+        "y": 63,
+        "z": 2124,
+        "dim": "overworld",
+        "name": "Rhaverik",
+        "detail": "Town destroyed by sinkholes and tunnel collapses due to mining for scraps of rehntite by Insohm.",
+        "type": "abandoned_town"
+    },
+    {
+        "x": 2276,
+        "y": 50,
+        "z": 2471,
+        "dim": "overworld",
+        "name": "Goziak",
+        "detail": "Town in North Heartwood",
+        "type": "town"
+    },
+    {
+        "x": 1795,
+        "y": 96,
+        "z": 3251,
+        "dim": "overworld",
+        "name": "Kazzani",
+        "detail": "Abandoned village at edge of North Heartwood and Mael's Desolation",
+        "type": "abandoned_town"
+    },
+    {
+        "x": 1407,
+        "y": 66,
+        "z": 3811,
+        "dim": "overworld",
+        "name": "Pillager Mining Town",
+        "detail": "Pillagers in houses in Mael's Desolation with a mine.",
+        "type": "small_town"
+    },
+    {
+        "x": 1030,
+        "y": 60,
+        "z": 3833,
+        "dim": "overworld",
+        "name": "Ossein",
+        "detail": "Ossein, located at the epicenter of Mael's Desolation",
+        "type": "boss"
+    },
+    {
+        "x": 26302,
+        "y": 193,
+        "z": 153,
+        "dim": "overworld",
+        "name": "Ossein Arena",
+        "detail": "Ossein boss arena.",
+        "type": "meta"
+    },
+    {
+        "x": 703,
+        "y": 75,
+        "z": 4679,
+        "dim": "overworld",
+        "name": "Tahva",
+        "detail": "South of Mael's Desolation, a village of ships that can sail away when needed.",
+        "type": "small_town"
+    },
+    {
+        "x": 1868,
+        "y": 63,
+        "z": 4270,
+        "dim": "overworld",
+        "name": "Port Solitude",
+        "detail": "On the coast of Mael's Desolation, a town of villagers and friendly pillagers.",
+        "type": "small_town"
+    },
+    {
+        "x": 2644,
+        "y": 105,
+        "z": 3939,
+        "dim": "overworld",
+        "name": "Espinor",
+        "detail": "On the Eastern edge of Mael's Desolation, next to the bridge is all that remains of the Kingdom of Espinor.",
+        "type": "abandoned_town"
+    },
+    {
+        "x": 3003,
+        "y": 105,
+        "z": 3954,
+        "dim": "overworld",
+        "name": "Zovan",
+        "detail": "On the Western edge of the Black Jungle, next to the bridge.",
+        "type": "abandoned_town"
+    },
+    {
+        "x": 3759,
+        "y": 85,
+        "z": 3922,
+        "dim": "overworld",
+        "name": "Vulteid",
+        "detail": "The former spiritual heart of the Black Jungle and home to the Indomitable, a local militia.",
+        "type": "abandoned_town"
+    },
+    {
+        "x": 4291,
+        "y": 21,
+        "z": 4125,
+        "dim": "overworld",
+        "name": "Verrhys Statue",
+        "detail": "Underground statue of Verrhys, Aspect of Silence.",
+        "type": "other_location"
+    },
+    {
+        "x": 4142,
+        "y": 85,
+        "z": 3922,
+        "dim": "overworld",
+        "name": "Abandoned obsidian and blackstone town",
+        "detail": "An abandoned town in the central Black Jungle, made up of obsidian and blackstone buildings with water and lava channels.",
+        "type": "abandoned_town"
+    },
+    {
+        "x": 4805,
+        "y": 122,
+        "z": 4567,
+        "dim": "overworld",
+        "name": "Library Island",
+        "detail": "Island Library, with a compass.",
+        "type": "other_location"
+    },
+    {
+        "x": 3923,
+        "y": 81,
+        "z": 3491,
+        "dim": "overworld",
+        "name": "Firteid",
+        "detail": "City of Tides, capital of the Tidal Empire.",
+        "type": "town"
+    },
+    {
+        "x": 3260,
+        "y": 85,
+        "z": 3338,
+        "dim": "overworld",
+        "name": "Kiln of Virtuo",
+        "detail": "Virtuo's Island",
+        "type": "other_location"
+    },
+    {
+        "x": 3202,
+        "y": 86,
+        "z": 3249,
+        "dim": "overworld",
+        "name": "Divination Facility",
+        "detail": "A research site at the Kiln of Virtuo to study an anomalous object with divine properties in project ArkAngel.",
+        "type": "avsohm_facility"
+    },
+    {
+        "x": 986,
+        "y": 58,
+        "z": -179,
+        "dim": "lodahr",
+        "name": "Lajani",
+        "detail": "A town of fertile lands in the bones of Noha",
+        "type": "small_town"
+    },
+    {
+        "x": 5617,
+        "y": 177,
+        "z": 3014,
+        "dim": "overworld",
+        "name": "Tieruun Monastery",
+        "detail": "A monastery to Virtuo with dark secrets.",
+        "type": "other_location"
+    },
+    {
+        "x": 6031,
+        "y": 92,
+        "z": 1523,
+        "dim": "overworld",
+        "name": "Coven of Potentia",
+        "detail": "An Insohmic castle on an island in the far East, where the Coven of Potentia preformed it experiments.",
+        "type": "building"
+    },
+    {
+        "x": 5038,
+        "y": 86,
+        "z": 1080,
+        "dim": "overworld",
+        "name": "Sevick",
+        "detail": "An isolated island in the East. The inhabitants fled after convincing themselves they were dying of pestilence.",
+        "type": "abandoned_town"
+    },
+    {
+        "x": 4361,
+        "y": 105,
+        "z": 1572,
+        "dim": "overworld",
+        "name": "Old Mossfield",
+        "detail": "Former capital of the Order of Insohm and the largest city in Drehmari history.",
+        "type": "abandoned_town"
+    },
+    {
+        "x": 4551,
+        "y": 98,
+        "z": 1587,
+        "dim": "overworld",
+        "name": "The Insohmic Library",
+        "detail": "Library of the Insohmic Council, all that remains of Old Mossfield.",
+        "type": "building"
+    },
+    {
+        "x": 4142,
+        "y": 65,
+        "z": 1723,
+        "dim": "overworld",
+        "name": "Mossfield",
+        "detail": "A seaside village once a large city.",
+        "type": "town"
+    },
+    {
+        "x": 3223,
+        "y": 35,
+        "z": 1809,
+        "dim": "overworld",
+        "name": "Hovadchear Crater",
+        "detail": "All that is left of Castle Hovadchear, the site that housed the Insohmic Council, before vanishing.",
+        "type": "other_location"
+    },
+    {
+        "x": 3130,
+        "y": 30,
+        "z": 1272,
+        "dim": "overworld",
+        "name": "Insane Alchemist's House",
+        "detail": "House of an insane Skeveraan alchemist that experimented on local villagers from Helmshire.",
+        "type": "building"
+    },
+    {
+        "x": 4414,
+        "y": 121,
+        "z": 663,
+        "dim": "overworld",
+        "name": "Sunhearth Saloon",
+        "detail": "Abandoned Saloon on the Spearhead Forest coast.",
+        "type": "building"
+    },
+    {
+        "x": 3709,
+        "y": 70,
+        "z": 899,
+        "dim": "overworld",
+        "name": "Lily Meadows Inn",
+        "detail": "Inn on a lake.",
+        "type": "building"
+    },
+    {
+        "x": 3508,
+        "y": 88,
+        "z": 153,
+        "dim": "overworld",
+        "name": "Grandma Ben's House",
+        "detail": "Grandma Ben dies of thorns leaving her house and livestock behind.",
+        "type": "building"
+    },
+    {
+        "x": 3975,
+        "y": 81,
+        "z": -22,
+        "dim": "overworld",
+        "name": "Virsuhl",
+        "detail": "The remnants of Virsuhl, of the Southern Empire of Vir.",
+        "type": "abandoned_town"
+    },
+    {
+        "x": 4138,
+        "y": 128,
+        "z": 285,
+        "dim": "overworld",
+        "name": "Timberhearth Observatory & Museum",
+        "detail": "Museum containing a variety of artifacts from across the world.",
+        "type": "building"
+    },
+    {
+        "x": 3165,
+        "y": 151,
+        "z": 768,
+        "dim": "overworld",
+        "name": "Abandoned Altar",
+        "detail": "Former home of a lonely and paranoid plant grower.",
+        "type": "building"
+    },
+    {
+        "x": 3775,
+        "y": 85,
+        "z": -392,
+        "dim": "overworld",
+        "name": "Cliff Tower",
+        "detail": "Home of the Solitary Southerner.",
+        "type": "building"
+    },
+    {
+        "x": 4134,
+        "y": 42,
+        "z": -531,
+        "dim": "overworld",
+        "name": "Frontier's Edge Gift Shop",
+        "detail": "A shop in the middle of Grand Pike Canyon, serving adventurers and survivors.",
+        "type": "building"
+    },
+    {
+        "x": 4309,
+        "y": 46,
+        "z": -918,
+        "dim": "overworld",
+        "name": "Wokonori",
+        "detail": "Ancient adobe cliff dwellings with lots of taihryte deep underground.",
+        "type": "abandoned_town"
+    },
+    {
+        "x": 4651,
+        "y": 36,
+        "z": -772,
+        "dim": "overworld",
+        "name": "Shatterhorn Gulch Prison",
+        "detail": "Prison used by the Insohmic Coalition.",
+        "type": "building"
+    },
+    {
+        "x": 5956,
+        "y": 75,
+        "z": -1108,
+        "dim": "overworld",
+        "name": "Highfall",
+        "detail": "Formerly wealthy town, but the Frostfang Disaster cause trade to drop.",
+        "type": "town"
+    },
+    {
+        "x": 5881,
+        "y": 15,
+        "z": -1202,
+        "dim": "overworld",
+        "name": "Structure under Highfall Castle",
+        "detail": "Old structure, possible Avshomic and used for alchemy, deep under Highfall Castle.",
+        "type": "other_location"
+    },
+    {
+        "x": 4740,
+        "y": 125,
+        "z": -1226,
+        "dim": "overworld",
+        "name": "Virmari Hero Crypt",
+        "detail": "Burial place of a Virmari hero from the Deity Wars",
+        "type": "other_location"
+    },
+    {
+        "x": 6222,
+        "y": 134,
+        "z": -1765,
+        "dim": "overworld",
+        "name": "Highfall Lighthouse",
+        "detail": "A lighthouse.",
+        "type": "building"
+    },
+    {
+        "x": 5887,
+        "y": 147,
+        "z": -303,
+        "dim": "overworld",
+        "name": "Stone Circle",
+        "detail": "A circle of standing stones.",
+        "type": "other_location"
+    },
+    {
+        "x": 6073,
+        "y": 104,
+        "z": -524,
+        "dim": "overworld",
+        "name": "Max & Ruby's House",
+        "detail": "Bunny house.",
+        "type": "building"
+    },
+    {
+        "x": 4619,
+        "y": 62,
+        "z": -2814,
+        "dim": "overworld",
+        "name": "Homli's Pass Tower",
+        "detail": "A tower in Highfall looking at the pass into Faehrcyle.",
+        "type": "building"
+    },
+    {
+        "x": 4484,
+        "y": 118,
+        "z": -3274,
+        "dim": "overworld",
+        "name": "Frozen Bite small town",
+        "detail": "A small town on top of the shattered land of the Frozen Bite.",
+        "type": "small_town"
+    },
+    {
+        "x": 4881,
+        "y": 102,
+        "z": -3368,
+        "dim": "overworld",
+        "name": "Shivering Pines Inn",
+        "detail": "A tavern and lodge in the Frozen Bite with a surprising number of guests.",
+        "type": "building"
+    },
+    {
+        "x": 5828,
+        "y": 63,
+        "z": -2989,
+        "dim": "overworld",
+        "name": "Nihilist's House",
+        "detail": "A house belonging to the Nihilist who has been under Hightower castle and knows three were involved in Av'sohm's destruction.",
+        "type": "building"
+    },
+    {
+        "x": 6364,
+        "y": 100,
+        "z": -3007,
+        "dim": "overworld",
+        "name": "Av'sohm Art Historian Lighthouse",
+        "detail": "A lighthouse belonging to a Green Serpent Trade Guild sponsored art historian.",
+        "type": "building"
+    },
+    {
+        "x": 3627,
+        "y": 12,
+        "z": -2549,
+        "dim": "overworld",
+        "name": "Underground Spider Tower",
+        "detail": "A tower created by some kind of sentient spider species?",
+        "type": "other_location"
+    },
+    {
+        "x": 3544,
+        "y": 97,
+        "z": -2646,
+        "dim": "overworld",
+        "name": "Faehrcyle  Mines",
+        "detail": "Mine shafts and branch mining. Beware of spiders.",
+        "type": "other_location"
+    },
+    {
+        "x": 3888,
+        "y": 112,
+        "z": -3980,
+        "dim": "overworld",
+        "name": "Faehrcyle Pillager Outpost",
+        "detail": "Collection of igloos with a band of pillagers.",
+        "type": "other_location"
+    },
+    {
+        "x": 2626,
+        "y": 99,
+        "z": -3438,
+        "dim": "overworld",
+        "name": "Lai Devotee's House",
+        "detail": "A small house with a large fire.",
+        "type": "building"
+    },
+    {
+        "x": 2830,
+        "y": 84,
+        "z": -3025,
+        "dim": "overworld",
+        "name": "Tahsgan House",
+        "detail": "An abandoned building of the Tahsgan clan.",
+        "type": "building"
+    },
+    {
+        "x": 2291,
+        "y": 40,
+        "z": -2959,
+        "dim": "overworld",
+        "name": "Grave of Frost",
+        "detail": "Grave site of Homli Tahsgan, King of the North, Guardian of Snow.",
+        "type": "other_location"
+    },
+    {
+        "x": 2027,
+        "y": 72,
+        "z": -3034,
+        "dim": "overworld",
+        "name": "Loeleyhn Church",
+        "detail": "Church to Loeleyhn, Aspect of Snow.",
+        "type": "building"
+    },
+    {
+        "x": 1098,
+        "y": 65,
+        "z": -3022,
+        "dim": "overworld",
+        "name": "Schlonko",
+        "detail": "Small coastal town in the west of Faehrcyle.",
+        "type": "small_town"
+    },
+    {
+        "x": 2347,
+        "y": 64,
+        "z": -3987,
+        "dim": "overworld",
+        "name": "Frozen House",
+        "detail": "Abandoned house of someone with nothing.",
+        "type": "building"
+    },
+    {
+        "x": 730,
+        "y": 71,
+        "z": -4581,
+        "dim": "overworld",
+        "name": "Frozen Ship",
+        "detail": "A ship has found itself stuck in the ice and been abandoned.",
+        "type": "other_location"
+    },
+    {
+        "x": 1663,
+        "y": 97,
+        "z": -4137,
+        "dim": "overworld",
+        "name": "Nihilist's Maze",
+        "detail": "Entrance to a dark maze.",
+        "type": "other_location"
+    },
+    {
+        "x": 1819,
+        "y": 66,
+        "z": -4177,
+        "dim": "overworld",
+        "name": "Insohm Research Camp",
+        "detail": "A camp on the slopes of Mt. Yavhlix where Insohm tried and failed to gain access past the door.",
+        "type": "other_location"
+    },
+    {
+        "x": 1812,
+        "y": 38,
+        "z": -4284,
+        "dim": "overworld",
+        "name": "Mt. Yavhlix Entrance",
+        "detail": "Building and the entrance to the Primary Collection Facility. Sealed and guarded by the Gatewatch.",
+        "type": "avsohm_facility"
+    },
+    {
+        "x": 26907,
+        "y": 61,
+        "z": -190,
+        "dim": "overworld",
+        "name": "Primal Energy Collection Facility",
+        "detail": "Structure inside Mt. Yavhlix for collecting primal energy. Full of holes.",
+        "type": "avsohm_facility"
+    },
+    {
+        "x": 26907,
+        "y": 126,
+        "z": 2,
+        "dim": "overworld",
+        "name": "The Breach",
+        "detail": "Sealed entrance to the Breach (Spiral Anomaly), the source of Avsohm's primal energy.",
+        "type": "avsohm_facility"
+    },
+    {
+        "x": 26907,
+        "y": 13,
+        "z": -50,
+        "dim": "overworld",
+        "name": "Resonant Eye",
+        "detail": "The most complex catalyst ever created by Avsohm to communicate across the Spiral Anomaly.",
+        "type": "avsohm_facility"
+    },
+    {
+        "x": 0,
+        "y": 67,
+        "z": 0,
+        "dim": "end",
+        "name": "Tethlaen",
+        "detail": "The Ever-Fear, Lost to Nothing",
+        "type": "boss"
+    },
+    {
+        "x": 4106,
+        "y": 185,
+        "z": -2210,
+        "dim": "overworld",
+        "name": "Verukhtian Tower",
+        "detail": "An ancient Verukhtian Tower refurbished into a 'Battle Pizzazzle' by Vikhtor Ohna.",
+        "type": "building"
+    },
+    {
+        "x": 4335,
+        "y": 153,
+        "z": -1251,
+        "dim": "overworld",
+        "name": "Guarded pass between Veruhkt Plateau and Grand Pike Canyon",
+        "detail": "The pass is guarded and blocked by a wooden wall.",
+        "type": "other_location"
+    },
+    {
+        "x": 4512,
+        "y": 67,
+        "z": -1024,
+        "dim": "overworld",
+        "name": "Destroyed Priscilla House",
+        "detail": "A destroyed wooden house, Priscilla remains.",
+        "type": "building"
+    },
+    {
+        "x": 5268,
+        "y": 123,
+        "z": -2086,
+        "dim": "overworld",
+        "name": "Vir Fort",
+        "detail": "A sturdy stone fort built by the Empire of Vir.",
+        "type": "building"
+    },
+    {
+        "x": 5092,
+        "y": 70,
+        "z": -2395,
+        "dim": "overworld",
+        "name": "Old Highfall Gatehouse",
+        "detail": "An old gatehouse used to keep Frozen Bite barbarians out of Highfall.",
+        "type": "building"
+    },
+    {
+        "x": 4027,
+        "y": 138,
+        "z": -1863,
+        "dim": "overworld",
+        "name": "Cabin",
+        "detail": "An isolated Blacksmith's home in Verhkut Plateau.",
+        "type": "building"
+    },
+    {
+        "x": 4141,
+        "y": 121,
+        "z": -1547,
+        "dim": "overworld",
+        "name": "Altar of Insight",
+        "detail": "A ruined tower formerly occupied by people who sought to reach Lo'Veruhkt.",
+        "type": "building"
+    },
+    {
+        "x": 3598,
+        "y": 65,
+        "z": -1368,
+        "dim": "overworld",
+        "name": "Sal'Veruhkt",
+        "detail": "Formerly Verukhaan, the capital of the Veruhkt Plateau. It was conquered bu Avsohm.",
+        "type": "abandoned_town"
+    },
+    {
+        "x": 2999,
+        "y": 85,
+        "z": -1622,
+        "dim": "overworld",
+        "name": "Xenoh's Grave",
+        "detail": "Rosefather Xenoh's grave.",
+        "type": "other_location"
+    },
+    {
+        "x": 2739,
+        "y": 122,
+        "z": -1958,
+        "dim": "overworld",
+        "name": "Azaim",
+        "detail": "Town founded by Casain residents fleeing Mael's advances in the west. It was destroyed by Gendrik's Incursion.",
+        "type": "abandoned_town"
+    },
+    {
+        "x": 2225,
+        "y": 74,
+        "z": -2359,
+        "dim": "overworld",
+        "name": "Campsite",
+        "detail": "A campsite of with three Drehmari in Akhlo'Rohma.",
+        "type": "other_location"
+    },
+    {
+        "x": 1683,
+        "y": 31,
+        "z": -2712,
+        "dim": "overworld",
+        "name": "The Lost Cavern",
+        "detail": "A cavern of rhentite Avsohm discovered, contributing to its fast growth.",
+        "type": "avsohm_facility"
+    },
+    {
+        "x": 2085,
+        "y": 75,
+        "z": -2024,
+        "dim": "overworld",
+        "name": "Duspian Bridge",
+        "detail": "A bridge connecting north and south Akhlo'Rohma guarded by undead Duspians.",
+        "type": "other_location"
+    },
+    {
+        "x": 1507,
+        "y": 154,
+        "z": -1965,
+        "dim": "overworld",
+        "name": "Ancehl Castle",
+        "detail": "Royal castle and origin of modern alchemical practices. Contains crypts that hold many secrets.",
+        "type": "building"
+    },
+    {
+        "x": 2284,
+        "y": 79,
+        "z": -1611,
+        "dim": "overworld",
+        "name": "Marahza",
+        "detail": "A small village with greenhouses and the Altar of Vauniklah.",
+        "type": "small_town"
+    },
+    {
+        "x": 1656,
+        "y": 91,
+        "z": -1345,
+        "dim": "overworld",
+        "name": "Estpelli Vineyard",
+        "detail": "A inn and vineyard in Akhlo'Rohma",
+        "type": "building"
+    },
+    {
+        "x": 2088,
+        "y": 112,
+        "z": -838,
+        "dim": "overworld",
+        "name": "Dusps",
+        "detail": "Capital of the Kingdom of Dusps from before the Order of Insohm.",
+        "type": "town"
+    },
+    {
+        "x": 3165,
+        "y": 74,
+        "z": -998,
+        "dim": "overworld",
+        "name": "Red Dawn Transport Station",
+        "detail": "Located beneath a sunken astral body, this facility leads to other Red Dawn locations.",
+        "type": "avsohm_facility"
+    },
+    {
+        "x": 2726,
+        "y": 81,
+        "z": -397,
+        "dim": "overworld",
+        "name": "Abandoned Tehrmari Town",
+        "detail": "A town formerly inhabited by Tehrmari Wingmakers. It slowly died as travel to Drehmal became optional.",
+        "type": "abandoned_town"
+    },
+    {
+        "x": 2944,
+        "y": 184,
+        "z": -116,
+        "dim": "overworld",
+        "name": "Tehrmari Temple",
+        "detail": "High up in the Purity Peaks live Tehrmari and Scalebound Priests.",
+        "type": "small_town"
+    },
+    {
+        "x": 1582,
+        "y": 65,
+        "z": -377,
+        "dim": "overworld",
+        "name": "Drahbes",
+        "detail": "A civilization from the early Second Avihm",
+        "type": "abandoned_town"
+    },
+    {
+        "x": 1502,
+        "y": 70,
+        "z": -397,
+        "dim": "overworld",
+        "name": "Next to Drahbes",
+        "detail": "A small village with homes in hills next to the ruins of Drahbes",
+        "type": "small_town"
+    },
+    {
+        "x": 1679,
+        "y": 64,
+        "z": -624,
+        "dim": "overworld",
+        "name": "Maelmari House",
+        "detail": "A house with Maelmari Berserkers in Akhlo'Rohma.",
+        "type": "building"
+    },
+    {
+        "x": 1186,
+        "y": 64,
+        "z": -493,
+        "dim": "overworld",
+        "name": "Campsite",
+        "detail": "A small campsite in a forest to the east of the Gulf of Drehmal",
+        "type": "other_location"
+    },
+    {
+        "x": 678,
+        "y": 100,
+        "z": -737,
+        "dim": "overworld",
+        "name": "Abandoned Tower",
+        "detail": "A tower on an island near the Gulf of Drehmal.",
+        "type": "building"
+    },
+    {
+        "x": 1363,
+        "y": 69,
+        "z": 192,
+        "dim": "overworld",
+        "name": "Mihkmari Controlled Bridge",
+        "detail": "A guarded bridge between the central regions and Purity Peaks.",
+        "type": "other_location"
+    },
+    {
+        "x": 2212,
+        "y": 64,
+        "z": 209,
+        "dim": "overworld",
+        "name": "Hevhlak",
+        "detail": "A farming and fishing town of Tehrmari in the Purity Peaks.",
+        "type": "town"
+    },
+    {
+        "x": 1959,
+        "y": 50,
+        "z": 829,
+        "dim": "overworld",
+        "name": "Underground Avsohmic Tower",
+        "detail": "A tower of unknown purpose in an underground lake under a mountain in the Purity Peaks.",
+        "type": "building"
+    },
+    {
+        "x": 1563,
+        "y": 74,
+        "z": 808,
+        "dim": "overworld",
+        "name": "Solvei",
+        "detail": "A small town between Capital Valley and Purity Peaks.",
+        "type": "small_town"
+    },
+    {
+        "x": 2889,
+        "y": 73,
+        "z": 1277,
+        "dim": "overworld",
+        "name": "Helmshire",
+        "detail": "A small town in Spearhead Forest. Villagers have mysteriously disappeared recently.",
+        "type": "small_town"
+    },
+    {
+        "x": 2475,
+        "y": 188,
+        "z": 2139,
+        "dim": "overworld",
+        "name": "Castle Scarstone",
+        "detail": "Used by the Order of Insohm as a base of operations, now it lies in disrepair.",
+        "type": "building"
+    },
+    {
+        "x": 3321,
+        "y": 141,
+        "z": 2671,
+        "dim": "overworld",
+        "name": "Deigh's Tower",
+        "detail": "Mihkmari base of operations in the Verdant Labyrinth, suspended above the water.",
+        "type": "building"
+    },
+    {
+        "x": 4576,
+        "y": 71,
+        "z": 2732,
+        "dim": "overworld",
+        "name": "Tree Village",
+        "detail": "A small village built vertically around a tall tree.",
+        "type": "small_town"
+    },
+    {
+        "x": 4331,
+        "y": 130,
+        "z": 4412,
+        "dim": "overworld",
+        "name": "Jack Beanin's House",
+        "detail": "A house with a fast skeleton in it.",
+        "type": "building"
+    },
+    {
+        "x": 2918,
+        "y": 65,
+        "z": 6106,
+        "dim": "overworld",
+        "name": "Sahd Ship",
+        "detail": "A ship from Sahd carrying precious cargo.",
+        "type": "other_location"
+    },
+    {
+        "x": 4498,
+        "y": 148,
+        "z": 5560,
+        "dim": "overworld",
+        "name": "Morah",
+        "detail": "A town up in the mountains of Sahd",
+        "type": "small_town"
+    },
+    {
+        "x": 4675,
+        "y": 162,
+        "z": 5449,
+        "dim": "overworld",
+        "name": "'The Path' Pagoda",
+        "detail": "A tiered tower.",
+        "type": "building"
+    },
+    {
+        "x": 4723,
+        "y": 149,
+        "z": 5325,
+        "dim": "overworld",
+        "name": "Runic Forge",
+        "detail": "A powerful, runic forge in the caldera of a volcano.",
+        "type": "building"
+    },
+    {
+        "x": 5225,
+        "y": 103,
+        "z": 5597,
+        "dim": "overworld",
+        "name": "Zedoh Clan Village",
+        "detail": "Abandoned village of the Zedoh Clan.",
+        "type": "abandoned_town"
+    },
+    {
+        "x": 5358,
+        "y": 63,
+        "z": 6047,
+        "dim": "overworld",
+        "name": "Bell Temple",
+        "detail": "Five bells. One for each fragment.",
+        "type": "other_location"
+    },
+    {
+        "x": 5107,
+        "y": 149,
+        "z": 6328,
+        "dim": "overworld",
+        "name": "Estate",
+        "detail": "A large estate. Attacked by outlaws, the lord cursed them to forever defend it.",
+        "type": "abandoned_town"
+    },
+    {
+        "x": 4308,
+        "y": 66,
+        "z": 6541,
+        "dim": "overworld",
+        "name": "Serpant Mural",
+        "detail": "An ancient mural of a great serpant.",
+        "type": "building"
+    },
+    {
+        "x": 4797,
+        "y": 65,
+        "z": 5708,
+        "dim": "overworld",
+        "name": "Sahd",
+        "detail": "Capital of the Island of Sahd.",
+        "type": "town"
+    },
+    {
+        "x": 4531,
+        "y": 66,
+        "z": 5757,
+        "dim": "overworld",
+        "name": "Destroyed Dahe Clan Village",
+        "detail": "The flattened ruins of the Dahe Clan.",
+        "type": "abandoned_town"
+    },
+    {
+        "x": 1162,
+        "y": 69,
+        "z": 2794,
+        "dim": "overworld",
+        "name": "Underwood Village",
+        "detail": "Village at the entrance to the Underwood.",
+        "type": "small_town"
+    },
+    {
+        "x": 976,
+        "y": 69,
+        "z": 2734,
+        "dim": "overworld",
+        "name": "Beast's Den",
+        "detail": "A tower at the center of the Underwood to Greatbeast Muhs, the Aspect of Beasts. Guarded by Templars of the Beast.",
+        "type": "building"
+    },
+    {
+        "x": 1649,
+        "y": 65,
+        "z": 1907,
+        "dim": "overworld",
+        "name": "Overgrown Heartwood House",
+        "detail": "An abandoned house in the Heartwood.",
+        "type": "building"
+    },
+    {
+        "x": 1668,
+        "y": 82,
+        "z": 1727,
+        "dim": "overworld",
+        "name": "Overgrown Structure",
+        "detail": "An overgrown, pyramid like structure to the North of the Heartwood.",
+        "type": "other_location"
+    },
+    {
+        "x": 1971,
+        "y": 63,
+        "z": 1506,
+        "dim": "overworld",
+        "name": "Insohmic Research Center",
+        "detail": "A center for studying Avsohmic artefacts, tyring to unlock the Empire's technological secrets.",
+        "type": "building"
+    },
+    {
+        "x": 1023,
+        "y": 77,
+        "z": 1350,
+        "dim": "overworld",
+        "name": "The Fool's Home",
+        "detail": "A damaged, solitary home.",
+        "type": "building"
+    },
+    {
+        "x": 1067,
+        "y": 65,
+        "z": 1103,
+        "dim": "overworld",
+        "name": "Ihted",
+        "detail": "A city of runic magic and Khive worship from before Avsohm. It has slowly sunk into the ground.",
+        "type": "abandoned_town"
+    },
+    {
+        "x": 325,
+        "y": 71,
+        "z": 293,
+        "dim": "overworld",
+        "name": "Hunter's Crypt",
+        "detail": "Crypt of three hunters.",
+        "type": "other_location"
+    },
+    {
+        "x": -377,
+        "y": 111,
+        "z": 757,
+        "dim": "overworld",
+        "name": "Thesund",
+        "detail": "A small village overlooking a lake that has seeks to live without primal catalysts. May have been founded by teenagers?",
+        "type": "small_town"
+    },
+    {
+        "x": -2,
+        "y": 171,
+        "z": 1788,
+        "dim": "overworld",
+        "name": "Drehn's Castle",
+        "detail": "A castle overlooking Av'Sal where Drehn was raised.",
+        "type": "building"
+    },
+    {
+        "x": -162,
+        "y": 86,
+        "z": 1413,
+        "dim": "overworld",
+        "name": "Av'Sal Scavengers House",
+        "detail": "A house with three scavengers on the outskirts of Av'Sal.",
+        "type": "building"
+    },
+    {
+        "x": 77,
+        "y": 99,
+        "z": 2488,
+        "dim": "overworld",
+        "name": "Friendly Fellow's Humble Abode",
+        "detail": "The Funny Man is inside.",
+        "type": "building"
+    },
+    {
+        "x": 29,
+        "y": 103,
+        "z": 2397,
+        "dim": "overworld",
+        "name": "Drehuan Sculptures and Ruins",
+        "detail": "Collection of large Drehuan sculptures and ruins from before Av'Sal.",
+        "type": "abandoned_town"
+    },
+    {
+        "x": 253,
+        "y": 117,
+        "z": 2715,
+        "dim": "overworld",
+        "name": "Watchtower",
+        "detail": "A watchtower overlooking the lake with no easy access.",
+        "type": "building"
+    },
+    {
+        "x": -110,
+        "y": 158,
+        "z": 2859,
+        "dim": "overworld",
+        "name": "Drehua Temple",
+        "detail": "A large temple to Drehmal in the Palisade's Heath.",
+        "type": "building"
+    },
+    {
+        "x": -202,
+        "y": 71,
+        "z": 3608,
+        "dim": "overworld",
+        "name": "The Whale's Tale",
+        "detail": "A boat turned tavern and inn.",
+        "type": "building"
+    },
+    {
+        "x": -361,
+        "y": 129,
+        "z": 3816,
+        "dim": "overworld",
+        "name": "Palisade's Heath Catacombs",
+        "detail": "Catacombs build halfway up the cliff wall.",
+        "type": "other_location"
+    },
+    {
+        "x": 503,
+        "y": 64,
+        "z": 4039,
+        "dim": "overworld",
+        "name": "Abandoned Seaside town",
+        "detail": "Abandoned Avshomic town on the coast with a strange underground room.",
+        "type": "abandoned_town"
+    },
+    {
+        "x": 2273,
+        "y": 71,
+        "z": 3597,
+        "dim": "overworld",
+        "name": "Zack's Hut of Shame",
+        "detail": "A simple dirt hut.",
+        "type": "building"
+    },
+    {
+        "x": -18,
+        "y": 71,
+        "z": 5280,
+        "dim": "overworld",
+        "name": "Mohta",
+        "detail": "Major town of Lorahn'Khal.",
+        "type": "building"
+    },
+    {
+        "x": -626,
+        "y": 65,
+        "z": 4902,
+        "dim": "overworld",
+        "name": "Moonlight Sanctum",
+        "detail": "Underground dungeon where the Tri-Moon Theocracy raised a massive army of the undead using the Necrotic Engine.",
+        "type": "other_location"
+    },
+    {
+        "x": -721,
+        "y": 65,
+        "z": 4554,
+        "dim": "overworld",
+        "name": "Eloa",
+        "detail": "Town in the forests of Lorahn'Kahl. Abandoned after the collapse of Insohm and the return of the Maelmari and a Burnt General.",
+        "type": "abandoned_town"
+    },
+    {
+        "x": -580,
+        "y": 97,
+        "z": 4670,
+        "dim": "overworld",
+        "name": "Ayre Family House",
+        "detail": "Abandoned house of the Ayre family located outside of Eloa. The family fled east to escape the Maelmari, leaving behind many of their belongings.",
+        "type": "building"
+    },
+    {
+        "x": -1129,
+        "y": 106,
+        "z": 5227,
+        "dim": "overworld",
+        "name": "Sal'Loran",
+        "detail": "City previously inhabited by supporters of the Tri-Moon Theocracy.",
+        "type": "abandoned_town"
+    },
+    {
+        "x": -1671,
+        "y": 35,
+        "z": 5213,
+        "dim": "overworld",
+        "name": "Tri-Moon Theocracy Meeting Hall",
+        "detail": "Located beneath the remains of a skull beast, necromancers and alchemists of the Tri-Moon Theocracy met for the last time.",
+        "type": "other_location"
+    },
+    {
+        "x": -1239,
+        "y": 86,
+        "z": 3736,
+        "dim": "overworld",
+        "name": "Slime Island",
+        "detail": "An inland island made up of green slime.",
+        "type": "other_location"
+    },
+    {
+        "x": -1710,
+        "y": 65,
+        "z": 3878,
+        "dim": "overworld",
+        "name": "Semehol",
+        "detail": "The town was destroyed and occupied by Maelmari after the residents rose up against the Third Burnt General.",
+        "type": "abandoned_town"
+    },
+    {
+        "x": -2158,
+        "y": 77,
+        "z": 3786,
+        "dim": "overworld",
+        "name": "Ohmswil's Emporium'",
+        "detail": "Home of Master Arcanist Ohmswil who sells rare and unusual items.",
+        "type": "building"
+    },
+    {
+        "x": 554,
+        "y": 104,
+        "z": 114,
+        "dim": "overworld",
+        "name": "Campsite on Floating Island",
+        "detail": "A single campsite on a floating island near the Gulf of Drehmal",
+        "type": "other_location"
+    },
+    {
+        "x": 321,
+        "y": 65,
+        "z": -98,
+        "dim": "overworld",
+        "name": "Fortahn",
+        "detail": "Ruins of an Avshomic city on the coast of the Gulf of Drehmal. It's leaders vanished and others torn to shreds by the monster that destroyed the empire.",
+        "type": "abandoned_town"
+    },
+    {
+        "x": -478,
+        "y": 94,
+        "z": -1927,
+        "dim": "overworld",
+        "name": "ICS Arbiter",
+        "detail": "The Order of Insohm only remaining airship. Built using designs of Mael's airships and Avsohmic technology.",
+        "type": "other_location"
+    },
+    {
+        "x": -638,
+        "y": 99,
+        "z": -1710,
+        "dim": "overworld",
+        "name": "Loe Village (Kamt?)",
+        "detail": "A small town that worshiped Loe, on the coast of the Gulf of Drehmal.",
+        "type": "abandoned_town"
+    },
+    {
+        "x": -870,
+        "y": 85,
+        "z": -1132,
+        "dim": "overworld",
+        "name": "Arijool Forks",
+        "detail": "A collection of ancient structures build into the ground. Possibly a meeting place for the Mekta tribe.",
+        "type": "other_location"
+    },
+    {
+        "x": -856,
+        "y": 114,
+        "z": -660,
+        "dim": "overworld",
+        "name": "Maelmari Cliff Outpost",
+        "detail": "A small Maelmari outpost in Merijool.",
+        "type": "other_location"
+    },
+    {
+        "x": -1087,
+        "y": 62,
+        "z": -277,
+        "dim": "overworld",
+        "name": "Primal Sapling",
+        "detail": "A giant tree deep in the forest of Merijool.",
+        "type": "other_location"
+    },
+    {
+        "x": -1562,
+        "y": 67,
+        "z": -482,
+        "dim": "overworld",
+        "name": "Okeke",
+        "detail": "A peaceful town in Merijool.",
+        "type": "town"
+    },
+    {
+        "x": -1808,
+        "y": 120,
+        "z": -877,
+        "dim": "overworld",
+        "name": "Coal Mine",
+        "detail": "A small coal mine in Merijool.",
+        "type": "other_location"
+    },
+    {
+        "x": -1483,
+        "y": 93,
+        "z": -898,
+        "dim": "overworld",
+        "name": "Merijool Unification Shrine",
+        "detail": "A shrine celebrating the unification of Merjool between Loe and Lai followers, ending centuries of conflict.",
+        "type": "other_location"
+    },
+    {
+        "x": -1242,
+        "y": 63,
+        "z": -1709,
+        "dim": "overworld",
+        "name": "Sunken ruins",
+        "detail": "Sunken ruins of a Drehmal worshiping town in Merijool.",
+        "type": "abandoned_town"
+    },
+    {
+        "x": -1430,
+        "y": 91,
+        "z": -1637,
+        "dim": "overworld",
+        "name": "Sacred Flame Temple",
+        "detail": "Temple to Lai, Aspect of Warmth. Its flame has gone out.",
+        "type": "building"
+    },
+    {
+        "x": -2130,
+        "y": 67,
+        "z": -2135,
+        "dim": "overworld",
+        "name": "Campsite",
+        "detail": "A campsite on a volcanic island between Merijool and Casai.",
+        "type": "other_location"
+    },
+    {
+        "x": -2624,
+        "y": 63,
+        "z": -1522,
+        "dim": "overworld",
+        "name": "Butte Mine",
+        "detail": "A mine inside the butte's of Cassai.",
+        "type": "other_location"
+    },
+    {
+        "x": -2720,
+        "y": 66,
+        "z": -1769,
+        "dim": "overworld",
+        "name": "Arhrah",
+        "detail": "On the northern shore of Lake Athrah, the city was founded in Av2 and was the center of the Casain Empire.",
+        "type": "town"
+    },
+    {
+        "x": -2372,
+        "y": 65,
+        "z": -1152,
+        "dim": "overworld",
+        "name": "Sal'Lohd",
+        "detail": "Once premier port in Casai.",
+        "type": "abandoned_town"
+    },
+    {
+        "x": -2422,
+        "y": 93,
+        "z": -831,
+        "dim": "overworld",
+        "name": "House with tower",
+        "detail": "A house on the western edge of Merijool.",
+        "type": "building"
+    },
+    {
+        "x": -2741,
+        "y": 66,
+        "z": -872,
+        "dim": "overworld",
+        "name": "Campsite",
+        "detail": "A miners campsite in east Casai.",
+        "type": "other_location"
+    },
+    {
+        "x": -3844,
+        "y": 76,
+        "z": -1775,
+        "dim": "overworld",
+        "name": "Maelmari Watchtower",
+        "detail": "A wooden tower with Maelmari on the last island in Northwest Casai.",
+        "type": "other_location"
+    },
+    {
+        "x": -3623,
+        "y": 82,
+        "z": -1200,
+        "dim": "overworld",
+        "name": "Avsohmic Vault",
+        "detail": "A vault of knowledge created by Avsohm primarily to store information about primal energy and the collection facility. Master Ultva of the Order of Insohm was driven insane by what he learned here.",
+        "type": "avsohm_facility"
+    },
+    {
+        "x": -3137,
+        "y": 87,
+        "z": -989,
+        "dim": "overworld",
+        "name": "Perishing Well",
+        "detail": "An altar to Voynahla and a crypt.",
+        "type": "other_location"
+    },
+    {
+        "x": -3037,
+        "y": 63,
+        "z": -720,
+        "dim": "overworld",
+        "name": "Zarha",
+        "detail": "A town previously inhabited by the Zarha tribe of southern Casai. A building of Chieftain's Kazabar favored art still remains.",
+        "type": "abandoned_town"
+    },
+    {
+        "x": -2171,
+        "y": 118,
+        "z": -142,
+        "dim": "overworld",
+        "name": "Maerhn'Vos",
+        "detail": "A great wall created by the Tharhan Empire in the time before Avsohm. It was used to secure the lands to the south, stopping Casain and Merijool invaders.",
+        "type": "other_location"
+    },
+    {
+        "x": -2167,
+        "y": 65,
+        "z": 3658,
+        "dim": "overworld",
+        "name": "Tharxax City",
+        "detail": "Originally the Tharhan capitol of Elthun, Tharxax City is now under the control of Maelihs, paying taxes to remain 'free'.",
+        "type": "town"
+    },
+    {
+        "x": -1760,
+        "y": 138,
+        "z": 3009,
+        "dim": "overworld",
+        "name": "Loraga Keep",
+        "detail": "A castle in the former province of Loraga.",
+        "type": "abandoned_town"
+    },
+    {
+        "x": -1480,
+        "y": 73,
+        "z": 2992,
+        "dim": "overworld",
+        "name": "John Brinn Thinn Estate",
+        "detail": "An abandoned house in South Tharxax.",
+        "type": "building"
+    },
+    {
+        "x": -1048,
+        "y": 67,
+        "z": 2512,
+        "dim": "overworld",
+        "name": "Tharxax House",
+        "detail": "A large, staffed house in east Tharxax. Possibly a nobles house.",
+        "type": "building"
+    },
+    {
+        "x": -1673,
+        "y": 64,
+        "z": 2235,
+        "dim": "overworld",
+        "name": "Maelmari Camp",
+        "detail": "A Maelmari base in central Tharxax to asset control over the area.",
+        "type": "other_location"
+    },
+    {
+        "x": -1713,
+        "y": 157,
+        "z": 1881,
+        "dim": "overworld",
+        "name": "Fort Nihmaj",
+        "detail": "A well defended castle-town that continues to resist Maelihs.",
+        "type": "town"
+    },
+    {
+        "x": -1241,
+        "y": 66,
+        "z": 1351,
+        "dim": "overworld",
+        "name": "Avshom Kohlohmah",
+        "detail": "Crashed Avsohmic flying machine. Its pilot likely escaped from Sal'Anyr to Fort Nihmaj.",
+        "type": "other_location"
+    },
+    {
+        "x": -1157,
+        "y": 80,
+        "z": 1179,
+        "dim": "overworld",
+        "name": "Homesick Tergei's Camp",
+        "detail": "He's a long way from Mohta.",
+        "type": "other_location"
+    },
+    {
+        "x": -1382,
+        "y": 120,
+        "z": 1149,
+        "dim": "overworld",
+        "name": "Ezahn Family Residence",
+        "detail": "Unknown empty building at the north end of Tharxax.",
+        "type": "building"
+    },
+    {
+        "x": -1169,
+        "y": 70,
+        "z": 813,
+        "dim": "overworld",
+        "name": "Mihkmari Camp",
+        "detail": "Mihkmari tree camp.",
+        "type": "other_location"
+    },
+    {
+        "x": -1357,
+        "y": 42,
+        "z": 422,
+        "dim": "overworld",
+        "name": "Caer Adacia",
+        "detail": "Ancient underground city and capital of the Second Tharhan Empire until Avshom then Maelihs then Insohm the ruin.",
+        "type": "abandoned_town"
+    },
+    {
+        "x": -1799,
+        "y": 66,
+        "z": 412,
+        "dim": "overworld",
+        "name": "Giant Jack'o'Lantern",
+        "detail": "A giant glowing pumpkin surrounded by smaller pumpkins.",
+        "type": "other_location"
+    },
+    {
+        "x": -2148,
+        "y": 67,
+        "z": 408,
+        "dim": "overworld",
+        "name": "Bone Excavation Site",
+        "detail": "A dig site uncovering a large skeleton.",
+        "type": "other_location"
+    },
+    {
+        "x": -2221,
+        "y": 74,
+        "z": 760,
+        "dim": "overworld",
+        "name": "Maelmari House",
+        "detail": "A house complex with Maelmari Berserkers in the Ebony Veldt.",
+        "type": "building"
+    },
+    {
+        "x": -2338,
+        "y": 98,
+        "z": 1484,
+        "dim": "overworld",
+        "name": "Seylon Klemelli House",
+        "detail": "Seylon Klemelli traveled to the Ebony Veldt every year to harvest Paroto roots.",
+        "type": "building"
+    },
+    {
+        "x": -3174,
+        "y": 124,
+        "z": 928,
+        "dim": "overworld",
+        "name": "Avsohm Tunnel",
+        "detail": "An old tunnel from The Foundry, through the mountains around Mt. Ebonfire.",
+        "type": "other_location"
+    },
+    {
+        "x": -3035,
+        "y": 121,
+        "z": 1186,
+        "dim": "overworld",
+        "name": "Foundry Access Tower",
+        "detail": "A security tower for the Foundry.",
+        "type": "avsohm_facility"
+    },
+    {
+        "x": -3394,
+        "y": 145,
+        "z": 1083,
+        "dim": "overworld",
+        "name": "Foundry Access Tower",
+        "detail": "A security tower for the Foundry.",
+        "type": "avsohm_facility"
+    },
+    {
+        "x": -3130,
+        "y": 148,
+        "z": 1490,
+        "dim": "overworld",
+        "name": "Foundry Access Tower",
+        "detail": "A security tower for the Foundry.",
+        "type": "avsohm_facility"
+    },
+    {
+        "x": -3179,
+        "y": 63,
+        "z": 1262,
+        "dim": "overworld",
+        "name": "Elvett?",
+        "detail": "A town in the shadows of a giant Avsohmic bridge.",
+        "type": "small_town"
+    },
+    {
+        "x": -3558,
+        "y": 159,
+        "z": 342,
+        "dim": "overworld",
+        "name": "Temple to Lailoehn",
+        "detail": "A temple to Lailoehn, Aspect of Fire, child of Lai.",
+        "type": "building"
+    },
+    {
+        "x": -3646,
+        "y": 179,
+        "z": 707,
+        "dim": "overworld",
+        "name": "Camp",
+        "detail": "An abandoned camp south east of Mt. Ebonfire.",
+        "type": "other_location"
+    },
+    {
+        "x": -3138,
+        "y": 146,
+        "z": 436,
+        "dim": "overworld",
+        "name": "Mt. Ebonfire Mine",
+        "detail": "The entrance to the mines inside Mt. Ebonfire.",
+        "type": "other_location"
+    },
+    {
+        "x": -2986,
+        "y": 141,
+        "z": -22,
+        "dim": "overworld",
+        "name": "Ebonrun Tunnel",
+        "detail": "A tunnel through the clifs for workers between Ebonrun and Mt. Ebonfire.",
+        "type": "other_location"
+    },
+    {
+        "x": -2980,
+        "y": 131,
+        "z": -188,
+        "dim": "overworld",
+        "name": "Ebonrun",
+        "detail": "A town enslaved to work the mines by Maelihs.",
+        "type": "town"
+    },
+    {
+        "x": -2964,
+        "y": 124,
+        "z": -294,
+        "dim": "overworld",
+        "name": "Ebonrun Dam",
+        "detail": "A missive dam controlled by Maelmari. It also keeps in the villagers.",
+        "type": "other_location"
+    },
+    {
+        "x": -3984,
+        "y": 97,
+        "z": 1613,
+        "dim": "overworld",
+        "name": "Avsohmic Launch Zone",
+        "detail": "A site for launching and docking Avsohmic airships.",
+        "type": "avsohm_facility"
+    },
+    {
+        "x": -4114,
+        "y": 148,
+        "z": 2278,
+        "dim": "overworld",
+        "name": "Jungle City Ruins",
+        "detail": "A long abandoned city of red sandstone, possibly Cassian.",
+        "type": "abandoned_town"
+    },
+    {
+        "x": -3943,
+        "y": 102,
+        "z": 2743,
+        "dim": "overworld",
+        "name": "Ocean Spire House",
+        "detail": "A house high up on a stone pillar off the west coast.",
+        "type": "building"
+    },
+    {
+        "x": -4110,
+        "y": 100,
+        "z": 2982,
+        "dim": "overworld",
+        "name": "Solitary Fisherman's House",
+        "detail": "A house of kelp and straw  with a single fisherman.",
+        "type": "building"
+    },
+    {
+        "x": -3954,
+        "y": 218,
+        "z": 3561,
+        "dim": "overworld",
+        "name": "Blackstone tower",
+        "detail": "A tower of blackstone overlooking the coast and islands.",
+        "type": "building"
+    },
+    {
+        "x": -3451,
+        "y": 125,
+        "z": 2806,
+        "dim": "overworld",
+        "name": "Desert Blacksmith's House",
+        "detail": "A nice house in the desert near Sal'Anyr. The blacksmith is the daughter of a talented Insohm smith.",
+        "type": "building"
+    },
+    {
+        "x": -3622,
+        "y": 37,
+        "z": 1993,
+        "dim": "overworld",
+        "name": "Temple of Dahroehl",
+        "detail": "Temple to the Water-Wyrm Dahroehl, Aspect of Freshwater, child of Dahr.",
+        "type": "building"
+    },
+    {
+        "x": -3292,
+        "y": 37,
+        "z": 2277,
+        "dim": "overworld",
+        "name": "Sal'Anyr Spelunker House",
+        "detail": "An unlucky spelunker's house at the base of Sal'Anyr.",
+        "type": "building"
+    },
+    {
+        "x": -3388,
+        "y": 137,
+        "z": 2233,
+        "dim": "overworld",
+        "name": "Sal'Anyr",
+        "detail": "A great military city of Avsohm under the control of House Anyr. It fell to a skullbeast in a day at the end of Avsohm and start of the Dune Wars. It was previously known as Azen'nath.",
+        "type": "abandoned_town"
+    },
+    {
+        "x": -3347,
+        "y": 128,
+        "z": 2215,
+        "dim": "overworld",
+        "name": "Missile Silo",
+        "detail": "Powerful weapons of Avsohm lay buried in the sands.",
+        "type": "avsohm_facility"
+    },
+    {
+        "x": -2738,
+        "y": 32,
+        "z": 2214,
+        "dim": "overworld",
+        "name": "The Vault",
+        "detail": "Blue Exodus storage and research center for Avsohm's military equipment.",
+        "type": "avsohm_facility"
+    },
+    {
+        "x": -2176,
+        "y": 115,
+        "z": 2327,
+        "dim": "overworld",
+        "name": "Witch's Tower",
+        "detail": "A witch's tower overlooking Nihmaj Swamp.",
+        "type": "building"
+    },
+    {
+        "x": -2250,
+        "y": 93,
+        "z": 2112,
+        "dim": "overworld",
+        "name": "Crashed Avsohmic Ship",
+        "detail": "An old crashed cargo airship.",
+        "type": "other_location"
+    },
+    {
+        "x": -2431,
+        "y": 87,
+        "z": 2248,
+        "dim": "overworld",
+        "name": "Avshomic Lifeboat",
+        "detail": "A crashed lifeboat from an airship. There were no survivors.",
+        "type": "other_location"
+    },
+    {
+        "x": -1866,
+        "y": 63,
+        "z": 1617,
+        "dim": "overworld",
+        "name": "Maelmari Camp",
+        "detail": "A Maelmari base near the Ebony Veldt.",
+        "type": "other_location"
+    },
+    {
+        "x": -1751,
+        "y": 70,
+        "z": 2137,
+        "dim": "overworld",
+        "name": "Crashed Steamboat",
+        "detail": "A crashed boat on the banks of the river south of Fort Nihmaj.",
+        "type": "other_location"
+    },
+    {
+        "x": -1751,
+        "y": 70,
+        "z": 2137,
+        "dim": "overworld",
+        "name": "Crashed Steamboat",
+        "detail": "A crashed boat on the banks of the river south of Fort Nihmaj.",
+        "type": "other_location"
+    },
+    {
+        "x": -2400,
+        "y": 71,
+        "z": 2549,
+        "dim": "overworld",
+        "name": "Abandoned Swamp Hut",
+        "detail": "An abandoned hut in the middle of a glowberry cave.",
+        "type": "other_location"
+    },
+    {
+        "x": -2222,
+        "y": 71,
+        "z": 2522,
+        "dim": "overworld",
+        "name": "Tharhan Swamp Castle",
+        "detail": "A castle in Nihmaj Swamp built by a Lady who would not submit to Maelihs.",
+        "type": "abandoned_town"
+    },
+    {
+        "x": -2425,
+        "y": 74,
+        "z": 2964,
+        "dim": "overworld",
+        "name": "Nihmaj Alchemical Castle",
+        "detail": "A run down castle full of Mikhmari and Alchemist trying to achieve The Great Work.",
+        "type": "building"
+    },
+    {
+        "x": -3314,
+        "y": 204,
+        "z": 3896,
+        "dim": "overworld",
+        "name": "Carmine Town Ruins",
+        "detail": "Ruins of a town at the far north of the Carmine.",
+        "type": "abandoned_town"
+    },
+    {
+        "x": -2125,
+        "y": 133,
+        "z": 5320,
+        "dim": "overworld",
+        "name": "Campsite",
+        "detail": "A campsite on the edge of the Carmine.",
+        "type": "other_location"
+    },
+    {
+        "x": -2086,
+        "y": 123,
+        "z": 5983,
+        "dim": "overworld",
+        "name": "Maelmari Lookout Fort",
+        "detail": "A lookout tower and building to keep watch and provide warning to Rhaveloth.",
+        "type": "building"
+    },
+    {
+        "x": -2384,
+        "y": 80,
+        "z": 5601,
+        "dim": "overworld",
+        "name": "Birthing Grounds Growth",
+        "detail": "A fleshy growth that extends deep into the birthing grounds. It may have been an attempt to recreate a skull beast or the Mother.",
+        "type": "other_location"
+    },
+    {
+        "x": -2332,
+        "y": 93,
+        "z": 5932,
+        "dim": "overworld",
+        "name": "Birthing Grounds Skull",
+        "detail": "A strange structure inside a skull at the end of the Birthing Grounds.",
+        "type": "other_location"
+    },
+    {
+        "x": -2804,
+        "y": 18,
+        "z": 5176,
+        "dim": "overworld",
+        "name": "Sarlac Pit",
+        "detail": "It does not like sand either.",
+        "type": "other_location"
+    },
+    {
+        "x": -2863,
+        "y": 62,
+        "z": 5204,
+        "dim": "overworld",
+        "name": "Rhaveloth",
+        "detail": "The chaotic, many leveled city of the Maelmari.",
+        "type": "town"
+    },
+    {
+        "x": -2859,
+        "y": 41,
+        "z": 5331,
+        "dim": "overworld",
+        "name": "Sepulchral Altar",
+        "detail": "A massive amphitheater and altar for Maelihs.",
+        "type": "building"
+    },
+    {
+        "x": -2866,
+        "y": 69,
+        "z": 5883,
+        "dim": "overworld",
+        "name": "Zombie Pigman Hamlet",
+        "detail": "A collection of small houses and zombie pigmen.",
+        "type": "other_location"
+    },
+    {
+        "x": -3661,
+        "y": 61,
+        "z": 5835,
+        "dim": "overworld",
+        "name": "Titans of Strength and Servitude",
+        "detail": "Giant statues at the entrance of the Hellcrags.",
+        "type": "other_location"
+    },
+    {
+        "x": -3995,
+        "y": 43,
+        "z": 5981,
+        "dim": "overworld",
+        "name": "The Burnt Palace",
+        "detail": "The Throne of Maelhis in the center of the Hellcrags.",
+        "type": "other_location"
+    },
+    {
+        "x": -2092,
+        "y": 64,
+        "z": -3314,
+        "dim": "overworld",
+        "name": "Insohmic Port",
+        "detail": "A port on the south side of the Island of Dusk.",
+        "type": "other_location"
+    },
+    {
+        "x": -2333,
+        "y": 65,
+        "z": -3306,
+        "dim": "overworld",
+        "name": "Coastal Tower",
+        "detail": "A tower with a single Drehmari.",
+        "type": "building"
+    },
+    {
+        "x": -2324,
+        "y": 87,
+        "z": -3846,
+        "dim": "overworld",
+        "name": "Coven of Koh",
+        "detail": "A coven of Drehmari in underground tunnels worshiping Koh, Aspect of Stone.",
+        "type": "small_town"
+    },
+    {
+        "x": -2281,
+        "y": 71,
+        "z": -4061,
+        "dim": "overworld",
+        "name": "Coastal Tower",
+        "detail": "A tower with a single Drehamri.",
+        "type": "building"
+    },
+    {
+        "x": -1867,
+        "y": 94,
+        "z": -3803,
+        "dim": "overworld",
+        "name": "Mendarum Crystal Mine",
+        "detail": "A mine to collect mendarum crystals, useful for runic magic.",
+        "type": "building"
+    },
+    {
+        "x": -1202,
+        "y": 65,
+        "z": -4095,
+        "dim": "overworld",
+        "name": "Xorhuul",
+        "detail": "Underground town of the Xorhai, descendants of the Clan Xorha Barbarians who were exiled by the Cassian Empire.",
+        "type": "abandoned_town"
+    },
+    {
+        "x": -804,
+        "y": 74,
+        "z": -4321,
+        "dim": "overworld",
+        "name": "Campsite",
+        "detail": "A small campsite on the Island of Dawn.",
+        "type": "other_location"
+    },
+    {
+        "x": -935,
+        "y": 155,
+        "z": -4138,
+        "dim": "overworld",
+        "name": "Starrise Bastion",
+        "detail": "Originally a temple to Virtuo, after the Goddess left, the Virmari encountered Rihelma, Aspect of the Sky.",
+        "type": "building"
+    },
+    {
+        "x": -652,
+        "y": 64,
+        "z": -3912,
+        "dim": "overworld",
+        "name": "Docks",
+        "detail": "Docks on the Island of Dawn to ship crystals.",
+        "type": "other_location"
+    },
+    {
+        "x": 580,
+        "y": 81,
+        "z": 1798,
+        "dim": "overworld",
+        "name": "Explorer's Campsite",
+        "detail": "Campsite of an explorer.",
+        "type": "other_location"
+    },
+    {
+        "x": 27295,
+        "y": 82,
+        "z": 85,
+        "dim": "overworld",
+        "name": "Ultva and Hovadchear",
+        "detail": "Masters of the Order of Insohm.",
+        "type": "boss"
+    },
+    {
+        "x": 10000,
+        "y": 0,
+        "z": 10000,
+        "dim": "true_end",
+        "name": "The Emissary",
+        "detail": "Waiting to see the end of Avsohm since its beginning.",
+        "type": "boss"
+    },
+    {
+        "x": -181,
+        "y": 163,
+        "z": -573,
+        "dim": "overworld",
+        "name": "Astorahnni Tower",
+        "detail": "Folowers of the Tohran, the heavenly body, banished from Merijool.",
+        "type": "building"
+    },
+    {
+        "x": 26941,
+        "y": 89,
+        "z": -529,
+        "dim": "overworld",
+        "name": "Mt. Yavhlix Entrance",
+        "detail": "Entrance to Mt. Yavhlix facility.",
+        "type": "meta"
+    },
+    {
+        "x": 25984,
+        "y": 134,
+        "z": 464,
+        "dim": "overworld",
+        "name": "Completion Room",
+        "detail": "Room after beating the game.",
+        "type": "meta"
+    },
+    {
+        "x": 26521,
+        "y": 170,
+        "z": -112,
+        "dim": "overworld",
+        "name": "Spawn Room",
+        "detail": "Room before starting the game",
+        "type": "meta"
+    },
+    {
+        "x": 867,
+        "y": 27,
+        "z": 1164,
+        "dim": "lodahr",
+        "name": "Augural Tangle",
+        "detail": "Crystal cavern revealing refractions of other worlds as seen by Rihelma.",
+        "type": "other_location"
+    },
+    {
+        "x": 1269,
+        "y": 53,
+        "z": 1203,
+        "dim": "lodahr",
+        "name": "Oriann's Tomb",
+        "detail": "Crystal tomb of Dragonrider Oriann, a mortal Ro'Tehrmari who was the only being to understand the Star-Rise Drake, Rihelma.",
+        "type": "building"
+    },
+    {
+        "x": 1285,
+        "y": 177,
+        "z": 1319,
+        "dim": "lodahr",
+        "name": "Up House",
+        "detail": "House from Up, the movie.",
+        "type": "building"
+    },
+    {
+        "x": 1125,
+        "y": 83,
+        "z": 1013,
+        "dim": "lodahr",
+        "name": "Star-Rise Orrery",
+        "detail": "Rihelma checks your perception.",
+        "type": "trial"
+    },
+    {
+        "x": 849,
+        "y": 55,
+        "z": -431,
+        "dim": "lodahr",
+        "name": "Slate House",
+        "detail": "Craftsman's house of made of slate in Noha's domain.",
+        "type": "building"
+    },
+    {
+        "x": 908,
+        "y": 63,
+        "z": -386,
+        "dim": "lodahr",
+        "name": "Destoryed slate town",
+        "detail": "Remnant's of a town in Noha's domain.",
+        "type": "abandoned_town"
+    },
+    {
+        "x": 2319,
+        "y": 42,
+        "z": -203,
+        "dim": "lodahr",
+        "name": "Moondonalds",
+        "detail": "Way out in the wastes.",
+        "type": "building"
+    },
+    {
+        "x": 971,
+        "y": 64,
+        "z": 222,
+        "dim": "lodahr",
+        "name": "Adventurine Dome",
+        "detail": "An adventurine house inside a glass dome.",
+        "type": "building"
+    },
+    {
+        "x": 872,
+        "y": 11,
+        "z": 333,
+        "dim": "lodahr",
+        "name": "Campsite",
+        "detail": "A campsite near an Avsohmic pad.",
+        "type": "other_location"
+    },
+    {
+        "x": 891,
+        "y": 11,
+        "z": 363,
+        "dim": "lodahr",
+        "name": "Avsohmic Landing Pad",
+        "detail": "An Avsohmic landing pad that used to be connected to a larger base.",
+        "type": "avsohm_facility"
+    },
+    {
+        "x": 1128,
+        "y": 246,
+        "z": 1125,
+        "dim": "lodahr",
+        "name": "Orrery",
+        "detail": "An orrery and house in Rihelma's domain.",
+        "type": "building"
+    },
+    {
+        "x": 372,
+        "y": 82,
+        "z": 980,
+        "dim": "lodahr",
+        "name": "Temple of Voynahla",
+        "detail": "A temple to Voynahla, Aspect of Death, who killed himself but did not truly die.",
+        "type": "building"
+    },
+    {
+        "x": 551,
+        "y": 31,
+        "z": 1179,
+        "dim": "lodahr",
+        "name": "Ro'Tehrmari Cave",
+        "detail": "A cave of Ro'Tehmari.",
+        "type": "small_town"
+    },
+    {
+        "x": 561,
+        "y": 39,
+        "z": 1228,
+        "dim": "lodahr",
+        "name": "Spider Cave",
+        "detail": "A cave poisonious spiders in Voynahla's Domain.",
+        "type": "other_location"
+    },
+    {
+        "x": 117,
+        "y": 88,
+        "z": 1140,
+        "dim": "lodahr",
+        "name": "Arkeje? or Rohei?",
+        "detail": "A town overlooking Voynahla's Domain.",
+        "type": "abandoned_town"
+    },
+    {
+        "x": 841,
+        "y": 218,
+        "z": 639,
+        "dim": "lodahr",
+        "name": "Rihanar",
+        "detail": "A town of craftsmen and thrid largest habitation before the Schism when all inhabitants dissapeared suddenly.",
+        "type": "abandoned_town"
+    },
+    {
+        "x": 621,
+        "y": 111,
+        "z": 435,
+        "dim": "lodahr",
+        "name": "Floating Temple to the Tempests",
+        "detail": "A temple marking the burial site to the three Tepests, Durias, Estehl, and Amohn Aihura.",
+        "type": "building"
+    },
+    {
+        "x": 457,
+        "y": 61,
+        "z": 452,
+        "dim": "lodahr",
+        "name": "Damaged building",
+        "detail": "A building beneath the corpse of the lightning dragon in Palaesida's domain",
+        "type": "building"
+    },
+    {
+        "x": 455,
+        "y": 149,
+        "z": 457,
+        "dim": "lodahr",
+        "name": "Heart of the Storm",
+        "detail": "The remains of the Aspect of Storms, the Tempest, Palaesida.",
+        "type": "other_location"
+    },
+    {
+        "x": 459,
+        "y": 116,
+        "z": 256,
+        "dim": "lodahr",
+        "name": "Okhran Prison",
+        "detail": "Floating prison in Palaesida's domain.",
+        "type": "building"
+    },
+    {
+        "x": 327,
+        "y": 40,
+        "z": 475,
+        "dim": "lodahr",
+        "name": "Kungahs's Cage",
+        "detail": "Prison cage for Kungahs, the Hateful Blade.",
+        "type": "other_location"
+    },
+    {
+        "x": 492,
+        "y": 161,
+        "z": -114,
+        "dim": "lodahr",
+        "name": "Hypogean Labyrinth",
+        "detail": "Nahyn evaluates your composure.",
+        "type": "trial"
+    },
+    {
+        "x": 573,
+        "y": 67,
+        "z": -351,
+        "dim": "lodahr",
+        "name": "Crystal Cavern",
+        "detail": "A cavern of large crystals with a spike of amethyst at the center.",
+        "type": "other_location"
+    },
+    {
+        "x": 733,
+        "y": 80,
+        "z": -308,
+        "dim": "lodahr",
+        "name": "Miner's house",
+        "detail": "A house belonging to a amethyst miner.",
+        "type": "building"
+    },
+    {
+        "x": 393,
+        "y": 127,
+        "z": -292,
+        "dim": "lodahr",
+        "name": "Forest Watchtower",
+        "detail": "A wooden tower to watch over the forest.",
+        "type": "building"
+    },
+    {
+        "x": 299,
+        "y": 229,
+        "z": -115,
+        "dim": "lodahr",
+        "name": "Ice Pond House",
+        "detail": "A house over a mine in a frozen pond.",
+        "type": "building"
+    },
+    {
+        "x": 82,
+        "y": 163,
+        "z": -259,
+        "dim": "lodahr",
+        "name": "Roheian Castle",
+        "detail": "Center of the Roheian Empire in the Free Lands.",
+        "type": "building"
+    },
+    {
+        "x": -99,
+        "y": 52,
+        "z": -295,
+        "dim": "lodahr",
+        "name": "Coven of Alchemists",
+        "detail": "A castle of alchemists in Maen's domain where they studied the primal emotions: Pain, Pleasure, & Fear.",
+        "type": "building"
+    },
+    {
+        "x": -46,
+        "y": 40,
+        "z": -45,
+        "dim": "lodahr",
+        "name": "Magic Practitioner's Fort",
+        "detail": "A small fort whos inhabitant studied magic.",
+        "type": "building"
+    },
+    {
+        "x": -114,
+        "y": 76,
+        "z": -469,
+        "dim": "lodahr",
+        "name": "Sword Bridge",
+        "detail": "A massive sword acts as a bridge between Vayniklah's and Moen's domains.",
+        "type": "other_location"
+    },
+    {
+        "x": 505,
+        "y": 76,
+        "z": -1382,
+        "dim": "lodahr",
+        "name": "Lopaja Town",
+        "detail": "A small town in mushrooms in Lahr's domain",
+        "type": "small_town"
+    },
+    {
+        "x": 1144,
+        "y": 213,
+        "z": -1232,
+        "dim": "lodahr",
+        "name": "Brightwyrm's Caldarium",
+        "detail": "Lai assays your ingenuity.",
+        "type": "trial"
+    },
+    {
+        "x": 1279,
+        "y": 185,
+        "z": -1335,
+        "dim": "lodahr",
+        "name": "Brulante Residence",
+        "detail": "The residence of the Brulante clan, Tehrmari pyromancers who wield a unique and pwerful flame known only to them.",
+        "type": "building"
+    },
+    {
+        "x": 1350,
+        "y": 139,
+        "z": -1176,
+        "dim": "lodahr",
+        "name": "Tehrmari Metalworkers",
+        "detail": "A small enclave of Tehrmari metalworkers in Lai's Domain.",
+        "type": "small_town"
+    },
+    {
+        "x": 1189,
+        "y": 31,
+        "z": -622,
+        "dim": "lodahr",
+        "name": "Lava worksite",
+        "detail": "A worksite with shallow pools of lava.",
+        "type": "other_location"
+    },
+    {
+        "x": -198,
+        "y": 19,
+        "z": 1177,
+        "dim": "lodahr",
+        "name": "Abyssal Rise",
+        "detail": "Dahr tests your logic.",
+        "type": "trial"
+    },
+    {
+        "x": -370,
+        "y": 69,
+        "z": 898,
+        "dim": "lodahr",
+        "name": "Mushroom campsite",
+        "detail": "A mushroom used as a shelter.",
+        "type": "building"
+    },
+    {
+        "x": -419,
+        "y": 49,
+        "z": 570,
+        "dim": "lodahr",
+        "name": "Bernice's House",
+        "detail": "Underwater temple to challenge Bernice and claim Dahr's powerful trident.",
+        "type": "boss"
+    },
+    {
+        "x": -399,
+        "y": 18,
+        "z": 437,
+        "dim": "lodahr",
+        "name": "Challenger's Grotto",
+        "detail": "Sea cave where Dahr's treasure lies.",
+        "type": "other_location"
+    },
+    {
+        "x": -366,
+        "y": 107,
+        "z": -13,
+        "dim": "lodahr",
+        "name": "Riverstead Town",
+        "detail": "A town of Drehmari in a swamp.",
+        "type": "small_town"
+    },
+    {
+        "x": -480,
+        "y": 40,
+        "z": 200,
+        "dim": "lodahr",
+        "name": "Scion's Campsite",
+        "detail": "A campsite of a scion after learning pyromancy.",
+        "type": "other_location"
+    },
+    {
+        "x": -486,
+        "y": 81,
+        "z": 342,
+        "dim": "lodahr",
+        "name": "Tower",
+        "detail": "A tower overlooking the swamp.",
+        "type": "building"
+    },
+    {
+        "x": -699,
+        "y": 82,
+        "z": 151,
+        "dim": "lodahr",
+        "name": "Swamp Fort",
+        "detail": "A for in the swamp for the Swamp Guardians.",
+        "type": "building"
+    },
+    {
+        "x": -923,
+        "y": 60,
+        "z": 172,
+        "dim": "lodahr",
+        "name": "Bridge",
+        "detail": "A long bridge over the swamp between Khive's and Loe's Domain.",
+        "type": "other_location"
+    },
+    {
+        "x": -1018,
+        "y": 42,
+        "z": 360,
+        "dim": "lodahr",
+        "name": "Potentic Pyromancers House",
+        "detail": "A house on the edge of the swamp, home to a pyromancer.",
+        "type": "building"
+    },
+    {
+        "x": -1005,
+        "y": 44,
+        "z": 221,
+        "dim": "lodahr",
+        "name": "Swamp village",
+        "detail": "An empty village with houses in bases of swamp trees and a brewery.",
+        "type": "abandoned_town"
+    },
+    {
+        "x": -830,
+        "y": 188,
+        "z": 508,
+        "dim": "lodahr",
+        "name": "Greyspire Castle",
+        "detail": "Headquarters of the Anti-Palaesians during the Divine Schism. Now there are many rumors about its Duke.",
+        "type": "building"
+    },
+    {
+        "x": -763,
+        "y": 50,
+        "z": 866,
+        "dim": "lodahr",
+        "name": "Tower",
+        "detail": "A tower in Loe's Domain.",
+        "type": "building"
+    },
+    {
+        "x": -978,
+        "y": 75,
+        "z": 742,
+        "dim": "lodahr",
+        "name": "Loeturia",
+        "detail": "The only town on Lo'dahr welcoming to Drehmari, before they closed the portal.",
+        "type": "town"
+    },
+    {
+        "x": -1264,
+        "y": 76,
+        "z": -21,
+        "dim": "lodahr",
+        "name": "Shackled Alchemist's Tower",
+        "detail": "A tall tower with an alchemist in Khive's Domain.",
+        "type": "building"
+    },
+    {
+        "x": -899,
+        "y": 78,
+        "z": -129,
+        "dim": "lodahr",
+        "name": "Shackled Alchemist's Tower",
+        "detail": "An abandond fishing village on the shore of Lake Khanak",
+        "type": "abandoned_town"
+    },
+    {
+        "x": -1120,
+        "y": 59,
+        "z": -685,
+        "dim": "lodahr",
+        "name": "Anchor",
+        "detail": "A giant anchor in a dried lakebed.",
+        "type": "other_location"
+    },
+    {
+        "x": -963,
+        "y": 130,
+        "z": -957,
+        "dim": "lodahr",
+        "name": "Ihted Academy",
+        "detail": "Transported by Khive to Lo'Dahr, it was the home and school to mystics.",
+        "type": "abandoned_town"
+    },
+    {
+        "x": -1076,
+        "y": 109,
+        "z": -1099,
+        "dim": "lodahr",
+        "name": "House",
+        "detail": "Small house in Khirve's Domain.",
+        "type": "building"
+    },
+    {
+        "x": -761,
+        "y": 98,
+        "z": -790,
+        "dim": "lodahr",
+        "name": "Mystic Gallery",
+        "detail": "Khive appraises your accuracy.",
+        "type": "trial"
+    },
+    {
+        "x": -493,
+        "y": 150,
+        "z": -1297,
+        "dim": "lodahr",
+        "name": "Beehive",
+        "detail": "A large beehive.",
+        "type": "other_location"
+    },
+    {
+        "x": -337,
+        "y": 50,
+        "z": -793,
+        "dim": "lodahr",
+        "name": "Lifegiven Hospital",
+        "detail": "A hospital in the side of a mountain, still dealing with a virus brough by Avshom long ago.",
+        "type": "building"
+    },
+    {
+        "x": -485,
+        "y": 75,
+        "z": -222,
+        "dim": "lodahr",
+        "name": "Temple of Life",
+        "detail": "Vayniklah tries your intuition.",
+        "type": "trial"
+    },
+    {
+        "x": -225,
+        "y": 105,
+        "z": -492,
+        "dim": "lodahr",
+        "name": "Honey Shack",
+        "detail": "A shack suspended and surrounded by honeycomb.",
+        "type": "building"
+    },
+    {
+        "x": -1923,
+        "y": 29,
+        "z": 1872,
+        "dim": "lodahr",
+        "name": "Yriel's Sanctum",
+        "detail": "Burial site of Yriel Rezhad, Ro'Tehrmari and friend of the Aspects.",
+        "type": "building"
+    },
+    {
+        "x": 9996,
+        "y": 62,
+        "z": 10181,
+        "dim": "true_end",
+        "name": "The Maddened Path",
+        "detail": "Path to the end.",
+        "type": "other_location"
+    },
+    {
+        "x": 778,
+        "y": 105,
+        "z": 690,
+        "dim": "true_end",
+        "name": "Stasis Facility",
+        "detail": "Exit for the last time.",
+        "type": "avsohm_facility"
+    },
+    {
+        "x": 1000,
+        "y": 78,
+        "z": 299,
+        "dim": "true_end",
+        "name": "Drehmal",
+        "detail": "Drehmal, the Final Aspect.",
+        "type": "other_location"
+    },
+    {
+        "x": 917,
+        "y": 42,
+        "z": 224,
+        "dim": "true_end",
+        "name": "The End",
+        "detail": "Ending",
+        "type": "meta"
+    },
+    {}
+]
