@@ -61,7 +61,7 @@ let TowerIcon = new L.Icon({
 });
 
 let LodahrPortalIcon = new L.Icon({
-        iconUrl: "images/icons/portal.png",
+        iconUrl: "images/icons/custom/portal.png",
         iconSize:     [32, 32],
         iconAnchor:   [16, 16],
         popupAnchor:  [0, -16],
