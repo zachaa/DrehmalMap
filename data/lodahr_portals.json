@@ -13,7 +13,7 @@
         "y": 75,
         "z": -56,
         "dim": "lodahr",
-        "name": "Lo'dahr Portal (Blackrock, dirt, snow, floating crystals, Noha?)",
+        "name": "Lo'dahr Portal (Noha's Domain)",
         "detail": "Exit of the Black Jungle portal, must be entered there first.",
         "type": "lodahr_portal"
     },
@@ -31,7 +31,7 @@
         "y": 92,
         "z": -1089,
         "dim": "lodahr",
-        "name": "Lo'dahr Portal (Green swamp, bees)",
+        "name": "Lo'dahr Portal (Vayniklah's Domain)",
         "detail": "Exit of the Speahead Forest portal, must be entered there first.",
         "type": "lodahr_portal"
     },
@@ -85,7 +85,7 @@
         "y": 9,
         "z": 1298,
         "dim": "lodahr",
-        "name": "Lo'dahr Portal (Inside crypt in Voynahla's Domain)",
+        "name": "Lo'dahr Portal (Voynahla's Domain)",
         "detail": "Exit of the Nihmaj Swamp portal, must be entered there first.",
         "type": "lodahr_portal"
     },
