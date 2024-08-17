@@ -1,4 +1,14 @@
+.idea/
+.vscode/
+__pycache__/
 .venv/
+venv/
+
 data_raw/
+images/
+images_raw/
 tools/
+
+*.py[icod]
 *.psd
+*.ai
