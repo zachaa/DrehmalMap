@@ -1,5 +1,5 @@
 .venv/
 data_raw/
-images/
+drehmal_images/
 tools/
 *.psd

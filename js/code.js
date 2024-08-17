@@ -2,31 +2,31 @@ const mapConfig = {
     overworld: {
         bounds: [[-5120, -5632], [7167, 7679]],  // y, x
         startCenter: [690, 778],
-        url: 'images/maps/overworld/tiles/zoom.{z}/tile.{x}.{y}.webp',
+        url: "drehmal_images/maps/overworld/tiles/zoom.{z}/tile.{x}.{y}.webp",
         zoomMin: -6,
     },
     end: {
         bounds: [[-512, -512], [511, 511]],
         startCenter: [0, 0],
-        url: 'images/maps/end/tiles/zoom.{z}/tile.{x}.{y}.webp',
+        url: "drehmal_images/maps/end/tiles/zoom.{z}/tile.{x}.{y}.webp",
         zoomMin: -2,
     },
     true_end: {
         bounds: [[-512, 0], [10751, 10239]],
         startCenter: [690, 778],
-        url: 'images/maps/true_end/tiles/zoom.{z}/tile.{x}.{y}.webp',
+        url: "drehmal_images/maps/true_end/tiles/zoom.{z}/tile.{x}.{y}.webp",
         zoomMin: -6,
     },
     lodahr: {
         bounds: [[-3072, -2560], [2559, 27647]],
         startCenter: [-718, -64],
-        url: 'images/maps/lodahr/tiles/zoom.{z}/tile.{x}.{y}.webp',
+        url: "drehmal_images/maps/lodahr/tiles/zoom.{z}/tile.{x}.{y}.webp",
         zoomMin: -6,
     },
     space: {
         bounds: [[-512, -512], [511, 511]],
         startCenter: [122, -130],
-        url: 'images/maps/space/tiles/zoom.{z}/tile.{x}.{y}.webp',
+        url: "drehmal_images/maps/space/tiles/zoom.{z}/tile.{x}.{y}.webp",
         zoomMin: -2,
     }
 };
@@ -212,7 +212,7 @@ async function createOverlays(dimension, renderer) {
 
 function imgSmallElement(icon_name) {
     const itemImage = document.createElement('img');
-    itemImage.src = `images/icons/${icon_name}.png`;
+    itemImage.src = `drehmal_images/icons/${icon_name}.png`;
     itemImage.style.width = '16px';
     itemImage.style.height = '16px';
     itemImage.style.verticalAlign = 'middle';
@@ -293,7 +293,7 @@ function tradeHtml(trades) {
 }
 
 function createStorageMarker(element) {
-    let icon = new Icon32({iconUrl: `images/icons/${element.name}.png`});
+    let icon = new Icon32({iconUrl: `drehmal_images/icons/${element.name}.png`});
     let items_html = storageHtml(element.items).outerHTML;
     return L.marker([element.z+0.5, element.x+0.5], {icon: icon})
         .bindPopup(`<span class=popup_title>${element.displayName}</span><hr>
@@ -302,7 +302,7 @@ function createStorageMarker(element) {
 }
 
 function createTraderMarker(element) {
-    let icon = new IconTrader({iconUrl: `images/icons/entity/${element.name}.png`});
+    let icon = new IconTrader({iconUrl: `drehmal_images/icons/entity/${element.name}.png`});
     let trade_html = tradeHtml(element.trades).outerHTML;
     return L.marker([element.z+0.5, element.x+0.5], {icon: icon})
         .bindPopup(`<span class=popup_title>${element.displayName}</span><hr>
@@ -311,14 +311,14 @@ function createTraderMarker(element) {
 }
 
 function createEntityMarker(element) {
-    let icon = new IconEntity({iconUrl: `images/icons/entity/${element.name}.png`});
+    let icon = new IconEntity({iconUrl: `drehmal_images/icons/entity/${element.name}.png`});
     return L.marker([element.z+0.5, element.x+0.5], {icon: icon})
         .bindPopup(`<span class=popup_title>${element.displayName}</span><hr>
                   <span class=popup_xyz>${element.x} ${element.y} ${element.z}</span>`);
 }
 
 function createTileEntityMarker(element) {
-    let icon = new Icon32({iconUrl: `images/icons/${element.name}.png`});
+    let icon = new Icon32({iconUrl: `drehmal_images/icons/${element.name}.png`});
     return L.marker([element.z+0.5, element.x+0.5], {icon: icon})
         .bindPopup(`<span class=popup_title>${element.displayName}</span><hr>
                   <span class=popup_xyz>${element.x} ${element.y} ${element.z}</span>`);
@@ -434,7 +434,7 @@ async function start() {
     });
 
     let baseTiles = L.tileLayer(config.url, {
-        errorTileUrl: "images/maps/null_tile.webp",
+        errorTileUrl: "drehmal_images/maps/null_tile.webp",
         attribution: '&copy; Drehmal map creators, uNmINeD, Mojang',
         minZoom: config.zoomMin,
         maxZoom: 4,

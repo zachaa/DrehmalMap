@@ -53,7 +53,7 @@ var IconLegendary = L.Icon.extend({
 });
 
 let TowerIcon = new L.Icon({
-        iconUrl: "images/icons/custom/Tower.png",
+        iconUrl: "drehmal_images/icons/custom/Tower.png",
         iconSize:     [16, 16],
         iconAnchor:   [8, 8],
         popupAnchor:  [0, -8],
@@ -61,7 +61,7 @@ let TowerIcon = new L.Icon({
 });
 
 let LodahrPortalIcon = new L.Icon({
-        iconUrl: "images/icons/custom/portal.png",
+        iconUrl: "drehmal_images/icons/custom/portal.png",
         iconSize:     [32, 32],
         iconAnchor:   [16, 16],
         popupAnchor:  [0, -16],

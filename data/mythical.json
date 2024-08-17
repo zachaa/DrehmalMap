@@ -6,7 +6,7 @@
         "dim": "lodahr",
         "name": "Syzygy",
         "lore": "",
-        "icon": "images/icons/custom/syzygy.png"
+        "icon": "drehmal_images/icons/custom/syzygy.png"
     },
     {
         "x": 1030,
@@ -15,7 +15,7 @@
         "dim": "overworld",
         "name": "Calamity",
         "lore": "",
-        "icon": "images/icons/custom/calamity.png"
+        "icon": "drehmal_images/icons/custom/calamity.png"
     },
     {
         "x": 1744,
@@ -24,7 +24,7 @@
         "dim": "overworld",
         "name": "Oblivion",
         "lore": "",
-        "icon": "images/icons/custom/oblivion.png"
+        "icon": "drehmal_images/icons/custom/oblivion.png"
     },
     {
         "x": 4718,
@@ -33,7 +33,7 @@
         "dim": "overworld",
         "name": "Frenzy",
         "lore": "",
-        "icon": "images/icons/custom/frenzy.png"
+        "icon": "drehmal_images/icons/custom/frenzy.png"
     },
     {
         "x": -618,
@@ -42,7 +42,7 @@
         "dim": "overworld",
         "name": "Ascendance",
         "lore": "",
-        "icon": "images/icons/custom/ascendance.png"
+        "icon": "drehmal_images/icons/custom/ascendance.png"
     },
     {
         "x": -3187,
@@ -51,7 +51,7 @@
         "dim": "overworld",
         "name": "Zenith",
         "lore": "",
-        "icon": "images/icons/custom/zenith.png"
+        "icon": "drehmal_images/icons/custom/zenith.png"
     },
     {
         "x": -3983,
@@ -60,6 +60,6 @@
         "dim": "overworld",
         "name": "Malevolentia",
         "lore": "",
-        "icon": "images/icons/custom/malevolentia.png"
+        "icon": "drehmal_images/icons/custom/malevolentia.png"
     }
 ]
