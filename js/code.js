@@ -2,31 +2,31 @@ const mapConfig = {
     overworld: {
         bounds: [[-5120, -5632], [7167, 7679]],  // y, x
         startCenter: [690, 778],
-        url: "drehmal_images/maps/overworld/tiles/zoom.{z}/tile.{x}.{y}.webp",
+        url: "drehmal_images/maps/overworld/tiles/zoom.{z}/tile.{x}.{y}.png",
         zoomMin: -6,
     },
     end: {
         bounds: [[-512, -512], [511, 511]],
         startCenter: [0, 0],
-        url: "drehmal_images/maps/end/tiles/zoom.{z}/tile.{x}.{y}.webp",
+        url: "drehmal_images/maps/end/tiles/zoom.{z}/tile.{x}.{y}.png",
         zoomMin: -2,
     },
     true_end: {
         bounds: [[-512, 0], [10751, 10239]],
         startCenter: [690, 778],
-        url: "drehmal_images/maps/true_end/tiles/zoom.{z}/tile.{x}.{y}.webp",
+        url: "drehmal_images/maps/true_end/tiles/zoom.{z}/tile.{x}.{y}.png",
         zoomMin: -6,
     },
     lodahr: {
         bounds: [[-3072, -2560], [2559, 27647]],
         startCenter: [-718, -64],
-        url: "drehmal_images/maps/lodahr/tiles/zoom.{z}/tile.{x}.{y}.webp",
+        url: "drehmal_images/maps/lodahr/tiles/zoom.{z}/tile.{x}.{y}.png",
         zoomMin: -6,
     },
     space: {
         bounds: [[-512, -512], [511, 511]],
         startCenter: [122, -130],
-        url: "drehmal_images/maps/space/tiles/zoom.{z}/tile.{x}.{y}.webp",
+        url: "drehmal_images/maps/space/tiles/zoom.{z}/tile.{x}.{y}.png",
         zoomMin: -2,
     }
 };
@@ -434,7 +434,7 @@ async function start() {
     });
 
     let baseTiles = L.tileLayer(config.url, {
-        errorTileUrl: "drehmal_images/maps/null_tile.webp",
+        errorTileUrl: "drehmal_images/maps/null_tile.png",
         attribution: '&copy; Drehmal map creators, uNmINeD, Mojang',
         minZoom: config.zoomMin,
         maxZoom: 4,

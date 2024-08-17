@@ -1,6 +1,6 @@
 from pathlib import Path
 import shutil
-# import subprocess
+import subprocess
 
 top_level_paths = [
     Path(r"C:\Users\Zachary\Coding\VSCode\DrehmalMap\images\maps\overworld\tiles\zoom.2"),
@@ -56,36 +56,37 @@ top_level_paths_space = [
     Path(r"C:\Users\Zachary\Coding\VSCode\DrehmalMap\images\maps\space\tiles\zoom.-3")
 ]
 
-def move_webp_files(top_level_dir: Path):
+def move_png_files(top_level_dir: Path):
     # Walk through the directory tree
-    for path in top_level_dir.rglob('*.webp'):
+    for path in top_level_dir.rglob('*.png'):
         if path.is_file():
             destination = top_level_dir / path.name
             shutil.move(str(path), str(destination))
-    print(f"{top_level_dir.name} finished")
+    print(f"{top_level_dir.name} finished move")
 
-def move_all_webp_files(path_list):
+def move_all_png_files(path_list):
     for top_dir in path_list:
-        move_webp_files(top_dir)
+        move_png_files(top_dir)
     print("Remember to delete folders and metadata.")
 
 
-# def optimize_pngs(path: Path):
-#     oxi_png_path = Path(__file__).parents[1] / "tools/oxipng-9.1.2-x86_64-pc-windows-msvc/oxipng.exe"
-#     if not oxi_png_path.exists():
-#         print("oxipng not found")
-#         return
+def optimize_pngs(path: Path):
+    oxipng_path = Path(__file__).parents[1] / "tools/oxipng-9.1.2-x86_64-pc-windows-msvc/oxipng.exe"
+    if not oxipng_path.exists():
+        print("oxipng not found")
+        return
     
-#     command = f"{oxi_png_path} -o 3 --alpha --recursive {path}"
-#     subprocess.run(command, capture_output=True)
+    command = f"{oxipng_path} -o 6 --strip safe --alpha --recursive {path}"
+    subprocess.run(command, capture_output=True)
+    print(f"Optimized PNGs completed in: {path}")
 
 
 if __name__ == "__main__":
-    move_all_webp_files(top_level_paths)
-    move_all_webp_files(top_level_paths_end)
-    move_all_webp_files(top_level_paths_lodahr)
-    move_all_webp_files(top_level_paths_space)
-    move_all_webp_files(top_level_paths_true_end)
+    move_all_png_files(top_level_paths)
+    move_all_png_files(top_level_paths_end)
+    move_all_png_files(top_level_paths_lodahr)
+    move_all_png_files(top_level_paths_space)
+    move_all_png_files(top_level_paths_true_end)
 
     # optimize_pngs(Path(r"C:\Users\Zachary\Coding\VSCode\DrehmalMap\images\maps\end\tiles"))
     # optimize_pngs(Path(r"C:\Users\Zachary\Coding\VSCode\DrehmalMap\images\maps\space\tiles"))
