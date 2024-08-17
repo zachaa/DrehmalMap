@@ -1,0 +1,65 @@
+# This workflow is triggered by a push to the `main` branch
+# which it checks out, minimizes the appropriate html/css/js
+# in-place, and pushes the changes to the `gh-pages` branch
+
+# Adapted from: https://github.com/aricooperdavis/Spotilist
+
+name: minify
+run-name: Minify JS/CSS/HTML [gh-pages branch]
+
+# Run on pushes to `main` branch
+on:
+  # push:
+  #   branches:
+  #     - 'main'
+  workflow_dispatch:
+
+jobs:
+  checkout-minify-push:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      # Install NodeJS and CLI tools
+      - name: Setup and Install Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Node CLI tools
+        run: npm install -g terser csso-cli html-minifier
+
+      # Perform minification, overwriting original files
+      - name: Minify JS, CSS, HTML
+        run: |
+          terser ./js/code.js --compress keep_classnames=true,keep_fnames=true -o ./js/code.js
+          terser ./js/icons.js --compress keep_classnames=true,keep_fnames=true -o ./js/icons.js
+          csso ./css/style.css -o ./css/style.css
+          html-minifier --collapse-boolean-attributes --collapse-whitespace --minify-css --minify-js --minify-urls --remove-attribute-quotes --remove-comments --remove-empty-attributes --remove-optional-tags --remove-redundant-attributes --remove-script-type-attributes --remove-style-link-type-attributes --remove-tag-whitespace --use-short-doctype --input-dir . --output-dir . --file-ext html
+
+      # Install minify for Go to minify JSON and GeoJSON
+      # https://kolappan.com/blog/2020/minify-websites-gh-actions/
+      # https://github.com/tdewolff/minify/tree/master/cmd/minify
+      - name: Install and run minify
+        run: |
+          go install github.com/tdewolff/minify/v2/cmd/minify@latest
+          export PATH=$PATH:$(go env GOPATH)/bin
+          minify -o data/ --ext {geojson:application/json} --json-keep-numbers data/
+
+      - name: Remove "extract" folder
+        run: |
+          if [ -d "extract" ]; then
+            rm -rf extract
+          fi
+
+      # (Force) push changes to `gh-pages` branch
+      - name: Push to gh-pages
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add -A
+          if [ -n "$(git status --porcelain)" ]; then
+            git commit -m 'Automated minify of ${{ github.sha }}'
+            git push --force -u origin main:gh-pages
+          fi
