@@ -5,13 +5,19 @@
 # Adapted from: https://github.com/aricooperdavis/Spotilist
 
 name: minify
-run-name: Minify JS/CSS/HTML [gh-pages branch]
+run-name: Minify JS/CSS/HTML/JSON [gh-pages branch]
 
 # Run on pushes to `main` branch
 on:
   # push:
   #   branches:
   #     - 'main'
+  #   paths:
+  #     - '**.js'
+  #     - '**.css'
+  #     - '**.html'
+  #     - '**.json'
+  #     - '**.geojson'
   workflow_dispatch:
 
 jobs:
@@ -21,7 +27,6 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v4
 
-      # Install NodeJS and CLI tools
       - name: Setup and Install Node
         uses: actions/setup-node@v4
         with:
