@@ -1,0 +1,3 @@
+[submodule "drehmal_images"]
+	path = drehmal_images
+	url = https://github.com/zachaa/drehmal_images.git
