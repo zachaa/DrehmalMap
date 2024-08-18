@@ -434,7 +434,7 @@ async function start() {
     });
 
     let baseTiles = L.tileLayer(config.url, {
-        errorTileUrl: "drehmal_images/maps/null_tile.png",
+        errorTileUrl: "drehmal_images/maps/null_tile.webp",
         attribution: '&copy; Drehmal map creators, uNmINeD, Mojang',
         minZoom: config.zoomMin,
         maxZoom: 4,
@@ -533,7 +533,7 @@ async function start() {
 function colorMarker(value) {
     switch (value) {
         case "town":
-            return "#FFEE00";
+            return "#F6DD00";
         case "small_town":
             return "#FFB700";
         case "abandoned_town":
@@ -542,12 +542,14 @@ function colorMarker(value) {
             return "#9C01E9";
         case "building":
             return "#00B8E1";
+        case "campsite":
+            return "#CCE320";
         case "boss":
             return "#D00000";
         case "trial":
             return "#000DC3";
         case "other_location":
-            return "#E803DC";
+            return "#F95AF1";
         case "meta":
             return "#00FF00"
         default:

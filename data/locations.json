@@ -285,7 +285,7 @@
         "dim": "overworld",
         "name": "Port Solitude",
         "detail": "On the coast of Mael's Desolation, a town of villagers and friendly pillagers.",
-        "type": "small_town"
+        "type": "town"
     },
     {
         "x": 2644,
@@ -630,6 +630,15 @@
         "type": "building"
     },
     {
+        "x": 6281,
+        "y": 106,
+        "z": -3852,
+        "dim": "overworld",
+        "name": "Snowman",
+        "detail": "A giant snowman.",
+        "type": "other_location"
+    },
+    {
         "x": 6364,
         "y": 100,
         "z": -3007,
@@ -744,7 +753,7 @@
         "dim": "overworld",
         "name": "Insohm Research Camp",
         "detail": "A camp on the slopes of Mt. Yavhlix where Insohm tried and failed to gain access past the door.",
-        "type": "other_location"
+        "type": "campsite"
     },
     {
         "x": 1812,
@@ -888,7 +897,7 @@
         "dim": "overworld",
         "name": "Campsite",
         "detail": "A campsite of with three Drehmari in Akhlo'Rohma.",
-        "type": "other_location"
+        "type": "campsite"
     },
     {
         "x": 1683,
@@ -1005,7 +1014,7 @@
         "dim": "overworld",
         "name": "Campsite",
         "detail": "A small campsite in a forest to the east of the Gulf of Drehmal",
-        "type": "other_location"
+        "type": "campsite"
     },
     {
         "x": 678,
@@ -1365,7 +1374,7 @@
         "dim": "overworld",
         "name": "Mohta",
         "detail": "Major town of Lorahn'Khal.",
-        "type": "building"
+        "type": "town"
     },
     {
         "x": -626,
@@ -1446,7 +1455,7 @@
         "dim": "overworld",
         "name": "Campsite on Floating Island",
         "detail": "A single campsite on a floating island near the Gulf of Drehmal",
-        "type": "other_location"
+        "type": "campsite"
     },
     {
         "x": 321,
@@ -1554,7 +1563,7 @@
         "dim": "overworld",
         "name": "Campsite",
         "detail": "A campsite on a volcanic island between Merijool and Casai.",
-        "type": "other_location"
+        "type": "campsite"
     },
     {
         "x": -2624,
@@ -1599,7 +1608,7 @@
         "dim": "overworld",
         "name": "Campsite",
         "detail": "A miners campsite in east Casai.",
-        "type": "other_location"
+        "type": "campsite"
     },
     {
         "x": -3844,
@@ -1716,7 +1725,7 @@
         "dim": "overworld",
         "name": "Homesick Tergei's Camp",
         "detail": "He's a long way from Mohta.",
-        "type": "other_location"
+        "type": "campsite"
     },
     {
         "x": -1382,
@@ -1842,7 +1851,7 @@
         "dim": "overworld",
         "name": "Camp",
         "detail": "An abandoned camp south east of Mt. Ebonfire.",
-        "type": "other_location"
+        "type": "campsite"
     },
     {
         "x": -3138,
@@ -2076,7 +2085,7 @@
         "dim": "overworld",
         "name": "Campsite",
         "detail": "A campsite on the edge of the Carmine.",
-        "type": "other_location"
+        "type": "campsite"
     },
     {
         "x": -2086,
@@ -2220,7 +2229,7 @@
         "dim": "overworld",
         "name": "Campsite",
         "detail": "A small campsite on the Island of Dawn.",
-        "type": "other_location"
+        "type": "campsite"
     },
     {
         "x": -935,
@@ -2243,11 +2252,11 @@
     {
         "x": 580,
         "y": 81,
-        "z": 1798,
+        "z": 1498,
         "dim": "overworld",
         "name": "Explorer's Campsite",
         "detail": "Campsite of an explorer.",
-        "type": "other_location"
+        "type": "campsite"
     },
     {
         "x": 27295,
@@ -2260,7 +2269,7 @@
     },
     {
         "x": 10000,
-        "y": 0,
+        "y": 102,
         "z": 10000,
         "dim": "true_end",
         "name": "The Emissary",
@@ -2382,7 +2391,7 @@
         "dim": "lodahr",
         "name": "Campsite",
         "detail": "A campsite near an Avsohmic pad.",
-        "type": "other_location"
+        "type": "campsite"
     },
     {
         "x": 891,
@@ -2670,7 +2679,7 @@
         "dim": "lodahr",
         "name": "Scion's Campsite",
         "detail": "A campsite of a scion after learning pyromancy.",
-        "type": "other_location"
+        "type": "campsite"
     },
     {
         "x": -486,
