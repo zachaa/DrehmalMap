@@ -4,8 +4,8 @@
         "y": 88,
         "z": 3249,
         "dim": "overworld",
-        "name": "Lo'dahr Portal (Black Jungle)",
-        "detail": "Requires activating the ArkAngle facility.",
+        "name": "Lo'Dahr Portal (Black Jungle)",
+        "detail": "Requires activating the ArkAngel facility.",
         "type": "lodahr_portal"
     },
     {
@@ -13,7 +13,7 @@
         "y": 75,
         "z": -56,
         "dim": "lodahr",
-        "name": "Lo'dahr Portal (Noha's Domain)",
+        "name": "Lo'Dahr Portal (Noha's Domain)",
         "detail": "Exit of the Black Jungle portal, must be entered there first.",
         "type": "lodahr_portal"
     },
@@ -22,7 +22,7 @@
         "y": 104,
         "z": 383,
         "dim": "overworld",
-        "name": "Lo'dahr Portal (Spearhead Forest)",
+        "name": "Lo'Dahr Portal (Spearhead Forest)",
         "detail": "Portal in a tree stump.",
         "type": "lodahr_portal"
     },
@@ -31,8 +31,8 @@
         "y": 92,
         "z": -1089,
         "dim": "lodahr",
-        "name": "Lo'dahr Portal (Vayniklah's Domain)",
-        "detail": "Exit of the Speahead Forest portal, must be entered there first.",
+        "name": "Lo'Dahr Portal (Vayniklah's Domain)",
+        "detail": "Exit of the Spearhead Forest portal, must be entered there first.",
         "type": "lodahr_portal"
     },
     {
@@ -40,7 +40,7 @@
         "y": 88,
         "z": -4052,
         "dim": "overworld",
-        "name": "Lo'dahr Portal (Faehrcyle)",
+        "name": "Lo'Dahr Portal (Faehrcyle)",
         "detail": "Exit of Lai's Domain portal, must be entered there first.",
         "type": "lodahr_portal"
     },
@@ -49,7 +49,7 @@
         "y": 129,
         "z": -949,
         "dim": "lodahr",
-        "name": "Lo'dahr Portal (Lai's Domain)",
+        "name": "Lo'Dahr Portal (Lai's Domain)",
         "detail": "On a mountain in Lai's Domain.",
         "type": "lodahr_portal"
     },
@@ -58,7 +58,7 @@
         "y": 69,
         "z": -1470,
         "dim": "overworld",
-        "name": "Lo'dahr Portal (Merijool)",
+        "name": "Lo'Dahr Portal (Merijool)",
         "detail": "Exit of Loe's Domain portal, must be entered there first.",
         "type": "lodahr_portal"
     },
@@ -67,7 +67,7 @@
         "y": 84,
         "z": 742,
         "dim": "lodahr",
-        "name": "Lo'dahr Portal (Loe's Domain)",
+        "name": "Lo'Dahr Portal (Loe's Domain)",
         "detail": "At Loeturia",
         "type": "lodahr_portal"
     },
@@ -76,7 +76,7 @@
         "y": 34,
         "z": 2945,
         "dim": "overworld",
-        "name": "Lo'dahr Portal (Nihmaj Swamp)",
+        "name": "Lo'Dahr Portal (Nihmaj Swamp)",
         "detail": "Requires activating the Alchemical facility.",
         "type": "lodahr_portal"
     },
@@ -85,7 +85,7 @@
         "y": 9,
         "z": 1298,
         "dim": "lodahr",
-        "name": "Lo'dahr Portal (Voynahla's Domain)",
+        "name": "Lo'Dahr Portal (Voynahla's Domain)",
         "detail": "Exit of the Nihmaj Swamp portal, must be entered there first.",
         "type": "lodahr_portal"
     },
@@ -94,7 +94,7 @@
         "y": 141,
         "z": 5959,
         "dim": "overworld",
-        "name": "Lo'dahr Portal (Burnt Palace)",
+        "name": "Lo'Dahr Portal (Burnt Palace)",
         "detail": "Next to Maelihs's quarters.",
         "type": "lodahr_portal"
     },
@@ -103,7 +103,7 @@
         "y": 80,
         "z": 212,
         "dim": "lodahr",
-        "name": "Lo'dahr Portal (In a green flowered field)",
+        "name": "Lo'Dahr Portal (In a green flowered field)",
         "detail": "Exit of the Burnt Palace portal, must be entered there first.",
         "type": "lodahr_portal"
     }

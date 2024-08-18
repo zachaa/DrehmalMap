@@ -23,7 +23,7 @@
         "z": 122,
         "dim": "space",
         "name": "Aphelion",
-        "detail": "Space Station, research vessel in orbit around Lo'dahr.",
+        "detail": "Space Station, research vessel in orbit around Lo'Dahr.",
         "type": "avsohm_facility"
     },
     {
@@ -58,7 +58,7 @@
         "y": 22,
         "z": 1640,
         "dim": "overworld",
-        "name": "Repository or whatever the name of the central place under Av'sal is",
+        "name": "Repository or whatever the name of the central place under Av'Sal is",
         "detail": "Main quest center, Mythbreaker hilt and reconstruction.",
         "type": "avsohm_facility"
     },
@@ -149,7 +149,7 @@
         "z": 55,
         "dim": "lodahr",
         "name": "Numencore",
-        "detail": "Facility build around the Numencore, a swirling orb of primal energy at the center of Lo'Dahr",
+        "detail": "Facility built around the Numencore, a swirling orb of primal energy at the center of Lo'Dahr",
         "type": "avsohm_facility"
     },
     {
@@ -185,7 +185,7 @@
         "z": 1613,
         "dim": "overworld",
         "name": "Administration Wing",
-        "detail": "Admin access required, Beneath Av'sal",
+        "detail": "Admin access required, Beneath Av'Sal",
         "type": "avsohm_facility"
     },
     {
@@ -554,7 +554,7 @@
         "z": -1202,
         "dim": "overworld",
         "name": "Structure under Highfall Castle",
-        "detail": "Old structure, possible Avshomic and used for alchemy, deep under Highfall Castle.",
+        "detail": "Old structure, possible Avsohmic and used for alchemy, deep under Highfall Castle.",
         "type": "other_location"
     },
     {
@@ -1355,7 +1355,7 @@
         "z": 4039,
         "dim": "overworld",
         "name": "Abandoned Seaside town",
-        "detail": "Abandoned Avshomic town on the coast with a strange underground room.",
+        "detail": "Abandoned Avsohmic town on the coast with a strange underground room.",
         "type": "abandoned_town"
     },
     {
@@ -1373,7 +1373,7 @@
         "z": 5280,
         "dim": "overworld",
         "name": "Mohta",
-        "detail": "Major town of Lorahn'Khal.",
+        "detail": "Major town of Lorahn'Kahl.",
         "type": "town"
     },
     {
@@ -1463,7 +1463,7 @@
         "z": -98,
         "dim": "overworld",
         "name": "Fortahn",
-        "detail": "Ruins of an Avshomic city on the coast of the Gulf of Drehmal. It's leaders vanished and others torn to shreds by the monster that destroyed the empire.",
+        "detail": "Ruins of an Avsohmic city on the coast of the Gulf of Drehmal. It's leaders vanished and others torn to shreds by the monster that destroyed the empire.",
         "type": "abandoned_town"
     },
     {
@@ -1535,7 +1535,7 @@
         "z": -898,
         "dim": "overworld",
         "name": "Merijool Unification Shrine",
-        "detail": "A shrine celebrating the unification of Merjool between Loe and Lai followers, ending centuries of conflict.",
+        "detail": "A shrine celebrating the unification of Merijool between Loe and Lai followers, ending centuries of conflict.",
         "type": "other_location"
     },
     {
@@ -1571,7 +1571,7 @@
         "z": -1522,
         "dim": "overworld",
         "name": "Butte Mine",
-        "detail": "A mine inside the butte's of Cassai.",
+        "detail": "A mine inside the butte's of Casai.",
         "type": "other_location"
     },
     {
@@ -1751,7 +1751,7 @@
         "z": 422,
         "dim": "overworld",
         "name": "Caer Adacia",
-        "detail": "Ancient underground city and capital of the Second Tharhan Empire until Avshom then Maelihs then Insohm the ruin.",
+        "detail": "Ancient underground city and capital of the Second Tharhan Empire until Avsohm then Maelihs then Insohm the ruin.",
         "type": "abandoned_town"
     },
     {
@@ -1904,7 +1904,7 @@
         "z": 2278,
         "dim": "overworld",
         "name": "Jungle City Ruins",
-        "detail": "A long abandoned city of red sandstone, possibly Cassian.",
+        "detail": "A long abandoned city of red sandstone, possibly Casian.",
         "type": "abandoned_town"
     },
     {
@@ -2219,7 +2219,7 @@
         "z": -4095,
         "dim": "overworld",
         "name": "Xorhuul",
-        "detail": "Underground town of the Xorhai, descendants of the Clan Xorha Barbarians who were exiled by the Cassian Empire.",
+        "detail": "Underground town of the Xorhai, descendants of the Clan Xorha Barbarians who were exiled by the Casian Empire.",
         "type": "abandoned_town"
     },
     {
@@ -2236,7 +2236,7 @@
         "y": 155,
         "z": -4138,
         "dim": "overworld",
-        "name": "Starrise Bastion",
+        "name": "Star-rise Bastion",
         "detail": "Originally a temple to Virtuo, after the Goddess left, the Virmari encountered Rihelma, Aspect of the Sky.",
         "type": "building"
     },
@@ -2282,7 +2282,7 @@
         "z": -573,
         "dim": "overworld",
         "name": "Astorahnni Tower",
-        "detail": "Folowers of the Tohran, the heavenly body, banished from Merijool.",
+        "detail": "Followers of the Torahn, the heavenly body, banished from Merijool.",
         "type": "building"
     },
     {
@@ -2362,7 +2362,7 @@
         "y": 63,
         "z": -386,
         "dim": "lodahr",
-        "name": "Destoryed slate town",
+        "name": "Destroyed slate town",
         "detail": "Remnant's of a town in Noha's domain.",
         "type": "abandoned_town"
     },
@@ -2426,7 +2426,7 @@
         "z": 1179,
         "dim": "lodahr",
         "name": "Ro'Tehrmari Cave",
-        "detail": "A cave of Ro'Tehmari.",
+        "detail": "A cave of Ro'Tehrmari.",
         "type": "small_town"
     },
     {
@@ -2435,7 +2435,7 @@
         "z": 1228,
         "dim": "lodahr",
         "name": "Spider Cave",
-        "detail": "A cave poisonious spiders in Voynahla's Domain.",
+        "detail": "A cave poisonous spiders in Voynahla's Domain.",
         "type": "other_location"
     },
     {
@@ -2453,7 +2453,7 @@
         "z": 639,
         "dim": "lodahr",
         "name": "Rihanar",
-        "detail": "A town of craftsmen and thrid largest habitation before the Schism when all inhabitants dissapeared suddenly.",
+        "detail": "A town of craftsmen and third largest habitation before the Schism when all inhabitants disappeared suddenly.",
         "type": "abandoned_town"
     },
     {
@@ -2462,7 +2462,7 @@
         "z": 435,
         "dim": "lodahr",
         "name": "Floating Temple to the Tempests",
-        "detail": "A temple marking the burial site to the three Tepests, Durias, Estehl, and Amohn Aihura.",
+        "detail": "A temple marking the burial site to the three Tempests, Durias, Estehl, and Amohn Aihura.",
         "type": "building"
     },
     {
@@ -2570,7 +2570,7 @@
         "z": -45,
         "dim": "lodahr",
         "name": "Magic Practitioner's Fort",
-        "detail": "A small fort whos inhabitant studied magic.",
+        "detail": "A small fort who's inhabitant studied magic.",
         "type": "building"
     },
     {
@@ -2606,7 +2606,7 @@
         "z": -1335,
         "dim": "lodahr",
         "name": "Brulante Residence",
-        "detail": "The residence of the Brulante clan, Tehrmari pyromancers who wield a unique and pwerful flame known only to them.",
+        "detail": "The residence of the Brulante clan, Tehrmari pyromancers who wield a unique and powerful flame known only to them.",
         "type": "building"
     },
     {
@@ -2750,7 +2750,7 @@
         "z": 742,
         "dim": "lodahr",
         "name": "Loeturia",
-        "detail": "The only town on Lo'dahr welcoming to Drehmari, before they closed the portal.",
+        "detail": "The only town on Lo'Dahr welcoming to Drehmari, before they closed the portal.",
         "type": "town"
     },
     {
@@ -2768,7 +2768,7 @@
         "z": -129,
         "dim": "lodahr",
         "name": "Shackled Alchemist's Tower",
-        "detail": "An abandond fishing village on the shore of Lake Khanak",
+        "detail": "An abandoned fishing village on the shore of Lake Khanak",
         "type": "abandoned_town"
     },
     {
@@ -2777,7 +2777,7 @@
         "z": -685,
         "dim": "lodahr",
         "name": "Anchor",
-        "detail": "A giant anchor in a dried lakebed.",
+        "detail": "A giant anchor in a dried lake bed.",
         "type": "other_location"
     },
     {
@@ -2795,7 +2795,7 @@
         "z": -1099,
         "dim": "lodahr",
         "name": "House",
-        "detail": "Small house in Khirve's Domain.",
+        "detail": "Small house in Khive's Domain.",
         "type": "building"
     },
     {
@@ -2822,7 +2822,7 @@
         "z": -793,
         "dim": "lodahr",
         "name": "Lifegiven Hospital",
-        "detail": "A hospital in the side of a mountain, still dealing with a virus brough by Avshom long ago.",
+        "detail": "A hospital in the side of a mountain, still dealing with a virus brought by Avshom long ago.",
         "type": "building"
     },
     {
@@ -2844,7 +2844,7 @@
         "type": "building"
     },
     {
-        "x": -1923,
+        "x": 1923,
         "y": 29,
         "z": 1872,
         "dim": "lodahr",
