@@ -102,10 +102,15 @@ function createDevotionMarker(element) {
 
 function createMythicalMarker(element) {
     let mythical_icon = new IconMythic({iconUrl: element.icon});
+
+    const loreText = document.createElement('div');
+    loreText.classList.add('lore_text');
+    loreText.innerHTML = element.lore.replace(/\n/g, '<br>')
+
     return L.marker([element.z+0.5, element.x+0.5], {icon: mythical_icon})
         .bindPopup(`<span class=popup_title>${element.name}</span><hr>
                   <span class=popup_xyz>${element.x} ${element.y} ${element.z}</span><br>
-                  ${element.lore}`);
+                  ${loreText.outerHTML}`);
 }
 
 function layerTowers(towerData) {

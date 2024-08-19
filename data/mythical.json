@@ -5,7 +5,7 @@
         "z": 1865,
         "dim": "lodahr",
         "name": "Syzygy",
-        "lore": "",
+        "lore": "Quick Charge I\nYriel the Moonsworn, greatest of all\nTehrmari, was the Aspects' solution\nto mortal interference. Empowered by\nthe blessings of the Prismatic Council,\nYriel carried out the Elder Will and\ndelivered it swiftly. Tragically, they were\nbutchered by a falsely-pure fanatic\nof Virtuo at the climax of the Battle\nfor Drehmal. For centuries, their\nhallowed weapon has sought a worthy\nset of hands. May yours serve it well.\n\nDraconitic Rebuke\nSwap to your offhand to enter sniper\nmode. While in sniper mode, steady your\naim to charge a super powerful shot.\n\nWhen in main hand:\n+0.02 Movement Speed\n100 Ability Damage\n20 Ranged Damage\nUnbreakable\n\nMythical [ ] [ ] [ ]",
         "icon": "drehmal_images/icons/custom/syzygy.png"
     },
     {
@@ -14,7 +14,7 @@
         "z": 3833,
         "dim": "overworld",
         "name": "Calamity",
-        "lore": "",
+        "lore": "No mortal has ever come close to slaying\na Skullbeast, yet so many throughout the\nyears have developed a fascination with\ntheir power. Thought Ossein carved numerous\narmaments from the bones of Skullbeasts, he\ncarried a special affectin for the claw\nof his beloved Femura.\n\nTrue Catastrophe\nHold crouch then jump to channel the power\nof Skullbeasts, releasing untold ruin upon foes.\n\nWhen in main hand:\n-4 Max Health\n+0.07 Movement Speed\n24 Ability Damage\n9 Attack Damage\n2.2 Attack Speed\nUnbreakable\n\nMythical [ ] [ ] [ ]",
         "icon": "drehmal_images/icons/custom/calamity.png"
     },
     {
@@ -23,7 +23,7 @@
         "z": -4119,
         "dim": "overworld",
         "name": "Oblivion",
-        "lore": "",
+        "lore": "Sweeping Edge IX\nThe Pawn of Nothing has long acted as\na grim guardian, always observing but\nnever acting. On one occasion, this\nrule was broken. That day, he wielded\nthis weapon as the emissary of Avsohm's\ndestruction and ensured that no leader\nsurvived.\n\nForce of Nothing\nPress your drop item key to pick up\nenemies and drain their life force.\nCrouch to launch held foes.\n\nWhen in main hand:\n+0.02 Movement Speed\n14 Attack Damage\n1.3 Attack Speed\nUnbreakable\n\nMythical [ ] [ ] [ ]",
         "icon": "drehmal_images/icons/custom/oblivion.png"
     },
     {
@@ -32,7 +32,7 @@
         "z": 5325,
         "dim": "overworld",
         "name": "Frenzy",
-        "lore": "",
+        "lore": "In the aftermath of mutual slaughter of\nall three clans at Mt. Narukin, the\n legendary Osaigah bladesmith Irtheis\ncrafted this sinister army-killing blade\nwhile surrounded by burning prisoners.\nTens of thousands of deaths later, it\nwas melted down and split into five\nfragments which were hidden throughout\nthe land.\n\nFatal Rampage\nKilling an enemy grants you a damage\nbuff, stacking up to three times.\n\nWhen in main hand:\n-6 Max Health\n+0.03 Movement Speed\n10 Attack Damage\n2 Attack Speed\nUnbreakable\n\nMythical [ ] [ ] [ ]",
         "icon": "drehmal_images/icons/custom/frenzy.png"
     },
     {
@@ -41,7 +41,7 @@
         "z": 5026,
         "dim": "overworld",
         "name": "Ascendance",
-        "lore": "",
+        "lore": "Deep within the flooded caverns of\nLorahn'Kahl lies the Moonlight Sanctum,\nthe crux of the Tri-Moon Theocracy's\ngreater machinations. As said by the\neidolic whispers, the sanctum was\ndesigned to create an endless\nnecromantic loop. This blade was part\nof that cycle, having killed millions\nof undead souls. To what ambitious end\nthe sanctum served was known only by\nits creators.\n\nHoly Moonlight\nPress your drop item key to fire an\narmor piercing wave of weakening\nmoonlight.\n\nWhen in main hand:\n+6 Max Health\n50% Knockback Resistance\n-0.01 Movement Speed\n18 Ability Damage\n15 Attack Damage\n1 Attack Speed\nUnbreakable\n\nMythical [ ] [ ] [ ]",
         "icon": "drehmal_images/icons/custom/ascendance.png"
     },
     {
@@ -50,7 +50,7 @@
         "z": 1559,
         "dim": "overworld",
         "name": "Zenith",
-        "lore": "",
+        "lore": "Avsohm fabricated this blade of\nincredible strength using the power\nof Primal Energy, a mysterious\nsubstance from beyond this world.\nIt is said that all matter and energy\nis derived from it. Distilling such\na material into its rawest form for\nuse in combat is exactly the reason\nwhy Avsohm was dealt such an\nharrowing fate.\n\nOntology\nCrouch and right click to switch modes.\nBuild up charges by dealing damage\nwith the blade. Use a charge by right\nclicking while the blade is retracted,\ncreating a blast of damaging energy.\n\nWhen in main hand:\n+4 Max Health\n15-30 Ranged Damage\n10 Attack Damage\n1.8 Attack Speed\nUnbreakable\n\nThis item cannot be enchanted\n\nMythical [ ] [ ] [ ]",
         "icon": "drehmal_images/icons/custom/zenith.png"
     },
     {
@@ -59,7 +59,16 @@
         "z": 5959,
         "dim": "overworld",
         "name": "Malevolentia",
-        "lore": "",
+        "lore": "Fire Aspect IV\nMael cast aside this signature trident-sword\nafter Virtuo's fight. Fueled only by grief\nand a powerful ennui, he abandoned his\npalace, perhaps residing with the Aspects\non Lo'Dahr. While the Burnt Generals feel\nhis return is an inevitability, the do not\nmind their increased status in his absence.\n\nInfernal Ground\nCrouch and use your drop item key to\nproject a trident that provides a\nresistance granting aura wherever it\nlands. Crouch longer for increased\neffectiveness.\n\nWhen in main hand:\n+10 Max Health\n100% Knockback Resistance\n-0.02 Movement Speed\n17 Attack Damage\n0.8 Attack Speed\nUnbreakable\n\nMythical [ ] [ ] [ ]",
         "icon": "drehmal_images/icons/custom/malevolentia.png"
+    },
+    {
+        "x": -119,
+        "y": 9,
+        "z": 1640,
+        "dim": "overworld",
+        "name": "The Mythbreaker",
+        "lore": "Sharpness X\nIn the endless cosmos beyond the veil,\nthere exists the primordial battle\nbetween fundamental forces. Trillions\nof realms, held together by the\nhopeful defiance of entropy, ultimately\nnothing more than a balancing act in\nthe face of inevitable, muted chaos.\nThose that fight to control it always\nforfeit their right to existence.\n\nCore Collapse\nHold down right click for an extended\nperiod to collapse the innumerable\npossibilities before you into an ultimate ray of death.\n\nWhen in main hand:\n-4 Max Health\n250 Ability Damage\n27 Attack Damage\n0.7 Attack Speed\nUnbreakable\n\nMythical [ ] [ ] [ ]",
+        "icon": "drehmal_images/icons/custom/mythbreaker.png"
     }
 ]
