@@ -1782,12 +1782,30 @@
         "type": "building"
     },
     {
+        "x": -2158,
+        "y": 63,
+        "z": 1116,
+        "dim": "overworld",
+        "name": "Maelmari tower fort",
+        "detail": "A small fort built around the Ebony Veldt tower.",
+        "type": "other_location"
+    },
+    {
         "x": -2338,
         "y": 98,
         "z": 1484,
         "dim": "overworld",
         "name": "Seylon Klemelli House",
         "detail": "Seylon Klemelli traveled to the Ebony Veldt every year to harvest Paroto roots.",
+        "type": "building"
+    },
+    {
+        "x": -2597,
+        "y": 145,
+        "z": -69,
+        "dim": "overworld",
+        "name": "Avsohm Gatehouse",
+        "detail": "An abandoned gatehouse between Casai and Mt Ebonfire.",
         "type": "building"
     },
     {
