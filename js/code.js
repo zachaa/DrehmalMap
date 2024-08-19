@@ -303,7 +303,7 @@ function createStorageMarker(element) {
     return L.marker([element.z+0.5, element.x+0.5], {icon: icon})
         .bindPopup(`<span class=popup_title>${element.displayName}</span><hr>
                   <span class=popup_xyz>${element.x} ${element.y} ${element.z}</span><br>
-                  ${items_html}`);
+                  ${items_html}`, {'maxWidth':'600','maxHeight':'500'});
 }
 
 function createTraderMarker(element) {
