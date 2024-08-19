@@ -3,6 +3,10 @@ Leaflet map for Drehmal 2.2 (Minecraft 1.17)
 
 Intended to show all dimensions and display locations of interesting items and places.
 
+---
+### Link: **[Drehmal Maps](https://zachaa.github.io/DrehmalMap/)**
+---
+
 Includes:
 - Towers
 - Lo'Dahr Portals
@@ -13,7 +17,7 @@ Includes:
     - Bosses (in progress)
     - Other structures
 - Region Shading (in progress)
-- Mythical Weapons (except Mythbreaker)
+- Mythical Weapons (Mythbreaker only in Av'Sal but full version because lazy)
 - All storage items if they have contents
     - Chests, shulker boxes, item frames, armor stands, brewing stands, ect.
     - Click to show contents
@@ -24,11 +28,19 @@ Includes:
 
 All lore items include their full text except books.
 
-Todo:
+Nice to Have:
 - Legendary Items as their own layer
 - Stones as their own layer
 - Cluster/group items at the same (x, z) coordinates.
 - Lore books as separate web page
+- Update to 1.20 (new traders and trades, some blocks updated)
+
+Issues/Todo:
+- Uses base Minecraft names for items (ex: Emerald->Scale, Netherite->Celestial)
+- Uses base Minecraft entity pictures
+- Missing mini-bosses like Abbot Balthysar, Burnt Generals, whatever is in Insohm Coven of Potentia island
+- Spelling might be wrong in some places
+- Location descriptions might be wrong, they are just my best guess for nearby lore items and assumptions.
 
 ---
 [Leaflet](https://leafletjs.com/)
