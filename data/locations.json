@@ -167,7 +167,7 @@
         "z": -682,
         "dim": "overworld",
         "name": "Azimuth Labs",
-        "detail": "Underground alchemical laboratory of Red Dawn. Contains the God Machine, a device to created to use primal energy to ascend Emperor Anyr.",
+        "detail": "Underground alchemical laboratory of Red Dawn. Contains the God Machine, a device created to use primal energy to ascend Emperor Anyr.",
         "type": "avsohm_facility"
     },
     {
@@ -661,7 +661,7 @@
         "y": 97,
         "z": -2646,
         "dim": "overworld",
-        "name": "Faehrcyle  Mines",
+        "name": "Faehrcyle Mines",
         "detail": "Mine shafts and branch mining. Beware of spiders.",
         "type": "other_location"
     },
@@ -869,7 +869,7 @@
         "z": -1368,
         "dim": "overworld",
         "name": "Sal'Veruhkt",
-        "detail": "Formerly Verukhaan, the capital of the Veruhkt Plateau. It was conquered bu Avsohm.",
+        "detail": "Formerly Verukhaan, the capital of the Veruhkt Plateau. It was conquered by Avsohm.",
         "type": "abandoned_town"
     },
     {
@@ -1174,8 +1174,8 @@
         "y": 66,
         "z": 6541,
         "dim": "overworld",
-        "name": "Serpant Mural",
-        "detail": "An ancient mural of a great serpant.",
+        "name": "Serpent Mural",
+        "detail": "An ancient mural of a great serpent.",
         "type": "building"
     },
     {
@@ -1229,7 +1229,7 @@
         "z": 1727,
         "dim": "overworld",
         "name": "Overgrown Structure",
-        "detail": "An overgrown, pyramid like structure to the North of the Heartwood.",
+        "detail": "An overgrown, pyramid-like structure to the North of the Heartwood.",
         "type": "other_location"
     },
     {
@@ -1238,7 +1238,7 @@
         "z": 1506,
         "dim": "overworld",
         "name": "Insohmic Research Center",
-        "detail": "A center for studying Avsohmic artefacts, tyring to unlock the Empire's technological secrets.",
+        "detail": "A center for studying Avsohmic artefacts, trying to unlock the Empire's technological secrets.",
         "type": "building"
     },
     {
@@ -1463,7 +1463,7 @@
         "z": -98,
         "dim": "overworld",
         "name": "Fortahn",
-        "detail": "Ruins of an Avsohmic city on the coast of the Gulf of Drehmal. It's leaders vanished and others torn to shreds by the monster that destroyed the empire.",
+        "detail": "Ruins of an Avsohmic city on the coast of the Gulf of Drehmal. Its leaders vanished and others torn to shreds by the monster that destroyed the empire.",
         "type": "abandoned_town"
     },
     {
@@ -1571,7 +1571,7 @@
         "z": -1522,
         "dim": "overworld",
         "name": "Butte Mine",
-        "detail": "A mine inside the butte's of Casai.",
+        "detail": "A mine inside the buttes of Casai.",
         "type": "other_location"
     },
     {
@@ -1607,7 +1607,7 @@
         "z": -872,
         "dim": "overworld",
         "name": "Campsite",
-        "detail": "A miners campsite in east Casai.",
+        "detail": "A miner's campsite in east Casai.",
         "type": "campsite"
     },
     {
@@ -1688,7 +1688,7 @@
         "z": 2512,
         "dim": "overworld",
         "name": "Tharxax House",
-        "detail": "A large, staffed house in east Tharxax. Possibly a nobles house.",
+        "detail": "A large, staffed house in east Tharxax. Possibly a noble's home.",
         "type": "building"
     },
     {
@@ -1697,7 +1697,7 @@
         "z": 2235,
         "dim": "overworld",
         "name": "Maelmari Camp",
-        "detail": "A Maelmari base in central Tharxax to asset control over the area.",
+        "detail": "A Maelmari base in central Tharxax to assert control over the area.",
         "type": "other_location"
     },
     {
@@ -1886,7 +1886,7 @@
         "z": -22,
         "dim": "overworld",
         "name": "Ebonrun Tunnel",
-        "detail": "A tunnel through the clifs for workers between Ebonrun and Mt. Ebonfire.",
+        "detail": "A tunnel through the cliffs for workers between Ebonrun and Mt. Ebonfire.",
         "type": "other_location"
     },
     {
@@ -1904,7 +1904,7 @@
         "z": -294,
         "dim": "overworld",
         "name": "Ebonrun Dam",
-        "detail": "A missive dam controlled by Maelmari. It also keeps in the villagers.",
+        "detail": "A massive dam controlled by Maelmari. It also keeps in the villagers.",
         "type": "other_location"
     },
     {
@@ -1940,7 +1940,7 @@
         "z": 2982,
         "dim": "overworld",
         "name": "Solitary Fisherman's House",
-        "detail": "A house of kelp and straw  with a single fisherman.",
+        "detail": "A house of kelp and straw with a single fisherman.",
         "type": "building"
     },
     {
@@ -2381,7 +2381,7 @@
         "z": -386,
         "dim": "lodahr",
         "name": "Destroyed slate town",
-        "detail": "Remnant's of a town in Noha's domain.",
+        "detail": "Remnants of a town in Noha's domain.",
         "type": "abandoned_town"
     },
     {
@@ -2389,7 +2389,7 @@
         "y": 42,
         "z": -203,
         "dim": "lodahr",
-        "name": "Moondonalds",
+        "name": "MoonDonalds",
         "detail": "Way out in the wastes.",
         "type": "building"
     },
@@ -2461,7 +2461,7 @@
         "y": 88,
         "z": 1140,
         "dim": "lodahr",
-        "name": "Arkeje? or Rohei?",
+        "name": "Arkeje?",
         "detail": "A town overlooking Voynahla's Domain.",
         "type": "abandoned_town"
     },
@@ -2543,7 +2543,7 @@
         "z": -308,
         "dim": "lodahr",
         "name": "Miner's house",
-        "detail": "A house belonging to a amethyst miner.",
+        "detail": "A house belonging to an amethyst miner.",
         "type": "building"
     },
     {
@@ -2588,7 +2588,7 @@
         "z": -45,
         "dim": "lodahr",
         "name": "Magic Practitioner's Fort",
-        "detail": "A small fort who's inhabitant studied magic.",
+        "detail": "A small fort whoes inhabitant studied magic.",
         "type": "building"
     },
     {
