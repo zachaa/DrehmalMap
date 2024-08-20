@@ -7,7 +7,12 @@
         "name": "Dahr",
         "icon": "drehmal_images/icons/devotion_dahr.png",
         "detail": "In Port Solitude.",
-        "items": ["ink_sack", "tropical_fish", "sea_pickle"]
+        "items": 
+        {
+            "low": ["tropical_fish", "ink_sack", "sea_pickle"],
+            "medium": ["pufferfish", "prismarine_shard"],
+            "high": ["nautilus_shell", "music_disc_pigstep"]
+        }
     },
     {
         "x": 3260,
@@ -17,7 +22,12 @@
         "name": "Virtuo",
         "icon": "drehmal_images/icons/devotion_virtuo.png",
         "detail": "At the Kiln of Virtuo.",
-        "items": ["melon_slice", "glistering_melon_slice", "dried_kelp", "soul_lantern", "diamond"]
+        "items":
+        {
+            "low": ["dried_kelp", "melon_slice", "soul_lantern"],
+            "medium": ["soul_campfire", "glistering_melon_slice"],
+            "high": ["diamond", "music_disk_far"]
+        }
     },
     {
         "x": 4274,
@@ -27,7 +37,12 @@
         "name": "Taihgel",
         "icon": "drehmal_images/icons/devotion_taihgel.png",
         "detail": "In the abandoned town of Wokonori in Grand Pike Canyon.",
-        "items": ["neather_quartz", "flint", "glowstone", "obsidian", "magma_block"]
+        "items":
+        {
+            "low": ["magma_block", "flint", "quartz"],
+            "medium": ["glowstone", "obsidian"],
+            "high": ["turtle_egg", "music_disc_blocks"]
+        }
     },
     {
         "x": 1032,
@@ -37,7 +52,12 @@
         "name": "Loe",
         "icon": "drehmal_images/icons/devotion_loe.png",
         "detail": "Next to Schlonko, occupied by a self proclaimed Archduke.",
-        "items": ["glass", "leather", "glow_lichen"]
+        "items":
+        {
+            "low": ["leather", "glow_lichen", "glass"],
+            "medium": ["rabbit_foot", "blue_ice"],
+            "high": ["powder_snow_bucket", "music_disc_mall"]
+        }
     },
     {
         "x": 2324,
@@ -47,7 +67,12 @@
         "name": "Vayniklah",
         "icon": "drehmal_images/icons/devotion_vayniklah.png",
         "detail": "At Marahza.",
-        "items": ["cactus", "egg", "sunflower"]
+        "items":
+        {
+            "low": ["sunflower", "egg", "cactus"],
+            "medium": ["honeycomb", "fermented_spider_eye"],
+            "high": ["golden_apple", "music_disc_strad"]
+        }
     },
     {
         "x": 1114,
@@ -57,7 +82,14 @@
         "name": "Khive",
         "icon": "drehmal_images/icons/devotion_khive.png",
         "detail": "On top of a ziggurat in Capital Valley.",
-        "items": ["book", "chiseled_stone_bricks", "chiseled_polished_blackstone", "ender_perl"]
+        "items":
+        {
+            "low": ["ender_pearl", "chiseled_deepslate", "chiseled_nether_bricks",
+                "chiseled_polished_blackstone", "chiseled_quartz_block", "chiseled_red_sandstone",
+                "chiseled_sandstone", "chiseled_stone_bricks", "book"],
+            "medium": ["lapis_block", "ender_eye"],
+            "high": ["end_crystal", "music_disc_mellohi"]
+        }
     },
     {
         "x": -131,
@@ -67,7 +99,12 @@
         "name": "Drehmal",
         "icon": "drehmal_images/icons/devotion_drehmal.png",
         "detail": "At the Drehua Temple.",
-        "items": ["oak_sapling", "bucket_of_milk", "grass_block", "sweet_berries", "bed"]
+        "items":
+        {
+            "low": ["oak_sapling", "red_bed", "sweet_berries"],
+            "medium": ["milk_bucket", "spore_blossom"],
+            "high": ["grass_block", "music_disk_cat"]
+        }
     },
     {
         "x": -1430,
@@ -77,7 +114,12 @@
         "name": "Lai",
         "icon": "drehmal_images/icons/devotion_lai.png",
         "detail": "At the Sacred Flame temple.",
-        "items": ["gunpowder", "campfire", "lantern", "magma_cream"]
+        "items":
+        {
+            "low": ["lantern", "campfire", "gunpowder"],
+            "medium": ["jack_o_lantern", "magma_cream"],
+            "high": ["lava_bucket", "music_disc_wait"]
+        }
     },
     {
         "x": -3137,
@@ -87,7 +129,12 @@
         "name": "Voynahla",
         "icon": "drehmal_images/icons/devotion_voynahla.png",
         "detail": "At the Perishing Well",
-        "items": ["rotten_flesh", "bone", "dead_bush"]
+        "items":
+        {
+            "low": ["dead_bush", "rotten_flesh", "bone"],
+            "medium": ["poisonous_potato", "wither_rose"],
+            "high": ["wither_skeleton_skull", "music_disc_ward"]
+        }
     },
     {
         "x": -2806,
@@ -97,7 +144,12 @@
         "name": "Maelihs",
         "icon": "drehmal_images/icons/devotion_maelihs.png",
         "detail": "At Rhaveloth inside the Sepulchral Altar.",
-        "items": ["spider_eye", "bell", "redstone_block", "golden_carrot", "tnt"]
+        "items": 
+        {
+            "low": ["redstone_block", "golden_carrot", "chain"],
+            "medium": ["bell", "tnt"],
+            "high": ["respawn_anchor", "music_disk_chirp"]
+        }
     },
     {
         "x": -954,
@@ -107,7 +159,12 @@
         "name": "Rihelma",
         "icon": "drehmal_images/icons/devotion_rihelma.png",
         "detail": "At the Star-rise Bastion.",
-        "items": ["feather", "copper_ingot", "clock", "blaze_rod", "spectral_arrow"]
+        "items":
+        {
+            "low": ["spectral_arrow", "copper_ingot", "feather"],
+            "medium": ["spyglass", "clock"],
+            "high": ["heart_of_the_sea", "music_disc_stal"]
+        }
     },
     {
         "x": -115,
@@ -117,7 +174,12 @@
         "name": "Dahr",
         "icon": "drehmal_images/icons/devotion_dahr.png",
         "detail": "",
-        "items": ["ink_sack", "tropical_fish", "sea_pickle"]
+        "items":
+        {
+            "low": ["tropical_fish", "ink_sack", "sea_pickle"],
+            "medium": ["pufferfish", "prismarine_shard"],
+            "high": ["nautilus_shell", "music_disc_pigstep"]
+        }
     },
     {
         "x": -172,
@@ -127,7 +189,12 @@
         "name": "Loe",
         "icon": "drehmal_images/icons/devotion_loe.png",
         "detail": "",
-        "items": ["glass", "leather", "glow_lichen"]
+        "items":
+        {
+            "low": ["leather", "glow_lichen", "glass"],
+            "medium": ["rabbit_foot", "blue_ice"],
+            "high": ["powder_snow_bucket", "music_disc_mall"]
+        }
     },
     {
         "x": -180,
@@ -137,7 +204,14 @@
         "name": "Khive",
         "icon": "drehmal_images/icons/devotion_khive.png",
         "detail": "",
-        "items": ["book", "chiseled_stone_bricks", "chiseled_polished_blackstone", "ender_perl"]
+        "items":
+        {
+            "low": ["ender_pearl", "chiseled_deepslate", "chiseled_nether_bricks",
+                "chiseled_polished_blackstone", "chiseled_quartz_block", "chiseled_red_sandstone",
+                "chiseled_sandstone", "chiseled_stone_bricks", "book"],
+            "medium": ["lapis_block", "ender_eye"],
+            "high": ["end_crystal", "music_disc_mellohi"]
+        }
     },
     {
         "x": -183,
@@ -147,7 +221,12 @@
         "name": "Vayniklah",
         "icon": "drehmal_images/icons/devotion_vayniklah.png",
         "detail": "",
-        "items": ["cactus", "egg", "sunflower"]
+        "items":
+        {
+            "low": ["sunflower", "egg", "cactus"],
+            "medium": ["honeycomb", "fermented_spider_eye"],
+            "high": ["golden_apple", "music_disc_strad"]
+        }
     },
     {
         "x": -147,
@@ -157,7 +236,12 @@
         "name": "Maelihs",
         "icon": "drehmal_images/icons/devotion_maelihs.png",
         "detail": "",
-        "items": ["spider_eye", "bell", "redstone_block", "golden_carrot", "tnt"]
+        "items":
+        {
+            "low": ["redstone_block", "golden_carrot", "chain"],
+            "medium": ["bell", "tnt"],
+            "high": ["respawn_anchor", "music_disk_chirp"]
+        }
     },
     {
         "x": -50,
@@ -167,7 +251,12 @@
         "name": "Drehmal",
         "icon": "drehmal_images/icons/devotion_drehmal.png",
         "detail": "",
-        "items": ["oak_sapling", "bucket_of_milk", "grass_block", "sweet_berries", "bed"]
+        "items":
+        {
+            "low": ["oak_sapling", "red_bed", "sweet_berries"],
+            "medium": ["milk_bucket", "spore_blossom"],
+            "high": ["grass_block", "music_disk_cat"]
+        }
     },
     {
         "x": 9,
@@ -177,7 +266,12 @@
         "name": "Virtuo",
         "icon": "drehmal_images/icons/devotion_virtuo.png",
         "detail": "",
-        "items": ["melon_slice", "glistering_melon_slice", "dried_kelp", "soul_lantern", "diamond"]
+        "items": 
+        {
+            "low": ["dried_kelp", "melon_slice", "soul_lantern"],
+            "medium": ["soul_campfire", "glistering_melon_slice"],
+            "high": ["diamond", "music_disk_far"]
+        }
     },
     {
         "x": -14,
@@ -187,7 +281,12 @@
         "name": "Taihgel",
         "icon": "drehmal_images/icons/devotion_taihgel.png",
         "detail": "",
-        "items": ["neather_quartz", "flint", "glowstone", "obsidian", "magma_block"]
+        "items":
+        {
+            "low": ["magma_block", "flint", "quartz"],
+            "medium": ["glowstone", "obsidian"],
+            "high": ["turtle_egg", "music_disc_blocks"]
+        }
     },
     {
         "x": -13,
@@ -197,7 +296,12 @@
         "name": "Lai",
         "icon": "drehmal_images/icons/devotion_lai.png",
         "detail": ".",
-        "items": ["gunpowder", "campfire", "lantern", "magma_cream"]
+        "items":
+        {
+            "low": ["lantern", "campfire", "gunpowder"],
+            "medium": ["jack_o_lantern", "magma_cream"],
+            "high": ["lava_bucket", "music_disc_wait"]
+        }
     },
     {
         "x": 5,
@@ -207,7 +311,12 @@
         "name": "Voynahla",
         "icon": "drehmal_images/icons/devotion_voynahla.png",
         "detail": "",
-        "items": ["rotten_flesh", "bone", "dead_bush"]
+        "items":
+        {
+            "low": ["dead_bush", "rotten_flesh", "bone"],
+            "medium": ["poisonous_potato", "wither_rose"],
+            "high": ["wither_skeleton_skull", "music_disc_ward"]
+        }
     },
     {
         "x": 17,
@@ -217,6 +326,11 @@
         "name": "Rihelma",
         "icon": "drehmal_images/icons/devotion_rihelma.png",
         "detail": "",
-        "items": ["feather", "copper_ingot", "clock", "blaze_rod", "spectral_arrow"]
+        "items":
+        {
+            "low": ["spectral_arrow", "copper_ingot", "feather"],
+            "medium": ["spyglass", "clock"],
+            "high": ["heart_of_the_sea", "music_disc_stal"]
+        }
     }
 ]
