@@ -78,6 +78,16 @@ html {
   margin-left: 2em;
 }
 
+.devotionList {
+  margin-top: 0.1em;
+  padding-left: 1em;
+}
+
+.devotionItemImage {
+  image-rendering: pixelated;
+  vertical-align: middle;
+}
+
 .storageList {
   margin-top: 0.1em;
   padding-inline-start: 0.2em; /*Indent space*/

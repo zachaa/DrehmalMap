@@ -91,13 +91,36 @@ function createLocationCircleMarker(renderer, locationData) {
     return circleMarker;
 };
 
-function createDevotionMarker(element) {
+function devotionItems(offerings) {
+    const devotionItems = document.createElement('ol');
+    devotionItems.classList.add("devotionList");
+
+    for (const [deity, item_list] of Object.entries(offerings)){
+        const li = document.createElement('li');
+        item_list.forEach(item => {
+            const itemImage = document.createElement('img');
+            itemImage.src = `drehmal_images/icons/${item}.png`;
+            itemImage.alt = item;
+            itemImage.title = item;
+            itemImage.classList.add("devotionItemImage");
+            itemImage.style.width = '32px';
+            itemImage.style.height = '32px';
+            li.appendChild(itemImage);
+        });
+        devotionItems.appendChild(li);
+    }
+    return devotionItems;
+}
+
+function createDevotionMarker(element, offerings) {
     let detail_text = element.detail ? element.detail : "";
     let devotion_icon = new IconDevotion({iconUrl: element.icon});
+    const devotionList = devotionItems(offerings).outerHTML;
     return L.marker([element.z+0.5, element.x+0.5], {icon: devotion_icon})
         .bindPopup(`<span class=popup_title>Devotion: ${element.name}</span><hr>
                   <span class=popup_xyz>${element.x} ${element.y} ${element.z}</span><br>
-                  ${detail_text}`);
+                  ${detail_text}<br>
+                  ${devotionList}`, {'maxWidth':'600','maxHeight':'500'});
 }
 
 function createMythicalMarker(element) {
@@ -140,10 +163,10 @@ function layerLocations(locationData, renderer) {
     return locationLayer;
 }
 
-function layerDevotion(devotionData) {
+function layerDevotion(devotionData, devotionOfferings) {
     let devotionLayer = L.layerGroup();
     devotionData.forEach(element => {
-        let marker = createDevotionMarker(element);
+        let marker = createDevotionMarker(element, devotionOfferings[element.name]);
         devotionLayer.addLayer(marker);
     });
     return devotionLayer;
@@ -194,9 +217,10 @@ async function createOverlays(dimension, renderer) {
     }
 
     let devotion = await readAndDimensionFilter(dimension, "data/devotion.json");
+    let devotionOfferings = await d3.json("data/devotion_offerings.json");
     console.log(`Devotion: ${devotion.length}`);
     if (devotion.length > 0) {
-        overlayLayers["Devotion"] = layerDevotion(devotion);
+        overlayLayers["Devotion"] = layerDevotion(devotion, devotionOfferings);
     }
 
     let mythical = await readAndDimensionFilter(dimension, "data/mythical.json");
