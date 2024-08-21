@@ -50,7 +50,7 @@ jobs:
         run: |
           go install github.com/tdewolff/minify/v2/cmd/minify@latest
           export PATH=$PATH:$(go env GOPATH)/bin
-          minify -o data/ --type=json --ext {geojson:application/json} --json-keep-numbers data/
+          minify -r -o data/ --ext {geojson:application/json} --json-keep-numbers data/
 
       - name: Remove "extract" folder
         run: |
