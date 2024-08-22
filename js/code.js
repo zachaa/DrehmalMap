@@ -136,6 +136,19 @@ function createMythicalMarker(element) {
                   ${loreText.outerHTML}`);
 }
 
+function createLegendaryMarker(element) {
+    let legendary_icon = new IconLegendary({iconUrl: element.icon});
+
+    const loreText = document.createElement('div');
+    loreText.classList.add('lore_text');
+    loreText.innerHTML = element.lore.replace(/\n/g, '<br>')
+
+    return L.marker([element.z+0.5, element.x+0.5], {icon: legendary_icon})
+        .bindPopup(`<span class=popup_title>${element.name}</span><hr>
+                  <span class=popup_xyz>${element.x} ${element.y} ${element.z}</span><br>
+                  ${loreText.outerHTML}`);
+}
+
 function layerTowers(towerData) {
     let towerLayer = L.layerGroup();
     towerData.forEach(element => {
@@ -179,6 +192,15 @@ function layerMythical(mythicalData) {
         mythicalLayer.addLayer(marker);
     });
     return mythicalLayer;
+}
+
+function layerLegendary(legendaryData) {
+    let legendaryLayer = L.layerGroup();
+    legendaryData.forEach(element => {
+        let marker = createLegendaryMarker(element);
+        legendaryLayer.addLayer(marker);
+    });
+    return legendaryLayer;
 }
 
 /**
@@ -229,10 +251,15 @@ async function createOverlays(dimension, renderer) {
         overlayLayers["Mythical"] = layerMythical(mythical);
     }
 
-    // legendaries
-    // items
+    let legendary = await readAndDimensionFilter(dimension, "data/legendary.json");
+    console.log(`Legendary: ${legendary.length}`);
+    if (legendary.length > 0) {
+        overlayLayers["Legendary"] = layerLegendary(legendary);
+    }
+
     // lore (books, paper)
     // entities?
+    // signs?
     return overlayLayers;
 };
 

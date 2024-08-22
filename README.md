@@ -11,6 +11,7 @@ Includes:
 - Towers
 - Lo'Dahr Portals
 - Devotion Sites
+    - Click to see offerings by value
 - Locations
     - Towns and Villages
     - Interesting buildings and sites
@@ -18,6 +19,7 @@ Includes:
     - Other structures
 - Region Shading (in progress)
 - Mythical Weapons (Mythbreaker only in Av'Sal but full version because lazy)
+- Legendary Items (Separate from when they are in chests)
 - All storage items if they have contents
     - Chests, shulker boxes, item frames, armor stands, brewing stands, ect.
     - Click to show contents
@@ -29,7 +31,6 @@ Includes:
 All lore items include their full text except books.
 
 Nice to Have:
-- Legendary Items as their own layer
 - Stones as their own layer
 - Cluster/group items at the same (x, z) coordinates.
 - Lore books as separate web page
