@@ -76,8 +76,8 @@
         "y": 14,
         "z": 2259,
         "dim": "overworld",
-        "name": "WarpHorse Receiver MkII and WarpHorse Armor MkIII",
-        "lore": "Blue Exodus invested heavily\ninto biomechanical enhancement\nprojects, with varying degrees\nof success.\n\nTerminus Recall\nLinks horse to Exodus database,\nallowing it to be summoned with\na WarpHorse Receiver.\n\n+0.1 Speed\n+0.1 Jump Strength\n+10 Max Health\n\nLegendary\n_____\nAn ancient piece of military\ntech that somehow remains\nfunctional.\n\nTerminus Fetch\nHold crouch and right-click to\naccess WarpHorse database.\nRight-click to summon\nfavorited horse.\n\nLegendary",
+        "name": "WarpHorse Receiver MkII &\nWarpHorse Armor MkIII",
+        "lore": "Blue Exodus invested heavily\ninto biomechanical enhancement\nprojects, with varying degrees\nof success.\n\nTerminus Recall\nLinks horse to Exodus database,\nallowing it to be summoned with\na WarpHorse Receiver.\n\n+0.1 Speed\n+0.1 Jump Strength\n+10 Max Health\n\nLegendary\n————————————\nAn ancient piece of military\ntech that somehow remains\nfunctional.\n\nTerminus Fetch\nHold crouch and right-click to\naccess WarpHorse database.\nRight-click to summon\nfavorited horse.\n\nLegendary",
         "icon": "drehmal_images/icons/warphorse_receiver.png"
     },
     {

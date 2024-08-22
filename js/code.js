@@ -144,7 +144,7 @@ function createLegendaryMarker(element) {
     loreText.innerHTML = element.lore.replace(/\n/g, '<br>')
 
     return L.marker([element.z+0.5, element.x+0.5], {icon: legendary_icon})
-        .bindPopup(`<span class=popup_title>${element.name}</span><hr>
+        .bindPopup(`<span class=popup_title>${element.name.replace(/\n/g, '<br>')}</span><hr>
                   <span class=popup_xyz>${element.x} ${element.y} ${element.z}</span><br>
                   ${loreText.outerHTML}`);
 }
