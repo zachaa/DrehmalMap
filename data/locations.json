@@ -32,7 +32,7 @@
         "z": 189,
         "dim": "space",
         "name": "Terminus",
-        "detail": "Teleportation Space Station",
+        "detail": "Warp center and primal energy transfer Space Station, in orbit around Lo'Dahr.",
         "type": "avsohm_facility"
     },
     {
@@ -41,7 +41,7 @@
         "z": -105,
         "dim": "overworld",
         "name": "Terminus",
-        "detail": "Teleportation Center",
+        "detail": "Warp center and primal energy transfer Space Station, in orbit around Lo'Dahr.",
         "type": "avsohm_facility"
     },
     {
@@ -58,8 +58,8 @@
         "y": 22,
         "z": 1640,
         "dim": "overworld",
-        "name": "Repository or whatever the name of the central place under Av'Sal is",
-        "detail": "Main quest center, Mythbreaker hilt and reconstruction.",
+        "name": "Repository",
+        "detail": "Center of avSYS, Mythbreaker hilt and reconstruction site.",
         "type": "avsohm_facility"
     },
     {
@@ -2869,6 +2869,24 @@
         "name": "Yriel's Sanctum",
         "detail": "Burial site of Yriel Rezhad, Ro'Tehrmari and friend of the Aspects.",
         "type": "building"
+    },
+    {
+        "x": 563,
+        "y": 65,
+        "z": 821,
+        "dim": "overworld",
+        "name": "Temple Ruins",
+        "detail": "Ruins of a temple about creation of the world. ",
+        "type": "building"
+    },
+    {
+        "x": 14,
+        "y": 101,
+        "z": 1562,
+        "dim": "overworld",
+        "name": "Mihkmari Camp and Tree Fort",
+        "detail": "A campsite and tree fort overlooking the ruins of Av'Sal. ",
+        "type": "campsite"
     },
     {
         "x": 9996,
