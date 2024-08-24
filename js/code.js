@@ -51,13 +51,19 @@ async function createGeoJsonLayer(filepath) {
  * Load and filter a json file to a given dimension.
  * @param {String} dimension name of dimension to filter to
  * @param {String} filepath path to JSON file
- * @returns Array of objects
+ * @returns {Promise<Array.<object>} Array of objects
  */
 async function readAndDimensionFilter(dimension, filepath) {
     let data = await d3.json(filepath);
     return data.filter(d => d.dim === dimension);
 };
 
+/**
+ * Create a simple marker with popup information and a custom icon.
+ * @param {Object} element Item data for the marker including x, y, z coordinates
+ * @param {L.Icon} customIcon Icon to use for all items in the layer
+ * @returns {L.marker} marker with popup data
+ */
 function createMarker(element, customIcon) {
     let detail_text = element.detail ? element.detail : "";
     return L.marker([element.z+0.5, element.x+0.5], {icon: customIcon})
@@ -149,24 +155,6 @@ function createLegendaryMarker(element) {
                   ${loreText.outerHTML}`);
 }
 
-function layerTowers(towerData) {
-    let towerLayer = L.layerGroup();
-    towerData.forEach(element => {
-        let marker = createMarker(element, TowerIcon);
-        towerLayer.addLayer(marker);
-    });
-    return towerLayer;
-}
-
-function layerPortals(portalData) {
-    let portalLayer = L.layerGroup();
-    portalData.forEach(element => {
-        let marker = createMarker(element, LodahrPortalIcon);
-        portalLayer.addLayer(marker);
-    });
-    return portalLayer;
-}
-
 function layerLocations(locationData, renderer) {
     let locationLayer = L.layerGroup();
     locationData.forEach(element => {
@@ -185,29 +173,35 @@ function layerDevotion(devotionData, devotionOfferings) {
     return devotionLayer;
 }
 
-function layerMythical(mythicalData) {
-    let mythicalLayer = L.layerGroup();
-    mythicalData.forEach(element => {
-        let marker = createMythicalMarker(element);
-        mythicalLayer.addLayer(marker);
+/**
+ * Create a layer group for the given data.
+ * Uses markerFunction to give different markers depending on content,
+ *  or use layerIcon if all markers will have the same icon.
+ * @param {Array} data Array of object for each marker
+ * @param {Function|null} markerFunction function to create a marker or null to use createMarker
+ * @param {L.Icon=} layerIcon Icon to use in createMarker or null
+ * @returns {L.LayerGroup} layerGroup for the given data
+ */
+function createLayer(data, markerFunction, layerIcon) {
+    lGroup = L.layerGroup();
+    data.forEach(element => {
+        let marker
+        if (markerFunction) {
+            marker = markerFunction(element);
+        } else {
+            // Every item in layer has the same marker
+            marker = createMarker(element, layerIcon)
+        }
+        lGroup.addLayer(marker);
     });
-    return mythicalLayer;
-}
-
-function layerLegendary(legendaryData) {
-    let legendaryLayer = L.layerGroup();
-    legendaryData.forEach(element => {
-        let marker = createLegendaryMarker(element);
-        legendaryLayer.addLayer(marker);
-    });
-    return legendaryLayer;
+    return lGroup;
 }
 
 /**
  * Create a list of overlay layers to use with Leaflet
  * @param {String} dimension current dimension
- * @param {*} renderer canvasRenderer for markers
- * @returns Array of overlay layers
+ * @param {L.canvas} renderer canvasRenderer for markers
+ * @returns {Promise<Object.<string, L.LayerGroup>>} Array of overlay layers
  */
 async function createOverlays(dimension, renderer) {
     overlayLayers = {};
@@ -223,13 +217,13 @@ async function createOverlays(dimension, renderer) {
     let towers = await readAndDimensionFilter(dimension, "data/towers.json");
     console.log(`Towers: ${towers.length}`);
     if (towers.length > 0) {
-        overlayLayers["Towers"] = layerTowers(towers);
+        overlayLayers["Towers"] = createLayer(towers, null, TowerIcon);
     }
 
     let portals = await readAndDimensionFilter(dimension, "data/lodahr_portals.json");
     console.log(`Portals: ${portals.length}`);
     if (portals.length > 0) {
-        overlayLayers["Portals"] = layerPortals(portals)
+        overlayLayers["Portals"] = createLayer(portals, null, LodahrPortalIcon);
     }
 
     let locations = await readAndDimensionFilter(dimension, "data/locations.json");
@@ -248,13 +242,13 @@ async function createOverlays(dimension, renderer) {
     let mythical = await readAndDimensionFilter(dimension, "data/mythical.json");
     console.log(`Mythical: ${mythical.length}`);
     if (mythical.length > 0) {
-        overlayLayers["Mythical"] = layerMythical(mythical);
+        overlayLayers["Mythical"] = createLayer(mythical, createMythicalMarker);
     }
 
     let legendary = await readAndDimensionFilter(dimension, "data/legendary.json");
     console.log(`Legendary: ${legendary.length}`);
     if (legendary.length > 0) {
-        overlayLayers["Legendary"] = layerLegendary(legendary);
+        overlayLayers["Legendary"] = createLayer(legendary, createLegendaryMarker);
     }
 
     // lore (books, paper)
@@ -277,7 +271,7 @@ function imgSmallElement(icon_name) {
 
 /**
  * Create HTML for use with Leaflet popup of Minecraft items
- * @param {Array} items array of MCItems with counts, optional lore
+ * @param {Array.<object>} items array of MCItems with counts, optional lore
  * @returns unordered list HTML
  */
 function storageHtml(items) {
@@ -380,42 +374,6 @@ function createTileEntityMarker(element) {
                   <span class=popup_xyz>${element.x} ${element.y} ${element.z}</span>`);
 }
 
-function layerEntStorage(storageData) {
-    let storageLayer = L.layerGroup();
-    storageData.forEach(element => {
-        let marker = createStorageMarker(element);
-        storageLayer.addLayer(marker);
-    });
-    return storageLayer;
-}
-
-function layerEntTrader(traderData) {
-    let traderLayer = L.layerGroup();
-    traderData.forEach(element => {
-        let marker = createTraderMarker(element);
-        traderLayer.addLayer(marker);
-    });
-    return traderLayer;
-}
-
-function layerEntity(entityData) {
-    let entityLayer = L.layerGroup();
-    entityData.forEach(element => {
-        let marker = createEntityMarker(element);
-        entityLayer.addLayer(marker);
-    });
-    return entityLayer;
-}
-
-function layerTileEntity(tileEntityData) {
-    let tileEntityLayer = L.layerGroup();
-    tileEntityData.forEach(element => {
-        let marker = createTileEntityMarker(element);
-        tileEntityLayer.addLayer(marker);
-    });
-    return tileEntityLayer;
-}
-
 function groupFilter(group, entity_array) {
     return entity_array.filter(d => d.group === group);
 };
@@ -437,37 +395,37 @@ async function createEntityOverlays(dimension) {
     let storage_ent = groupFilter("storage", tiles_and_entities);
     console.log(`Storage Entities: ${storage_ent.length}`);
     if (storage_ent.length > 0) {
-        entityLayers["Storage"] = layerEntStorage(storage_ent);
+        entityLayers["Storage"] = createLayer(storage_ent, createStorageMarker);
     }
     let lectern_ent = groupFilter("lectern", tiles_and_entities);
     console.log(`Lecterns with Book: ${lectern_ent.length}`);
     if (lectern_ent.length > 0) {
-        entityLayers["Lecterns"] = layerEntStorage(lectern_ent);
+        entityLayers["Lecterns"] = createLayer(lectern_ent, createStorageMarker);
     }
     let itemFrame_ent = groupFilter("item_frame", tiles_and_entities);
     console.log(`Item Frames: ${itemFrame_ent.length}`);
     if (itemFrame_ent.length > 0) {
-        entityLayers["Item Frames"] = layerEntStorage(itemFrame_ent);
+        entityLayers["Item Frames"] = createLayer(itemFrame_ent, createStorageMarker);
     }
     let traders_ent = groupFilter("trader", tiles_and_entities);
     console.log(`Named Traders: ${traders_ent.length}`);
     if (traders_ent.length > 0) {
-        entityLayers["Named Traders"] = layerEntTrader(traders_ent);
+        entityLayers["Named Trader"] = createLayer(traders_ent, createEntityMarker);
     }
     let armorStand_ent = groupFilter("armor_stand", tiles_and_entities);
     console.log(`Armor Stands with Items: ${armorStand_ent.length}`);
     if (armorStand_ent.length > 0) {
-        entityLayers["Armor Stands"] = layerEntStorage(armorStand_ent);
+        entityLayers["Armor Stands"] = createLayer(armorStand_ent, createStorageMarker);
     }
     let entity_ent = groupFilter("entity", tiles_and_entities);
     console.log(`Named Entities: ${entity_ent.length}`);
     if (entity_ent.length > 0) {
-        entityLayers["Other Entities"] = layerEntity(entity_ent);
+        entityLayers["Other Entities"] = createLayer(entity_ent, createEntityMarker);
     }
     let tileEntity_ent = groupFilter("tile_entity", tiles_and_entities);
     console.log(`Tile Entities: ${tileEntity_ent.length}`);
     if (tileEntity_ent.length > 0) {
-        entityLayers["Other Tile Entities"] = layerTileEntity(tileEntity_ent);
+        entityLayers["Other Tile Entities"] = createLayer(tileEntity_ent, createTileEntityMarker);
     }
 
     return entityLayers;
@@ -585,7 +543,11 @@ async function start() {
     console.log("Start complete")
 };
 
-
+/**
+ * Gives a color string based on `value`.
+ * @param {String} value type of marker string
+ * @returns hex color code
+ */
 function colorMarker(value) {
     switch (value) {
         case "town":
