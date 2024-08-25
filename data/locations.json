@@ -726,7 +726,16 @@
         "dim": "overworld",
         "name": "Faehrcyle Pillager Outpost",
         "detail": "Collection of igloos with a band of pillagers.",
-        "type": "other_location"
+        "type": "small_town"
+    },
+    {
+        "x": 3063,
+        "y": 71,
+        "z": -3464,
+        "dim": "overworld",
+        "name": "Khris' Campsite",
+        "detail": "A green and red tent in the snow.",
+        "type": "campsite"
     },
     {
         "x": 2626,
@@ -772,6 +781,15 @@
         "name": "Schlonko",
         "detail": "Small coastal town in the west of Faehrcyle.",
         "type": "small_town"
+    },
+    {
+        "x": 982,
+        "y": 66,
+        "z": -2847,
+        "dim": "overworld",
+        "name": "Infected Man's Campsite",
+        "detail": "A campsite where an infected man came after being cursed by a necromancer in Lorahn'Kahl.",
+        "type": "campsite"
     },
     {
         "x": 2347,
@@ -2509,6 +2527,42 @@
         "name": "Orrery",
         "detail": "An orrery and house in Rihelma's domain.",
         "type": "building"
+    },
+    {
+        "x": 989,
+        "y": 121,
+        "z": 745,
+        "dim": "lodahr",
+        "name": "Esa's House",
+        "detail": "House full of artwork of Rihelma's Domain, repeadetly painted over the centuries.",
+        "type": "building"
+    },
+    {
+        "x": 1295,
+        "y": 143,
+        "z": 870,
+        "dim": "lodahr",
+        "name": "Sculpters Mountain Village",
+        "detail": "A cave village of Tehrmari sculptors half way up the in the mountain Aldregakar in Rihelma's Domain.",
+        "type": "small_town"
+    },
+    {
+        "x": 960,
+        "y": 193,
+        "z": 1114,
+        "dim": "lodahr",
+        "name": "Bloodied Campsite",
+        "detail": "An abandoned, bloodied campsite atop Rihelma's Domain. Its occupant went down the waterfall and perished in the cave below.",
+        "type": "campsite"
+    },
+    {
+        "x": 1041,
+        "y": 40,
+        "z": 1219,
+        "dim": "lodahr",
+        "name": "Twilight Envoy",
+        "detail": "Guardian at the end of the Augural Tangle.",
+        "type": "boss"
     },
     {
         "x": 372,

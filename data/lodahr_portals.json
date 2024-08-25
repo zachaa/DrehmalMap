@@ -23,7 +23,7 @@
         "z": 383,
         "dim": "overworld",
         "name": "Lo'Dahr Portal (Spearhead Forest)",
-        "detail": "Portal in a tree stump.",
+        "detail": "Portal in a tree stump, exit of Vayniklah's Domain portal.",
         "type": "lodahr_portal"
     },
     {
@@ -32,7 +32,7 @@
         "z": -1089,
         "dim": "lodahr",
         "name": "Lo'Dahr Portal (Vayniklah's Domain)",
-        "detail": "Exit of the Spearhead Forest portal, must be entered there first.",
+        "detail": "Within a mountain, exit of the Spearhead Forest portal.",
         "type": "lodahr_portal"
     },
     {
@@ -41,7 +41,7 @@
         "z": -4052,
         "dim": "overworld",
         "name": "Lo'Dahr Portal (Faehrcyle)",
-        "detail": "Exit of Lai's Domain portal, must be entered there first.",
+        "detail": "Exit of Lai's Domain portal.",
         "type": "lodahr_portal"
     },
     {
@@ -50,7 +50,7 @@
         "z": -949,
         "dim": "lodahr",
         "name": "Lo'Dahr Portal (Lai's Domain)",
-        "detail": "On a mountain in Lai's Domain.",
+        "detail": "On a mountain in Lai's Domain, exit of the Faehrcyle Portal.",
         "type": "lodahr_portal"
     },
     {
@@ -59,7 +59,7 @@
         "z": -1470,
         "dim": "overworld",
         "name": "Lo'Dahr Portal (Merijool)",
-        "detail": "Exit of Loe's Domain portal, must be entered there first.",
+        "detail": "Exit of Loe's Domain portal.",
         "type": "lodahr_portal"
     },
     {
@@ -68,7 +68,7 @@
         "z": 742,
         "dim": "lodahr",
         "name": "Lo'Dahr Portal (Loe's Domain)",
-        "detail": "At Loeturia",
+        "detail": "At Loeturia, exit of the Merijool Portal.",
         "type": "lodahr_portal"
     },
     {
