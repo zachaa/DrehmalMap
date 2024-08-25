@@ -32,16 +32,24 @@ All lore items include their full text except books.
 
 Nice to Have:
 - Stones as their own layer
-- Cluster/group items at the same (x, z) coordinates.
+- Cluster/group/spread items at the same (x, z) coordinates.
+- Signs, but only if cluster/grouping
 - Lore books as separate web page
+    - Include drops from bosses (Letter of Thanks drop from Abbot Balthysar: see `hi_drehmal\data\entities\loot_tables\mob\virmari.json`)
 - Update to 1.20 (new traders and trades, some blocks updated)
+- Entity icons for custom mobs
+- Player Heads with textures
+    - Need to extract: `minecraft:player_head`
+        - then `tag` -> `Properties` -> `textures[0]` -> `value`
+        - then base64 decode
+        - then `textures` -> `SKIN` -> `url` -> then get PNG from url
 
 Issues/Todo:
 - Uses base Minecraft names for items (ex: Emerald->Scale, Netherite->Celestial)
 - Uses base Minecraft entity pictures
-- Missing mini-bosses like Abbot Balthysar, Burnt Generals, whatever is in Insohm Coven of Potentia island
 - Spelling might be wrong in some places
 - Location descriptions might be wrong, they are just my best guess for nearby lore items and assumptions.
+- Don't include invisible armor stands (named Invisible)
 
 ---
 [Leaflet](https://leafletjs.com/)
