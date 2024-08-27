@@ -32,7 +32,6 @@ All lore items include their full text except books.
 
 Nice to Have:
 - Stones as their own layer
-- Cluster/group/spread items at the same (x, z) coordinates.
 - Signs, but only if cluster/grouping
 - Lore books as separate web page
     - Include drops from bosses (Letter of Thanks drop from Abbot Balthysar: see `hi_drehmal\data\entities\loot_tables\mob\virmari.json`)
@@ -54,19 +53,22 @@ Issues/Todo:
 ---
 [Leaflet](https://leafletjs.com/)
 
+[Leaflet Marker Cluster](https://github.com/Leaflet/Leaflet.markercluster)
+
 [Leaflet Mouse Position](https://github.com/ardhi/Leaflet.MousePosition)
 
 [Leaflet Zoom Display](https://github.com/azavea/Leaflet.zoomdisplay)
 
-[Leaflet Geoman](https://geoman.io/docs)
-- drawing polygons to export to GeoJSON
+[Leaflet Geoman](https://geoman.io/docs)<br>
+drawing polygons to export to GeoJSON
 
-[minecraft-data](https://github.com/PrismarineJS/minecraft-data)
-- For the raw json file of 1.17 names and displayNames
+[minecraft-data](https://github.com/PrismarineJS/minecraft-data)<br>
+For the raw json file of 1.17 names and displayNames
 
-[1.21 inventory images](https://www.okamisquadron.com/downloads/1-21-images)
-- resized to 32x32 for non existing inventory images
-- Remake: Shulker Box, Trapped Chest, Netherite Scrap, Block of Netherite, End Portal Frame, Emerald and Purpur blocks
+[1.21 inventory images](https://www.okamisquadron.com/downloads/1-21-images)<br>
+resized to 32x32 for non existing inventory images<br>
+Remake: Shulker Box, Trapped Chest, Netherite Scrap, Block of Netherite, End Portal Frame, Emerald and Purpur blocks
+
 ---
 Drehmal: APOTHEOSIS by Keeko100, Rift and team. [https://www.drehmal.net/](https://www.drehmal.net/)
 

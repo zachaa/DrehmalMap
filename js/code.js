@@ -177,7 +177,7 @@ function layerDevotion(devotionData, devotionOfferings) {
  * Create a layer group for the given data.
  * Uses markerFunction to give different markers depending on content,
  *  or use layerIcon if all markers will have the same icon.
- * @param {Array} data Array of object for each marker
+ * @param {object[]} data Array of object for each marker
  * @param {Function|null} markerFunction function to create a marker or null to use createMarker
  * @param {L.Icon=} layerIcon Icon to use in createMarker or null
  * @returns {L.LayerGroup} layerGroup for the given data
@@ -197,15 +197,31 @@ function createLayer(data, markerFunction, layerIcon) {
     return lGroup;
 }
 
+/**
+ * Create an icon with a number overlay for grouped markers.
+ * @param {L.MarkerCluster} cluster Marker Cluster
+ * @param {String} iconImage path to image file to use as group icon
+ * @returns {L.Icon} Icon for a cluster
+ */
 function createClusterIcon(cluster, iconImage) {
     return L.divIcon({
+        className: "mc-cluster-icon",  // Need this to get rid of divIcon white square
         html: `<div class="cluster-image-container">
                    <img src="${iconImage}">
                    <div class="mc-cluster-icon-count">${cluster.getChildCount()}</div>
-               </div>`
+               </div>`,
+        iconAnchor: [16, 16]
     })
 }
 
+/**
+ * Create a layer group that will cluster very close markers.
+ * The cluster icon is customizable and will show the number of items in the cluster.
+ * @param {object[]} data Array of objects for each marker
+ * @param {Function} markerFunction function to create a marker for the individual items
+ * @param {String} iconImage path to image file to use as group icon
+ * @returns {L.MarkerClusterGroup} cluster Layer Group for the given data
+ */
 function createClusterLayer(data, markerFunction, iconImage) {
     clusterGroup = L.markerClusterGroup({
         showCoverageOnHover: false,
@@ -418,7 +434,8 @@ async function createEntityOverlays(dimension) {
     let storage_ent = groupFilter("storage", tiles_and_entities);
     console.log(`Storage Entities: ${storage_ent.length}`);
     if (storage_ent.length > 0) {
-        entityLayers["Storage"] = createLayer(storage_ent, createStorageMarker);
+        // entityLayers["Storage"] = createLayer(storage_ent, createStorageMarker);
+        entityLayers["Storage"] = createClusterLayer(storage_ent, createStorageMarker, "drehmal_images/icons/chest.png");
     }
     let lectern_ent = groupFilter("lectern", tiles_and_entities);
     console.log(`Lecterns with Book: ${lectern_ent.length}`);
@@ -439,7 +456,8 @@ async function createEntityOverlays(dimension) {
     let armorStand_ent = groupFilter("armor_stand", tiles_and_entities);
     console.log(`Armor Stands with Items: ${armorStand_ent.length}`);
     if (armorStand_ent.length > 0) {
-        entityLayers["Armor Stands"] = createLayer(armorStand_ent, createStorageMarker);
+        // entityLayers["Armor Stands"] = createLayer(armorStand_ent, createStorageMarker);
+        entityLayers["Armor Stands"] = createClusterLayer(armorStand_ent, createStorageMarker, "drehmal_images/icons/armor_stand.png");
     }
     let entity_ent = groupFilter("entity", tiles_and_entities);
     console.log(`Named Entities: ${entity_ent.length}`);
@@ -475,7 +493,7 @@ async function start() {
         errorTileUrl: "drehmal_images/maps/null_tile.webp",
         attribution: '&copy; Drehmal map creators, uNmINeD, Mojang',
         minZoom: config.zoomMin,
-        maxZoom: 4,
+        maxZoom: 6,
         maxNativeZoom: 2,  // Last tile zoom level
         noWrap: true,
         maxBounds: config.bounds
