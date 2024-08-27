@@ -197,6 +197,29 @@ function createLayer(data, markerFunction, layerIcon) {
     return lGroup;
 }
 
+function createClusterIcon(cluster, iconImage) {
+    return L.divIcon({
+        html: `<div class="cluster-image-container">
+                   <img src="${iconImage}">
+                   <div class="mc-cluster-icon-count">${cluster.getChildCount()}</div>
+               </div>`
+    })
+}
+
+function createClusterLayer(data, markerFunction, iconImage) {
+    clusterGroup = L.markerClusterGroup({
+        showCoverageOnHover: false,
+        maxClusterRadius: 10,
+        spiderLegPolylineOptions: { weight: 2, color: '#000000', opacity: 1 },
+        iconCreateFunction: (cluster) => createClusterIcon(cluster, iconImage)
+    });
+    data.forEach(element => {
+        let marker = markerFunction(element);
+        clusterGroup.addLayer(marker);
+    });
+    return clusterGroup;
+}
+
 /**
  * Create a list of overlay layers to use with Leaflet
  * @param {String} dimension current dimension
@@ -405,7 +428,8 @@ async function createEntityOverlays(dimension) {
     let itemFrame_ent = groupFilter("item_frame", tiles_and_entities);
     console.log(`Item Frames: ${itemFrame_ent.length}`);
     if (itemFrame_ent.length > 0) {
-        entityLayers["Item Frames"] = createLayer(itemFrame_ent, createStorageMarker);
+        // entityLayers["Item Frames"] = createLayer(itemFrame_ent, createStorageMarker);
+        entityLayers["Item Frames"] = createClusterLayer(itemFrame_ent, createStorageMarker, "drehmal_images/icons/item_frame.png");
     }
     let traders_ent = groupFilter("trader", tiles_and_entities);
     console.log(`Named Traders: ${traders_ent.length}`);

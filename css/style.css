@@ -53,6 +53,35 @@ html {
     drop-shadow(0 0 8px rgb(59, 213, 255));
 }
 
+/* Cluster Icon */
+.cluster-image-container {
+  image-rendering: pixelated;
+  position: relative;
+  display: inline-block;
+}
+
+.cluster-image-container img {
+  display: block;
+  width: 32px;
+  height: 32px;
+}
+
+.mc-cluster-icon-count {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 
+    -1px -1px 0 black,
+    -1px 1px 0 black,
+    1px -1px 0 black,
+    1px 1px 0 black;
+}
+
 /* Popup */
 .popup_title {
   text-align: center;
