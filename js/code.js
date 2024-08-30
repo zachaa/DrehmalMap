@@ -531,7 +531,7 @@ async function start() {
         cutPolygon: true,
         removalMode: true,
     });
-    map.pm.setGlobalOptions({snappable: true , snapDistance: 10, tooltips: false});
+    map.pm.setGlobalOptions({snappable: true, snapDistance: 10, tooltips: false});
 
     L.control.layers(
         null,
@@ -545,6 +545,35 @@ async function start() {
         mapEntityLayers,
         {collapsed: false}
     ).addTo(map);
+
+    // Edit geoJSON --------------- Enable only when needed -------------------
+    // fetch('data_raw/geojson/mountains_SE.geojson')  // Path to geoJSON file with at least 1 feature
+    // .then(response => response.json())
+    // .then(data => {
+    //     // Change index to select different feature
+    //     const featureToEdit = data.features[0];
+    //     console.log("Attempting to load and edit feature");
+    //
+    //     // Add the feature to the map and enable editing for it
+    //     const editableLayer = L.geoJSON(featureToEdit).addTo(map);
+    //     editableLayer.pm.enable();
+    //
+    //     // Save the feature when button clicked
+    //     document.getElementById('save-edits').onclick = function () {
+    //         var editedData = editableLayer.toGeoJSON();
+    //         var convertedEditData = 'text/json;charset=utf-8,' + encodeURIComponent(JSON.stringify(editedData));
+    //
+    //         var a = document.createElement('a');
+    //         a.href = 'data:' + convertedEditData;
+    //         a.download = 'edited_data.geojson';
+    //         a.innerHTML = 'Export Edited GeoJSON';
+    //
+    //         document.body.appendChild(a);
+    //         a.click();
+    //         document.body.removeChild(a);
+    //     }
+    // });
+    // ------------------------------------------------------------------------
 
 
     var drawnItems = new L.FeatureGroup();
@@ -567,7 +596,7 @@ async function start() {
     // Set the map view to the center and zoom level
     map.setView(config.startCenter, 0);
 
-    // Is this ok here???
+    // Save the draw layer to geoJSON
     document.getElementById('export').onclick = function () {
         var data = drawnItems.toGeoJSON();
         var convertedData = 'text/json;charset=utf-8,' + encodeURIComponent(JSON.stringify(data));
