@@ -212,8 +212,8 @@
         "z": 1984,
         "dim": "overworld",
         "name": "Rhaverik Inn and Trading Post",
-        "detail": "Trading post in the Great Heartwood",
-        "type": "building"
+        "detail": "Trading post in the Great Heartwood, all that is left of Rhaverik.",
+        "type": "small_town"
     },
     {
         "x": 1078,
