@@ -387,7 +387,7 @@ function createStorageMarker(element) {
     return L.marker([element.z+0.5, element.x+0.5], {icon: icon})
         .bindPopup(`<span class=popup_title>${element.displayName}</span><hr>
                   <span class=popup_xyz>${element.x} ${element.y} ${element.z}</span><br>
-                  ${items_html}`, {'maxWidth':'600','maxHeight':'500'});
+                  ${items_html}`, {'maxWidth':'600','maxHeight':'400'});
 }
 
 function createTraderMarker(element) {
@@ -396,7 +396,7 @@ function createTraderMarker(element) {
     return L.marker([element.z+0.5, element.x+0.5], {icon: icon})
         .bindPopup(`<span class=popup_title>${element.displayName}</span><hr>
                   <span class=popup_xyz>${element.x} ${element.y} ${element.z}</span><br>
-                  ${trade_html}`, {'maxWidth':'500','maxHeight':'500'});
+                  ${trade_html}`, {'maxWidth':'600','maxHeight':'400'});
 }
 
 function createEntityMarker(element) {
@@ -451,7 +451,7 @@ async function createEntityOverlays(dimension) {
     let traders_ent = groupFilter("trader", tiles_and_entities);
     console.log(`Named Traders: ${traders_ent.length}`);
     if (traders_ent.length > 0) {
-        entityLayers["Named Trader"] = createLayer(traders_ent, createEntityMarker);
+        entityLayers["Named Trader"] = createLayer(traders_ent, createTraderMarker);
     }
     let armorStand_ent = groupFilter("armor_stand", tiles_and_entities);
     console.log(`Armor Stands with Items: ${armorStand_ent.length}`);
