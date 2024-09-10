@@ -14,10 +14,12 @@ Includes:
     - Click to see offerings by value
 - Locations
     - Towns and Villages
+    - Abandoned Towns and Villages
     - Interesting buildings and sites
-    - Bosses (in progress)
+    - Bosses/mini-bosses
+    - Lo'Dahr Trial sites
     - Other structures
-- Region Shading (in progress)
+- Region Shading
 - Mythical Weapons (Mythbreaker only in Av'Sal but full version because lazy)
 - Legendary Items (Separate from when they are in chests)
 - All storage items if they have contents
@@ -33,6 +35,7 @@ All lore items include their full text except books.
 Nice to Have:
 - Stones as their own layer
 - Signs, but only if cluster/grouping
+- Enchantments on items or in books
 - Lore books as separate web page
     - Include drops from bosses (Letter of Thanks drop from Abbot Balthysar: see `hi_drehmal\data\entities\loot_tables\mob\virmari.json`)
 - Update to 1.20 (new traders and trades, some blocks updated)
