@@ -249,9 +249,9 @@ async function createOverlays(dimension, renderer) {
         overlayLayers["Regions"] = await createGeoJsonLayer("data/regions.geojson");
     }
 
-    // if (dimension === "lodahr") {
-    //     overlayLayers["Domains"] = createGeoJsonLayer("data/domains.geojson");
-    // }
+    if (dimension === "lodahr") {
+        overlayLayers["Domains"] = await createGeoJsonLayer("data/domains.geojson");
+    }
 
     let towers = await readAndDimensionFilter(dimension, "data/towers.json");
     console.log(`Towers: ${towers.length}`);
