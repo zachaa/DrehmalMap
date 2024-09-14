@@ -19,7 +19,8 @@ Includes:
     - Bosses/mini-bosses
     - Lo'Dahr Trial sites
     - Other structures
-- Region Shading
+- Drehmal Region Shading
+- Lo'Dahr Domain Shading
 - Mythical Weapons (Mythbreaker only in Av'Sal but full version because lazy)
 - Legendary Items (Separate from when they are in chests)
 - All storage items if they have contents
