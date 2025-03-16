@@ -2803,8 +2803,8 @@
         "y": 49,
         "z": 570,
         "dim": "lodahr",
-        "name": "Bernice's House",
-        "detail": "Underwater temple to challenge Bernice and claim Dahr's powerful trident.",
+        "name": "The Vehrniis",
+        "detail": "Underwater temple to challenge The Vehrniis and claim Dahr's powerful trident.",
         "type": "boss"
     },
     {
@@ -2920,7 +2920,7 @@
         "y": 78,
         "z": -129,
         "dim": "lodahr",
-        "name": "Shackled Alchemist's Tower",
+        "name": "Abandoned Lake town",
         "detail": "An abandoned fishing village on the shore of Lake Khanak",
         "type": "abandoned_town"
     },
@@ -3006,6 +3006,15 @@
         "type": "building"
     },
     {
+        "x": -69,
+        "y": 31,
+        "z": -1702,
+        "dim": "lodahr",
+        "name": "Soletta",
+        "detail": "A mythical forge that create powerful weapons.",
+        "type": "other_location"
+    },
+    {
         "x": 563,
         "y": 65,
         "z": 821,
@@ -3051,6 +3060,33 @@
         "type": "other_location"
     },
     {
+        "x": 1111,
+        "y": 72,
+        "z": 1008,
+        "dim": "true_end",
+        "name": "Statue of Verrhys",
+        "detail": "A partially burried statue of the Aspect of Silence, with its wings outstreached.",
+        "type": "other_location"
+    },
+    {
+        "x": 2352,
+        "y": 51,
+        "z": 412,
+        "dim": "true_end",
+        "name": "Circle of Chairs",
+        "detail": "Blood of the Dark Soul, Dark Souls 3 reference.",
+        "type": "other_location"
+    },
+    {
+        "x": 477,
+        "y": 65,
+        "z": 478,
+        "dim": "true_end",
+        "name": "2.1 Spawn Tomb",
+        "detail": "Old version spawn area burried under the sand.",
+        "type": "meta"
+    },
+    {
         "x": 917,
         "y": 42,
         "z": 224,
@@ -3058,6 +3094,5 @@
         "name": "The End",
         "detail": "Ending",
         "type": "meta"
-    },
-    {}
+    }
 ]
