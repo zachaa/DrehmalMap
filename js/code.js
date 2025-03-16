@@ -15,7 +15,7 @@ const mapConfig = {
         bounds: [[-512, 0], [10751, 10239]],
         startCenter: [690, 778],
         url: "drehmal_images/maps/true_end/tiles/zoom.{z}/tile.{x}.{y}.png",
-        zoomMin: -6,
+        zoomMin: -4,
     },
     lodahr: {
         bounds: [[-3072, -2560], [2559, 27647]],
