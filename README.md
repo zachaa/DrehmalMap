@@ -21,6 +21,7 @@ Includes:
     - Other structures
 - Drehmal Region Shading
 - Lo'Dahr Domain Shading
+- Paths, roads, and trail lines
 - Mythical Weapons (Mythbreaker only in Av'Sal but full version because lazy)
 - Legendary Items (Separate from when they are in chests)
 - All storage items if they have contents

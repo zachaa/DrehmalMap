@@ -47,6 +47,18 @@ async function createGeoJsonLayer(filepath) {
     return geoJsonLayer;
 };
 
+async function createGeoJsonPathLayer(filepath) {
+    let geoJSONData = await d3.json(filepath);
+    let geoJsonLayer = L.geoJSON(geoJSONData, {
+        style: {
+            color: "#000000",
+            weight: 3,
+            opacity: 1.0
+        }
+    });
+    return geoJsonLayer;
+}
+
 /**
  * Load and filter a json file to a given dimension.
  * @param {String} dimension name of dimension to filter to
@@ -247,6 +259,7 @@ async function createOverlays(dimension, renderer) {
 
     if (dimension === "overworld") {
         overlayLayers["Regions"] = await createGeoJsonLayer("data/regions.geojson");
+        overlayLayers["Paths"] = await createGeoJsonPathLayer("data/paths.geojson");
     }
 
     if (dimension === "lodahr") {
