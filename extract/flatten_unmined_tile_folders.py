@@ -71,7 +71,7 @@ def move_all_png_files(path_list):
 
 
 def optimize_pngs(path: Path):
-    oxipng_path = Path(__file__).parents[1] / "tools/oxipng-9.1.2-x86_64-pc-windows-msvc/oxipng.exe"
+    oxipng_path = Path(__file__).parents[1] / "tools/oxipng-9.1.4-x86_64-pc-windows-msvc/oxipng.exe"
     if not oxipng_path.exists():
         print("oxipng not found")
         return
@@ -87,10 +87,12 @@ if __name__ == "__main__":
     move_all_png_files(top_level_paths_lodahr)
     move_all_png_files(top_level_paths_space)
     move_all_png_files(top_level_paths_true_end)
+    print("Finished moving all map files.")
 
     # optimize_pngs(Path(r"C:\Users\Zachary\Coding\VSCode\DrehmalMap\images\maps\end\tiles"))
     # optimize_pngs(Path(r"C:\Users\Zachary\Coding\VSCode\DrehmalMap\images\maps\space\tiles"))
     # optimize_pngs(Path(r"C:\Users\Zachary\Coding\VSCode\DrehmalMap\images\maps\true_end\tiles"))
     # optimize_pngs(Path(r"C:\Users\Zachary\Coding\VSCode\DrehmalMap\images\maps\lodahr\tiles"))
     # optimize_pngs(Path(r"C:\Users\Zachary\Coding\VSCode\DrehmalMap\images\maps\overworld\tiles"))
+    # print("Finished optimizing all png files.")
     pass
