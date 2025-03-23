@@ -3069,6 +3069,60 @@
         "type": "campsite"
     },
     {
+        "x": 1002,
+        "y": 70,
+        "z": 2836,
+        "dim": "overworld",
+        "name": "Underwood House",
+        "detail": "A single house near lava in the Underwood.",
+        "type": "building"
+    },
+    {
+        "x": -278,
+        "y": 84,
+        "z": 2277,
+        "dim": "overworld",
+        "name": "Campsite by Monument",
+        "detail": "A small light blue tent by an Avsohmic monument.",
+        "type": "campsite"
+    },
+    {
+        "x": -274,
+        "y": 92,
+        "z": 2288,
+        "dim": "overworld",
+        "name": "Abandond Lighthouse",
+        "detail": "A small, abandond lighthouse on the coast of Palisade's Heath.",
+        "type": "building"
+    },
+    {
+        "x": -1731,
+        "y": 95,
+        "z": 5257,
+        "dim": "overworld",
+        "name": "Tri-Moon Theocracy Altar",
+        "detail": "A monument or altar created by the Tri-Moon Theocracy with the inscription 'EVER BEYOND'.",
+        "type": "other_location"
+    },
+    {
+        "x": -890,
+        "y": 86,
+        "z": 5915,
+        "dim": "overworld",
+        "name": "Tri-Moon Theocracy Monument",
+        "detail": "A monument depicting the three moons of the Tri-Moon Theocracy.",
+        "type": "other_location"
+    },
+    {
+        "x": -1278,
+        "y": 70,
+        "z": 4249,
+        "dim": "overworld",
+        "name": "Insohmic Watchtower",
+        "detail": "A old, crumbling tower used by Insohm.",
+        "type": "building"
+    },
+    {
         "x": 9996,
         "y": 62,
         "z": 10181,
