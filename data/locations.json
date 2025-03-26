@@ -342,13 +342,22 @@
         "type": "other_location"
     },
     {
-        "x": 4142,
-        "y": 85,
-        "z": 3922,
+        "x": 4146,
+        "y": 70,
+        "z": 4137,
         "dim": "overworld",
         "name": "Abandoned obsidian and blackstone town",
-        "detail": "An abandoned town in the central Black Jungle, made up of obsidian and blackstone buildings with water and lava channels.",
+        "detail": "An abandoned town in the central Black Jungle that worshiped Verrhys. It made up of obsidian and blackstone buildings with water and lava channels.",
         "type": "abandoned_town"
+    },
+    {
+        "x": 3222,
+        "y": 83,
+        "z": 4018,
+        "dim": "overworld",
+        "name": "Abandoned shrine and statue",
+        "detail": "An abandoned and crumbling collection of obsidian and blackstone shines and frog statue, or maybe a village.",
+        "type": "other_location"
     },
     {
         "x": 4805,
@@ -357,7 +366,7 @@
         "dim": "overworld",
         "name": "Library Island",
         "detail": "Island Library, with a compass.",
-        "type": "other_location"
+        "type": "building"
     },
     {
         "x": 3923,
@@ -592,6 +601,15 @@
         "name": "Shatterhorn Gulch Prison",
         "detail": "Prison used by the Insohmic Coalition.",
         "type": "building"
+    },
+    {
+        "x": 4651,
+        "y": 105,
+        "z": -740,
+        "dim": "overworld",
+        "name": "Shatterhorn Warden",
+        "detail": "Warden of the prison cursed by a necromancer to have eternal life and festering wounds.",
+        "type": "boss"
     },
     {
         "x": 5956,
@@ -1206,6 +1224,15 @@
         "type": "building"
     },
     {
+        "x": 4589,
+        "y": 221,
+        "z": 5418,
+        "dim": "overworld",
+        "name": "Shrine to Moen",
+        "detail": "A small shrine on top of a mountain to Moen, Aspect of Pleasure.",
+        "type": "other_location"
+    },
+    {
         "x": 4723,
         "y": 149,
         "z": 5325,
@@ -1228,7 +1255,7 @@
         "y": 63,
         "z": 6047,
         "dim": "overworld",
-        "name": "Bell Temple",
+        "name": "Bell Shrine",
         "detail": "Five bells. One for each fragment.",
         "type": "other_location"
     },
@@ -1237,8 +1264,17 @@
         "y": 149,
         "z": 6328,
         "dim": "overworld",
-        "name": "Estate",
-        "detail": "A large estate. Attacked by outlaws, the lord cursed them to forever defend it.",
+        "name": "Emperor's Estate",
+        "detail": "The large estate of the Emperor of Sahd. Attacked by outlaws, the emperor cursed them to forever defend it.",
+        "type": "abandoned_town"
+    },
+    {
+        "x": 5037,
+        "y": 109,
+        "z": 6320,
+        "dim": "overworld",
+        "name": "Osaigah Clan ruins",
+        "detail": "Ruins of the Maen worshiping Osaigah clan settlement.",
         "type": "abandoned_town"
     },
     {
@@ -1921,8 +1957,8 @@
         "y": 63,
         "z": 1262,
         "dim": "overworld",
-        "name": "Elvett?",
-        "detail": "A town in the shadows of a giant Avsohmic bridge.",
+        "name": "Elvett",
+        "detail": "A small town in the shadow of a giant Avsohmic bridge to the Foundry.",
         "type": "small_town"
     },
     {
@@ -3087,7 +3123,7 @@
         "type": "campsite"
     },
     {
-        "x": -274,
+        "x": 274,
         "y": 92,
         "z": 2288,
         "dim": "overworld",
@@ -3121,6 +3157,24 @@
         "name": "Insohmic Watchtower",
         "detail": "A old, crumbling tower used by Insohm.",
         "type": "building"
+    },
+    {
+        "x": 1747,
+        "y": 186,
+        "z": 112,
+        "dim": "overworld",
+        "name": "Avshomic Watchtower",
+        "detail": "A tower overlooking the Purity Peaks.",
+        "type": "building"
+    },
+    {
+        "x": 2040,
+        "y": 80,
+        "z": -426,
+        "dim": "overworld",
+        "name": "Campsite",
+        "detail": "A campsite between the Purity Peaks and Ahklo'Rohma.",
+        "type": "campsite"
     },
     {
         "x": 9996,
