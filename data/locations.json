@@ -9,6 +9,51 @@
         "type": "town"
     },
     {
+        "x": 84,
+        "y": 24,
+        "z": -1469,
+        "dim": "lodahr",
+        "name": "Statue of Rihelma",
+        "detail": "A statue of Star-Rise Drake Rihelma, Great Sky Aspect. Depicted as a dragon.",
+        "type": "large_statue"
+    },
+    {
+        "x": 93,
+        "y": 24,
+        "z": -1755,
+        "dim": "lodahr",
+        "name": "Statue of Taihgel",
+        "detail": "A statue of Land-Fall Drake Taihgel, Great Land Aspect. Depicted as a tortoise.",
+        "type": "large_statue"
+    },
+    {
+        "x": -234,
+        "y": 23,
+        "z": -1764,
+        "dim": "lodahr",
+        "name": "Statue of Khive",
+        "detail": "A statue of Mystic Elder Khive, Great Arcane Aspect. Depicted as a large lizard.",
+        "type": "large_statue"
+    },
+    {
+        "x": -226,
+        "y": 24,
+        "z": -1473,
+        "dim": "lodahr",
+        "name": "Statue of Dahr",
+        "detail": "A statue of Abyssal Elder Dahr, Great Sea Aspect. Depicted as a sea serpent.",
+        "type": "large_statue"
+    },
+    {
+        "x": -69,
+        "y": 14,
+        "z": -1646,
+        "dim": "lodahr",
+        "name": "Prismatic Council Chamber",
+        "detail": "The meeting place with thrones for the Aspects and Deities, except Verrhys.",
+        "type": "building"
+    },
+    {
         "x": 263,
         "y": 86,
         "z": -852,
@@ -339,7 +384,7 @@
         "dim": "overworld",
         "name": "Verrhys Statue",
         "detail": "Underground statue of Verrhys, Aspect of Silence.",
-        "type": "other_location"
+        "type": "large_statue"
     },
     {
         "x": 4146,
@@ -519,7 +564,7 @@
         "dim": "overworld",
         "name": "Sunhearth Saloon",
         "detail": "Abandoned Saloon on the Spearhead Forest coast.",
-        "type": "building"
+        "type": "abandoned_building"
     },
     {
         "x": 3709,
@@ -564,7 +609,7 @@
         "dim": "overworld",
         "name": "Abandoned Altar",
         "detail": "Former home of a lonely and paranoid plant grower.",
-        "type": "building"
+        "type": "abandoned_building"
     },
     {
         "x": 3775,
@@ -699,7 +744,7 @@
         "dim": "overworld",
         "name": "Nihilist's House",
         "detail": "A house belonging to the Nihilist who has been under Hightower castle and knows three were involved in Av'sohm's destruction.",
-        "type": "building"
+        "type": "abandoned_building"
     },
     {
         "x": 6281,
@@ -771,7 +816,7 @@
         "dim": "overworld",
         "name": "Tahsgan House",
         "detail": "An abandoned building of the Tahsgan clan.",
-        "type": "building"
+        "type": "abandoned_building"
     },
     {
         "x": 2291,
@@ -816,7 +861,7 @@
         "dim": "overworld",
         "name": "Frozen House",
         "detail": "Abandoned house of someone with nothing.",
-        "type": "building"
+        "type": "abandoned_building"
     },
     {
         "x": 730,
@@ -915,7 +960,7 @@
         "dim": "overworld",
         "name": "Destroyed Priscilla House",
         "detail": "A destroyed wooden house, Priscilla remains.",
-        "type": "building"
+        "type": "abandoned_building"
     },
     {
         "x": 5268,
@@ -924,7 +969,7 @@
         "dim": "overworld",
         "name": "Vir Fort",
         "detail": "A sturdy stone fort built by the Empire of Vir.",
-        "type": "building"
+        "type": "abandoned_building"
     },
     {
         "x": 5092,
@@ -951,7 +996,7 @@
         "dim": "overworld",
         "name": "Altar of Insight",
         "detail": "A ruined tower formerly occupied by people who sought to reach Lo'Veruhkt.",
-        "type": "building"
+        "type": "abandoned_building"
     },
     {
         "x": 3598,
@@ -1113,7 +1158,7 @@
         "dim": "overworld",
         "name": "Abandoned Tower",
         "detail": "A tower on an island near the Gulf of Drehmal.",
-        "type": "building"
+        "type": "abandoned_building"
     },
     {
         "x": 1363,
@@ -1186,6 +1231,15 @@
         "name": "Tree Village",
         "detail": "A small village built vertically around a tall tree.",
         "type": "small_town"
+    },
+    {
+        "x": 4166,
+        "y": 122,
+        "z": 2463,
+        "dim": "overworld",
+        "name": "Statue of Viruto",
+        "detail": "A large statue Virtuo carved into the mountainside.",
+        "type": "large_statue"
     },
     {
         "x": 4331,
@@ -1329,7 +1383,7 @@
         "dim": "overworld",
         "name": "Overgrown Heartwood House",
         "detail": "An abandoned house in the Heartwood.",
-        "type": "building"
+        "type": "abandoned_building"
     },
     {
         "x": 1668,
@@ -1338,7 +1392,7 @@
         "dim": "overworld",
         "name": "Overgrown Structure",
         "detail": "An overgrown, pyramid-like structure to the North of the Heartwood.",
-        "type": "other_location"
+        "type": "abandoned_building"
     },
     {
         "x": 1971,
@@ -1392,7 +1446,7 @@
         "dim": "overworld",
         "name": "Drehn's Castle",
         "detail": "A castle overlooking Av'Sal where Drehn was raised.",
-        "type": "building"
+        "type": "abandoned_building"
     },
     {
         "x": -162,
@@ -1509,7 +1563,7 @@
         "dim": "overworld",
         "name": "Ayre Family House",
         "detail": "Abandoned house of the Ayre family located outside of Eloa. The family fled east to escape the Maelmari, leaving behind many of their belongings.",
-        "type": "building"
+        "type": "abandoned_building"
     },
     {
         "x": -1129,
@@ -1618,6 +1672,15 @@
         "name": "Primal Sapling",
         "detail": "A giant tree deep in the forest of Merijool.",
         "type": "other_location"
+    },
+    {
+        "x": -1002,
+        "y": 98,
+        "z": -338,
+        "dim": "overworld",
+        "name": "Primal Sapling Pyramid",
+        "detail": "A colorful pyramid near the Primal Sapling in the Glade of the Giant.",
+        "type": "building"
     },
     {
         "x": -1562,
@@ -1804,7 +1867,7 @@
         "y": 64,
         "z": 2235,
         "dim": "overworld",
-        "name": "Maelmari Camp",
+        "name": "Maelmari Outpost",
         "detail": "A Maelmari base in central Tharxax to assert control over the area.",
         "type": "other_location"
     },
@@ -1818,12 +1881,21 @@
         "type": "town"
     },
     {
+        "x": -1473,
+        "y": 125,
+        "z": 3676,
+        "dim": "overworld",
+        "name": "Tharxax Research Camp",
+        "detail": "A well equiped campsite in eastern Tharxax set up to study something.",
+        "type": "campsite"
+    },
+    {
         "x": -1241,
         "y": 66,
         "z": 1351,
         "dim": "overworld",
-        "name": "Avsohm Kohlohmah",
-        "detail": "Crashed Avsohmic flying machine. Its pilot likely escaped from Sal'Anyr to Fort Nihmaj.",
+        "name": "Crashed Avsohmic flying machine",
+        "detail": "A Crashed Avsohmic flying machine in the swamps of North Tharxax. Likely from Sal'Anyr or Exodus Citadel.",
         "type": "other_location"
     },
     {
@@ -1842,15 +1914,15 @@
         "dim": "overworld",
         "name": "Ezahn Family Residence",
         "detail": "Unknown empty building at the north end of Tharxax.",
-        "type": "building"
+        "type": "abandoned_building"
     },
     {
         "x": -1169,
         "y": 70,
         "z": 813,
         "dim": "overworld",
-        "name": "Mihkmari Camp",
-        "detail": "Mihkmari tree camp.",
+        "name": "Mihkmari Tree Fort",
+        "detail": "A small Mihkmari outpost in the trees along with a Grafted Mihkmari in an enclosure.",
         "type": "other_location"
     },
     {
@@ -1914,7 +1986,7 @@
         "dim": "overworld",
         "name": "Avsohm Gatehouse",
         "detail": "An abandoned gatehouse between Casai and Mt Ebonfire.",
-        "type": "building"
+        "type": "abandoned_building"
     },
     {
         "x": -3174,
@@ -2013,6 +2085,15 @@
         "dim": "overworld",
         "name": "Ebonrun Dam",
         "detail": "A massive dam controlled by Maelmari. It also keeps in the villagers.",
+        "type": "building"
+    },
+    {
+        "x": -3055,
+        "y": 120,
+        "z": -401,
+        "dim": "overworld",
+        "name": "Ebonrun Watchtower",
+        "detail": "A Maelmari watchtower overlooking the road to Ebonrun. It also keeps in the villagers.",
         "type": "other_location"
     },
     {
@@ -2146,7 +2227,7 @@
         "y": 63,
         "z": 1617,
         "dim": "overworld",
-        "name": "Maelmari Camp",
+        "name": "Maelmari Outpost",
         "detail": "A Maelmari base near the Ebony Veldt.",
         "type": "other_location"
     },
@@ -2192,7 +2273,7 @@
         "z": 2964,
         "dim": "overworld",
         "name": "Nihmaj Alchemical Castle",
-        "detail": "A run down castle full of Mikhmari and Alchemist trying to achieve The Great Work.",
+        "detail": "A run down castle full of Mihkmari and Alchemist trying to achieve The Great Work.",
         "type": "building"
     },
     {
@@ -2292,7 +2373,7 @@
         "dim": "overworld",
         "name": "Titans of Strength and Servitude",
         "detail": "Giant statues at the entrance of the Hellcrags.",
-        "type": "other_location"
+        "type": "large_statue"
     },
     {
         "x": -3995,
@@ -2383,6 +2464,15 @@
         "name": "Campsite",
         "detail": "A small campsite on the Island of Dawn.",
         "type": "campsite"
+    },
+    {
+        "x": -1120,
+        "y": 67,
+        "z": -3640,
+        "dim": "overworld",
+        "name": "Portal Structure",
+        "detail": "A strange structure with a non-working, green portal.",
+        "type": "other_location"
     },
     {
         "x": -935,
@@ -2661,7 +2751,7 @@
         "dim": "lodahr",
         "name": "Damaged building",
         "detail": "A building beneath the corpse of the lightning dragon in Palaesida's domain",
-        "type": "building"
+        "type": "abandoned_building"
     },
     {
         "x": 455,
@@ -2832,7 +2922,7 @@
         "dim": "lodahr",
         "name": "Mushroom campsite",
         "detail": "A mushroom used as a shelter.",
-        "type": "building"
+        "type": "campsite"
     },
     {
         "x": -419,
@@ -3051,13 +3141,22 @@
         "type": "other_location"
     },
     {
+        "x": -160,
+        "y": 154,
+        "z": -1690,
+        "dim": "lodahr",
+        "name": "Maelihs ",
+        "detail": "The Burnt Lord, at his throne in Ytaj.",
+        "type": "other_location"
+    },
+    {
         "x": 563,
         "y": 65,
         "z": 821,
         "dim": "overworld",
         "name": "Temple Ruins",
         "detail": "Ruins of a temple about creation of the world.",
-        "type": "building"
+        "type": "abandoned_building"
     },
     {
         "x": 14,
@@ -3075,7 +3174,7 @@
         "dim": "overworld",
         "name": "Primal Caverns Graveyard",
         "detail": "An old graveyard for the caretakers of the Primal Caverns.",
-        "type": "building"
+        "type": "abandoned_building"
     },
     {
         "x": 11,
@@ -3129,7 +3228,7 @@
         "dim": "overworld",
         "name": "Abandond Lighthouse",
         "detail": "A small, abandond lighthouse on the coast of Palisade's Heath.",
-        "type": "building"
+        "type": "abandoned_building"
     },
     {
         "x": -1731,
@@ -3156,7 +3255,7 @@
         "dim": "overworld",
         "name": "Insohmic Watchtower",
         "detail": "A old, crumbling tower used by Insohm.",
-        "type": "building"
+        "type": "abandoned_building"
     },
     {
         "x": 1747,
@@ -3200,7 +3299,7 @@
         "z": 299,
         "dim": "true_end",
         "name": "Drehmal",
-        "detail": "Drehmal, the Final Aspect.",
+        "detail": "Drehmal, the Great Serpent, The Final Aspect, The Last Divine.",
         "type": "other_location"
     },
     {
@@ -3210,7 +3309,7 @@
         "dim": "true_end",
         "name": "Statue of Verrhys",
         "detail": "A partially burried statue of the Aspect of Silence, with its wings outstreached.",
-        "type": "other_location"
+        "type": "large_statue"
     },
     {
         "x": 2352,

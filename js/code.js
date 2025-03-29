@@ -644,6 +644,10 @@ function colorMarker(value) {
             return "#9C01E9";
         case "building":
             return "#00B8E1";
+        case "abandoned_building":
+            return "#387D8E";
+        case "large_statue":
+            return "#32A55E";
         case "campsite":
             return "#CCE320";
         case "boss":
