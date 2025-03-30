@@ -292,9 +292,18 @@
         "y": 66,
         "z": 3811,
         "dim": "overworld",
-        "name": "Pillager Mining Town",
-        "detail": "Pillagers in houses in Mael's Desolation with a mine.",
+        "name": "Mihkmari Mining Town",
+        "detail": "Mihkmari in houses in Mael's Desolation with a mine.",
         "type": "small_town"
+    },
+    {
+        "x": 1620,
+        "y": 75,
+        "z": 3685,
+        "dim": "overworld",
+        "name": "Ruins",
+        "detail": "Destroyed ruins of a unknown settlement once at the heart of the South Heartwood.",
+        "type": "abandoned_town"
     },
     {
         "x": 861,
@@ -347,7 +356,7 @@
         "z": 4270,
         "dim": "overworld",
         "name": "Port Solitude",
-        "detail": "On the coast of Mael's Desolation, a town of villagers and friendly pillagers.",
+        "detail": "On the coast of Mael's Desolation, a town of villagers and friendly Mihkmari.",
         "type": "town"
     },
     {
@@ -787,8 +796,8 @@
         "y": 112,
         "z": -3980,
         "dim": "overworld",
-        "name": "Faehrcyle Pillager Outpost",
-        "detail": "Collection of igloos with a band of pillagers.",
+        "name": "Faehrcyle Mihkmari Outpost",
+        "detail": "Collection of igloos with a band of Mihkmari.",
         "type": "small_town"
     },
     {
@@ -1516,8 +1525,8 @@
         "y": 64,
         "z": 4039,
         "dim": "overworld",
-        "name": "Abandoned Seaside town",
-        "detail": "Abandoned Avsohmic town on the coast with a strange underground room.",
+        "name": "Stromnar",
+        "detail": "Ruined Avsohmic city on the coast, and the birthplace of Blue Exodus. It has a strange underground room.",
         "type": "abandoned_town"
     },
     {
@@ -1528,6 +1537,15 @@
         "name": "Zack's Hut of Shame",
         "detail": "A simple dirt hut.",
         "type": "building"
+    },
+    {
+        "x": 1990,
+        "y": 26,
+        "z": 3536,
+        "dim": "overworld",
+        "name": "Campsite",
+        "detail": "A small campsite by the stump of a giant tree.",
+        "type": "campsite"
     },
     {
         "x": -18,
@@ -1642,8 +1660,8 @@
         "y": 99,
         "z": -1710,
         "dim": "overworld",
-        "name": "Loe Village (Kamt?)",
-        "detail": "A small town that worshiped Loe, on the coast of the Gulf of Drehmal.",
+        "name": "Kamt",
+        "detail": "A small town that worshiped Loe, on the coast of the Gulf of Drehmal and the slopes of Mt. Mekta.",
         "type": "abandoned_town"
     },
     {
@@ -2160,6 +2178,15 @@
         "type": "building"
     },
     {
+        "x": -3377,
+        "y": 48,
+        "z": 2016,
+        "dim": "overworld",
+        "name": "Sal'Anyr Campsite",
+        "detail": "A campsite at the base of the ancient stairs to Sal'Anyr.",
+        "type": "campsite"
+    },
+    {
         "x": -3292,
         "y": 37,
         "z": 2277,
@@ -2322,18 +2349,36 @@
         "type": "other_location"
     },
     {
+        "x": -3207,
+        "y": 146,
+        "z": 4575,
+        "dim": "overworld",
+        "name": "Maelmari Campsite",
+        "detail": "Simple Maelmari campsite in the Carmine.",
+        "type": "campsite"
+    },
+    {
         "x": -2804,
         "y": 18,
         "z": 5176,
         "dim": "overworld",
         "name": "Sarlac Pit",
-        "detail": "It does not like sand either.",
+        "detail": "Star Wars Sarlac Pit with Boba Fett.",
         "type": "other_location"
     },
     {
-        "x": -2863,
-        "y": 62,
-        "z": 5204,
+        "x": -2655,
+        "y": 177,
+        "z": 5244,
+        "dim": "overworld",
+        "name": "Rhaveloth Watchtower",
+        "detail": "A base looking over Rhaveloth.",
+        "type": "building"
+    },
+    {
+        "x": -2876,
+        "y": 70,
+        "z": 5228,
         "dim": "overworld",
         "name": "Rhaveloth",
         "detail": "The chaotic, many leveled city of the Maelmari.",
@@ -2372,7 +2417,7 @@
         "z": 5835,
         "dim": "overworld",
         "name": "Titans of Strength and Servitude",
-        "detail": "Giant statues at the entrance of the Hellcrags.",
+        "detail": "Giant statues at the entrance of the Hellcrags depicting Maelhis and a kneeling Maelmari.",
         "type": "large_statue"
     },
     {
