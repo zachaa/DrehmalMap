@@ -2875,9 +2875,9 @@
         "y": 163,
         "z": -259,
         "dim": "lodahr",
-        "name": "Roheian Castle",
-        "detail": "Center of the Roheian Empire in the Free Lands.",
-        "type": "building"
+        "name": "Fort Aelon",
+        "detail": "The former center of the Roheian Empire in the Free Lands.",
+        "type": "abandoned_building"
     },
     {
         "x": -99,
@@ -3019,8 +3019,8 @@
         "y": 82,
         "z": 151,
         "dim": "lodahr",
-        "name": "Swamp Fort",
-        "detail": "A for in the swamp for the Swamp Guardians.",
+        "name": "Kronglam's Fort",
+        "detail": "A fort in the swamp with Swamp Guardians.",
         "type": "building"
     },
     {

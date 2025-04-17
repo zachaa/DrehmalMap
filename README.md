@@ -3,6 +3,8 @@ Leaflet map for Drehmal 2.2 (Minecraft 1.17)
 
 Intended to show all dimensions and display locations of interesting items and places.
 
+v2.2.2 (Minecraft 1.20.1) soon...
+
 ---
 ### Link: **[Drehmal Maps](https://zachaa.github.io/DrehmalMap/)**
 ---
@@ -21,7 +23,7 @@ Includes:
     - Other structures
 - Drehmal Region Shading
 - Lo'Dahr Domain Shading
-- Paths, roads, and trail lines
+- Paths, roads, and trail lines (Drehmal only)
 - Mythical Weapons
 - Legendary Items (Separate from when they are in chests)
 - All storage items if they have contents
@@ -36,11 +38,11 @@ All lore items include their full text except books which instead show page coun
 
 Potential Future updates, Nice things to have:
 - Soletta Stones as their own layer
-- Signs, but only if cluster/grouping
-- Enchantments on items or in books ('A dumb sword would' cause problems)
-- Lore books as separate web page
+- ⭐ Signs, but only if cluster/grouping
+- Enchantments on items or in books? ('A dumb sword would' cause problems)
+- Lore books as separate web page?
     - Include drops from bosses (Letter of Thanks drop from Abbot Balthysar: see `hi_drehmal\data\entities\loot_tables\mob\virmari.json`)
-- Update to 1.20 (new traders and trades, some blocks updated)
+- ⭐ Update to 1.20 (new traders and trades, some blocks updated)
 - Entity icons for custom mobs
     - Potentially difficult
 - Player Heads with textures
@@ -51,7 +53,7 @@ Potential Future updates, Nice things to have:
         - then `textures` -> `SKIN` -> `url` -> then get PNG from url
 
 Issues/Todo:
-- Uses base Minecraft names for items (ex: Emerald->Scale, Netherite->Celestial)
+- ⭐ Uses base Minecraft names for items (ex: Emerald->Scale, Netherite->Celestial)
 - Uses base Minecraft entity pictures
 - Spelling might be wrong in some places
 - Location descriptions might be wrong, they are just my best guess for nearby lore items and assumptions.
