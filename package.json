@@ -1,0 +1,18 @@
+{
+  "name": "drehmalmap",
+  "version": "1.0.0",
+  "description": "Map for Drehmal: v2.2.2",
+  "main": "js/code.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zachaa/DrehmalMap.git"
+  },
+  "private": true,
+  "dependencies": {
+    "@types/leaflet": "1.9.4",
+    "@types/leaflet.markercluster": "^1.5.3",
+    "d3": "^7.9.0",
+    "leaflet": "1.9.4",
+    "leaflet.markercluster": "^1.5.3"
+  }
+}

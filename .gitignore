@@ -1,10 +1,12 @@
 .idea/
 .vscode/
 __pycache__/
+node_modules/
 .venv/
 venv/
 
 data_raw/
+data/old_data_2.2.1/
 images/
 images_raw/
 tools/
