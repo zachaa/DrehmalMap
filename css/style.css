@@ -117,6 +117,24 @@ html, body {
   vertical-align: middle;
 }
 
+.sign_side_container {
+  margin: 0 0 0.5em;
+}
+
+h4.sign_header_text{
+  font-size: 1em;
+  font-weight: bold;
+  margin: 0.25em 0 0.1em;
+}
+
+.sign_text {
+  /* Make it look kind of like a birch sign */
+  background-color: #ab9d6a;
+  border: 0.25em solid #988553;
+  font-family: monospace;
+  text-align: center;
+}
+
 .storageList {
   margin-top: 0.1em;
   padding-inline-start: 0.2em; /*Indent space*/

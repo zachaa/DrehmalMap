@@ -34,7 +34,7 @@ const mapConfig = {
 // ====================================================================================================================
 async function createGeoJsonLayer(filepath) {
     let geoJsonData = await d3.json(filepath);
-    let geoJsonLayer = L.geoJSON(geoJsonData, {
+    return L.geoJSON(geoJsonData, {
         style: function(feature) {
             return {color: feature.properties.color,
                 fillOpacity: 0.8
@@ -43,9 +43,8 @@ async function createGeoJsonLayer(filepath) {
         onEachFeature: function onEachFeature(feature, layer) {
             layer.bindPopup(`<span class=popup_title>${feature.properties.name}</span>`)
         }
-    });
-    return geoJsonLayer;
-};
+    })
+}
 
 async function createGeoJsonPathLayer(filepath) {
     let geoJSONData = await d3.json(filepath);
@@ -63,12 +62,12 @@ async function createGeoJsonPathLayer(filepath) {
  * Load and filter a json file to a given dimension.
  * @param {String} dimension name of dimension to filter to
  * @param {String} filepath path to JSON file
- * @returns {Promise<Array.<object>} Array of objects
+ * @returns {Promise<Array.<object>>} Array of objects
  */
 async function readAndDimensionFilter(dimension, filepath) {
     let data = await d3.json(filepath);
     return data.filter(d => d.dim === dimension);
-};
+}
 
 /**
  * Create a simple marker with popup information and a custom icon.
@@ -107,7 +106,7 @@ function createLocationCircleMarker(renderer, locationData) {
     circleMarker.options.type = locationData.type;
     
     return circleMarker;
-};
+}
 
 function devotionItems(offerings) {
     const devotionItems = document.createElement('ol');
@@ -235,10 +234,10 @@ function createClusterIcon(cluster, iconImage) {
  * @returns {L.MarkerClusterGroup} cluster Layer Group for the given data
  */
 function createClusterLayer(data, markerFunction, iconImage) {
-    clusterGroup = L.markerClusterGroup({
+    let clusterGroup = L.markerClusterGroup({
         showCoverageOnHover: false,
         maxClusterRadius: 10,
-        spiderLegPolylineOptions: { weight: 2, color: '#000000', opacity: 1 },
+        spiderLegPolylineOptions: {weight: 2, color: '#000000', opacity: 1},
         iconCreateFunction: (cluster) => createClusterIcon(cluster, iconImage)
     });
     data.forEach(element => {
@@ -255,7 +254,7 @@ function createClusterLayer(data, markerFunction, iconImage) {
  * @returns {Promise<Object.<string, L.LayerGroup>>} Array of overlay layers
  */
 async function createOverlays(dimension, renderer) {
-    overlayLayers = {};
+    let overlayLayers = {};
 
     if (dimension === "overworld") {
         overlayLayers["Regions"] = await createGeoJsonLayer("data/regions.geojson");
@@ -307,7 +306,7 @@ async function createOverlays(dimension, renderer) {
     // entities?
     // signs?
     return overlayLayers;
-};
+}
 
 // ====================================================================================================================
 // Entity Overlays
@@ -353,6 +352,55 @@ function storageHtml(items) {
         itemList.appendChild(li);
     });
     return itemList;
+}
+
+/**
+ * Create HTML for use with a Leaflet popup of Minecraft Signs.
+ * Colors text according to the sign and give back of the sign text if it exists.
+ * @param {Object} signData 
+ * @returns HTML for a sign, font and back if they exist
+ */
+function signHtml(signData) {
+    const signDivTop = document.createElement('div');
+    signDivTop.classList.add('sign_side_container');
+
+    // Create a div for each side or null if there is no text data
+    function createSignSide(side, textColor, textArray) {
+        if (textArray && Array.isArray(textArray)) {
+            const sideDiv = document.createElement('div');
+            const header = document.createElement('h4');
+            header.classList.add('sign_header_text');
+            header.textContent = side;
+            sideDiv.appendChild(header);
+
+            const textContainer = document.createElement('div');
+            textContainer.classList.add('sign_text');
+            textContainer.style.color = textColor;
+
+            // All lines should be added, even if they are blank
+            textArray.forEach(line => {
+                const lineDiv = document.createElement('div');
+                lineDiv.textContent = line;
+                textContainer.appendChild(lineDiv);
+            });
+
+            sideDiv.appendChild(textContainer);
+            return sideDiv;
+        }
+        return null;
+    }
+
+    const frontDiv = createSignSide("Front", signData.color_front, signData.text_front);
+    if (frontDiv) {
+        signDivTop.appendChild(frontDiv);
+    }
+
+    const backDiv = createSignSide("Back", signData.color_back, signData.text_back);
+    if (backDiv) {
+        signDivTop.appendChild(backDiv);
+    }
+
+    return signDivTop;
 }
 
 function tradeHtml(trades) {
@@ -403,13 +451,22 @@ function createStorageMarker(element) {
                   ${items_html}`, {'maxWidth':'600','maxHeight':'400'});
 }
 
+function createSignMarker(element) {
+    let icon = new Icon32({iconUrl: "drehmal_images/icons/oak_sign.png"});
+    let sign_html = signHtml(element.sign).outerHTML;
+    return L.marker([element.z+0.5, element.x+0.5], {icon: icon})
+        .bindPopup(`<span class=popup_title>${element.displayName}</span><hr>
+                   <span class=popup_xyz>${element.x} ${element.y} ${element.z}</span><br>
+                   ${sign_html}`, {'maxWidth':'600','maxHeight':'400'});
+}
+
 function createTraderMarker(element) {
     let icon = new IconTrader({iconUrl: `drehmal_images/icons/entity/${element.name}.png`});
     let trade_html = tradeHtml(element.trades).outerHTML;
     return L.marker([element.z+0.5, element.x+0.5], {icon: icon})
         .bindPopup(`<span class=popup_title>${element.displayName}</span><hr>
-                  <span class=popup_xyz>${element.x} ${element.y} ${element.z}</span><br>
-                  ${trade_html}`, {'maxWidth':'600','maxHeight':'400'});
+                   <span class=popup_xyz>${element.x} ${element.y} ${element.z}</span><br>
+                   ${trade_html}`, {'maxWidth':'600', 'maxHeight':'400'});
 }
 
 function createEntityMarker(element) {
@@ -428,7 +485,7 @@ function createTileEntityMarker(element) {
 
 function groupFilter(group, entity_array) {
     return entity_array.filter(d => d.group === group);
-};
+}
 
 /**
  * Create a list of overlay layers to use with Leaflet from entity data (may contain storage/trades)
@@ -440,7 +497,7 @@ async function createEntityOverlays(dimension) {
     console.log(`Tiles and Entities: ${tiles_and_entities.length}`);
 
     // Options:
-    // "storage", "lectern", "item_frame", "trader", "armor_stand", "entity", "tile_entity"
+    // "storage", "lectern", "item_frame", "sign", "trader", "armor_stand", "entity", "tile_entity"
 
     let entityLayers = {};
 
@@ -460,6 +517,10 @@ async function createEntityOverlays(dimension) {
     if (itemFrame_ent.length > 0) {
         // entityLayers["Item Frames"] = createLayer(itemFrame_ent, createStorageMarker);
         entityLayers["Item Frames"] = createClusterLayer(itemFrame_ent, createStorageMarker, "drehmal_images/icons/item_frame.png");
+    }
+    let sign_ent = groupFilter("sign", tiles_and_entities);
+    if (sign_ent.length > 0) {
+        entityLayers["Signs"] = createClusterLayer(sign_ent, createSignMarker, "drehmal_images/icons/oak_sign.png")
     }
     let traders_ent = groupFilter("trader", tiles_and_entities);
     console.log(`Named Traders: ${traders_ent.length}`);
@@ -484,7 +545,7 @@ async function createEntityOverlays(dimension) {
     }
 
     return entityLayers;
-};
+}
 
 // ====================================================================================================================
 // Main Function
@@ -589,12 +650,12 @@ async function start() {
     // ------------------------------------------------------------------------
 
 
-    var drawnItems = new L.FeatureGroup();
+    let drawnItems = new L.FeatureGroup();
     map.addLayer(drawnItems);
 
     // Listen for when a polygon is created and add it to drawnItems
     map.on('pm:create', function(e) {
-        var layer = e.layer;
+        let layer = e.layer;
         drawnItems.addLayer(layer);
     });
 
@@ -611,10 +672,10 @@ async function start() {
 
     // Save the draw layer to geoJSON
     document.getElementById('export').onclick = function () {
-        var data = drawnItems.toGeoJSON();
-        var convertedData = 'text/json;charset=utf-8,' + encodeURIComponent(JSON.stringify(data));
+        let data = drawnItems.toGeoJSON();
+        let convertedData = 'text/json;charset=utf-8,' + encodeURIComponent(JSON.stringify(data));
         
-        var a = document.createElement('a');
+        let a = document.createElement('a');
         a.href = 'data:' + convertedData;
         a.download = 'data.geojson';
         a.innerHTML = 'Export GeoJSON';
@@ -625,7 +686,7 @@ async function start() {
     }
 
     console.log("Start complete")
-};
+}
 
 /**
  * Gives a color string based on `value`.
@@ -661,7 +722,7 @@ function colorMarker(value) {
         default:
             return "#aaaaaa";
     }
-};
+}
 
 
 start();
