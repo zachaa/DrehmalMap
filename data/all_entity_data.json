@@ -17855,8 +17855,7 @@
         "displayName": "Ancient Theocracy Rites",
         "enchanted": true,
         "lore": "Dahr fahn Lorahn\n \nIhb fahn Rihelma\n \nVoynath nylsh axh'malrih\n \nIthlahr harhte\n \nNari fahn tohsima\n \nErtahn oulh silnar",
-        "name": "paper",
-        "pages": null
+        "name": "ancienttheocracyrites"
       }
     ],
     "name": "chest",
@@ -79105,7 +79104,7 @@
           " I tried in vain to calm him down, to no avail. And when I saw the figure of what looked like a hornless shadowy Drehmari in the distance, that was the last straw. I muscled Gehd over to tie him up at a nearby tree and found this old campsite to sit in and wait for his energy to ease. When",
           "he was still rampaging around at dusk, I unpacked and jumped into my bedroll to wait.\n\nIt were comfortable enough, so I decided to stay the night. Sleep was slow to come. I couldn’t stop thinking about poor Gehd. In fact, I can’t rightly say how many winks I got. Instead,\n",
           "I spent the night in agonizing fear. It felt like I kept waking up and walking up to the back of the cave, only for it to slide open and reveal a pack of grasswolves,  illuminated by the light of my lantern. Or a cloaked figure with a scythe who pulled back his hood to reveal the horrified",
-          "face of Gehd. Or a multitude of shadowy hands that reached out to grab me from the inky blackness. I couldn’t tell you exactly when I woke, but I was covered in cold sweat, and it felt like I had aged thirty years. I climbed out of the cave, only to find the skeleton of a horse where Gehd had",
+          "face of Gehd. Or a multitude of shadowy hands that reached out to grab me from the inky blackness. I couldn’t tell you exactly when I woke, but I was covered in cold sweat, and it felt like I had aged thirty years. I climbed out of the cave, only to find the skeleton of a horse where Gehd had",
           "once been. I must admit that I lost any remaining contents of my stomach at that juncture. I was gonna continue on to Drabyel right away to let them know about my ordeal, but I figured it would be better to do an act of public service and tell you, traveler, to get your sorry ass out of ",
           " here and back on the road. The shadows are getting longer and stranger, my friend. If there ever was a time to listen to the old stories, that time would be now.\n\nGood luck on your adventure, pal. You’re gonna need it.\n\nSincerely, Bryde Lentil\n"
         ]
@@ -89690,8 +89689,7 @@
         "displayName": "Fragment of Fury",
         "enchanted": true,
         "lore": "Sahd's legends speak of a\nfrenzied weapon that was split\ninto five fragments, hidden\nacross the island of Sahd. It is\nsaid that a powerful, runic\nforge exists somewhere on the\nisland, perched within the\ncaldera of a volcano. Toss all\nfive fragments into the red\nbricked forge to recreate the\nmythical blade.",
-        "name": "black_dye",
-        "pages": null
+        "name": "fragment_of_fury"
       }
     ],
     "name": "chest",
@@ -96359,7 +96357,7 @@
         "displayName": "Nihilist's Notes",
         "enchanted": true,
         "lore": "The Gaping Hole\nIts origin unsaid\nClose to the northern pole\nLies Mt. Yavhlix, place of dread\nSouth of its summit\nA lantern of sea\nOne must plummet\nAnd you will see",
-        "name": "paper",
+        "name": "nihilist_notes",
         "pages": null
       }
     ],
@@ -96669,8 +96667,7 @@
         "displayName": "Comedically Large Spoon",
         "enchanted": true,
         "lore": "An impractically large spoon.\nThere's nothing else to it.\n \nWhen in main hand:\n10 Attack Damage\n0.8 Attack Speed\n \nArtifact",
-        "name": "iron_shovel",
-        "pages": null
+        "name": "comedicallylargespoon"
       },
       {
         "count": 1,
@@ -128043,7 +128040,7 @@
         "displayName": "Nihilist's Notes",
         "enchanted": true,
         "lore": "The Gaping Hole\nIts origin unsaid\nClose to the northern pole\nLies Mt. Yavhlix, place of dread\nSouth of its summit\nA lantern of sea\nOne must plummet\nAnd you will see",
-        "name": "paper",
+        "name": "nihilist_notes",
         "pages": null
       }
     ],
@@ -193817,8 +193814,7 @@
         "displayName": "Fragment of Rage",
         "enchanted": true,
         "lore": "Sahd's legends speak of a\nfrenzied weapon that was split\ninto five fragments, hidden\nacross the island of Sahd. It is\nsaid that a powerful, runic\nforge exists somewhere on the\nisland, perched within the\ncaldera of a volcano. Toss all\nfive fragments into the red\nbricked forge to recreate the\nmythical blade.",
-        "name": "gold_nugget",
-        "pages": null
+        "name": "fragment_of_rage"
       }
     ],
     "name": "chest",
@@ -194848,8 +194844,7 @@
         "displayName": "Fragment of Wrath",
         "enchanted": true,
         "lore": "Sahd's legends speak of a\nfrenzied weapon that was split\ninto five fragments, hidden\nacross the island of Sahd. It is\nsaid that a powerful, runic\nforge exists somewhere on the\nisland, perched within the\ncaldera of a volcano. Toss all\nfive fragments into the red\nbricked forge to recreate the\nmythical blade.",
-        "name": "nether_brick",
-        "pages": null
+        "name": "fragment_of_wrath"
       }
     ],
     "name": "chest",
@@ -198266,7 +198261,8 @@
         "displayName": "_________________",
         "enchanted": false,
         "lore": "...\n \nWhen in offhand:\n+40 Max Health\n-70% Movement Speed\n-90% Attack Damage\n-90% Attack Speed\n \nArtifact",
-        "name": "charcoal"
+        "name": "unnamed",
+        "pages": null
       }
     ],
     "name": "chest",
@@ -202549,40 +202545,35 @@
         "displayName": "Fragment of Hate",
         "enchanted": true,
         "lore": "Sahd's legends speak of a\nfrenzied weapon that was split\ninto five fragments, hidden\nacross the island of Sahd. It is\nsaid that a powerful, runic\nforge exists somewhere on the\nisland, perched within the\ncaldera of a volcano. Toss all\nfive fragments into the red\nbricked forge to recreate the\nmythical blade.",
-        "name": "iron_nugget",
-        "pages": null
+        "name": "fragment_of_hate"
       },
       {
         "count": 1,
         "displayName": "Fragment of Rage",
         "enchanted": true,
         "lore": "Sahd's legends speak of a\nfrenzied weapon that was split\ninto five fragments, hidden\nacross the island of Sahd. It is\nsaid that a powerful, runic\nforge exists somewhere on the\nisland, perched within the\ncaldera of a volcano. Toss all\nfive fragments into the red\nbricked forge to recreate the\nmythical blade.",
-        "name": "gold_nugget",
-        "pages": null
+        "name": "fragment_of_rage"
       },
       {
         "count": 1,
         "displayName": "Fragment of Fury",
         "enchanted": true,
         "lore": "Sahd's legends speak of a\nfrenzied weapon that was split\ninto five fragments, hidden\nacross the island of Sahd. It is\nsaid that a powerful, runic\nforge exists somewhere on the\nisland, perched within the\ncaldera of a volcano. Toss all\nfive fragments into the red\nbricked forge to recreate the\nmythical blade.",
-        "name": "black_dye",
-        "pages": null
+        "name": "fragment_of_fury"
       },
       {
         "count": 1,
         "displayName": "Fragment of Wrath",
         "enchanted": true,
         "lore": "Sahd's legends speak of a\nfrenzied weapon that was split\ninto five fragments, hidden\nacross the island of Sahd. It is\nsaid that a powerful, runic\nforge exists somewhere on the\nisland, perched within the\ncaldera of a volcano. Toss all\nfive fragments into the red\nbricked forge to recreate the\nmythical blade.",
-        "name": "nether_brick",
-        "pages": null
+        "name": "fragment_of_wrath"
       },
       {
         "count": 1,
         "displayName": "Fragment of Pain",
         "enchanted": true,
         "lore": "Sahd's legends speak of a\nfrenzied weapon that was split\ninto five fragments, hidden\nacross the island of Sahd. It is\nsaid that a powerful, runic\nforge exists somewhere on the\nisland, perched within the\ncaldera of a volcano. Toss all\nfive fragments into the red\nbricked forge to recreate the\nmythical blade.",
-        "name": "blaze_powder",
-        "pages": null
+        "name": "fragment_of_pain"
       }
     ],
     "name": "chest",
@@ -202640,40 +202631,35 @@
         "displayName": "Fragment of Hate",
         "enchanted": true,
         "lore": "Sahd's legends speak of a\nfrenzied weapon that was split\ninto five fragments, hidden\nacross the island of Sahd. It is\nsaid that a powerful, runic\nforge exists somewhere on the\nisland, perched within the\ncaldera of a volcano. Toss all\nfive fragments into the red\nbricked forge to recreate the\nmythical blade.",
-        "name": "iron_nugget",
-        "pages": null
+        "name": "fragment_of_hate"
       },
       {
         "count": 1,
         "displayName": "Fragment of Rage",
         "enchanted": true,
         "lore": "Sahd's legends speak of a\nfrenzied weapon that was split\ninto five fragments, hidden\nacross the island of Sahd. It is\nsaid that a powerful, runic\nforge exists somewhere on the\nisland, perched within the\ncaldera of a volcano. Toss all\nfive fragments into the red\nbricked forge to recreate the\nmythical blade.",
-        "name": "gold_nugget",
-        "pages": null
+        "name": "fragment_of_rage"
       },
       {
         "count": 1,
         "displayName": "Fragment of Fury",
         "enchanted": true,
         "lore": "Sahd's legends speak of a\nfrenzied weapon that was split\ninto five fragments, hidden\nacross the island of Sahd. It is\nsaid that a powerful, runic\nforge exists somewhere on the\nisland, perched within the\ncaldera of a volcano. Toss all\nfive fragments into the red\nbricked forge to recreate the\nmythical blade.",
-        "name": "black_dye",
-        "pages": null
+        "name": "fragment_of_fury"
       },
       {
         "count": 1,
         "displayName": "Fragment of Wrath",
         "enchanted": true,
         "lore": "Sahd's legends speak of a\nfrenzied weapon that was split\ninto five fragments, hidden\nacross the island of Sahd. It is\nsaid that a powerful, runic\nforge exists somewhere on the\nisland, perched within the\ncaldera of a volcano. Toss all\nfive fragments into the red\nbricked forge to recreate the\nmythical blade.",
-        "name": "nether_brick",
-        "pages": null
+        "name": "fragment_of_wrath"
       },
       {
         "count": 1,
         "displayName": "Fragment of Pain",
         "enchanted": true,
         "lore": "Sahd's legends speak of a\nfrenzied weapon that was split\ninto five fragments, hidden\nacross the island of Sahd. It is\nsaid that a powerful, runic\nforge exists somewhere on the\nisland, perched within the\ncaldera of a volcano. Toss all\nfive fragments into the red\nbricked forge to recreate the\nmythical blade.",
-        "name": "blaze_powder",
-        "pages": null
+        "name": "fragment_of_pain"
       }
     ],
     "name": "chest",
@@ -204089,8 +204075,7 @@
         "displayName": "Fragment of Hate",
         "enchanted": true,
         "lore": "Sahd's legends speak of a\nfrenzied weapon that was split\ninto five fragments, hidden\nacross the island of Sahd. It is\nsaid that a powerful, runic\nforge exists somewhere on the\nisland, perched within the\ncaldera of a volcano. Toss all\nfive fragments into the red\nbricked forge to recreate the\nmythical blade.",
-        "name": "iron_nugget",
-        "pages": null
+        "name": "fragment_of_hate"
       }
     ],
     "name": "chest",
@@ -205181,8 +205166,7 @@
         "displayName": "Fragment of Pain",
         "enchanted": true,
         "lore": "Sahd's legends speak of a\nfrenzied weapon that was split\ninto five fragments, hidden\nacross the island of Sahd. It is\nsaid that a powerful, runic\nforge exists somewhere on the\nisland, perched within the\ncaldera of a volcano. Toss all\nfive fragments into the red\nbricked forge to recreate the\nmythical blade.",
-        "name": "blaze_powder",
-        "pages": null
+        "name": "fragment_of_pain"
       }
     ],
     "name": "chest",
@@ -253490,8 +253474,7 @@
           "displayName": "Honey Roasted Potato",
           "enchanted": false,
           "lore": "An exquisite taste, unmatched\nby anything else... besides a\nnormal baked potato, of course.",
-          "name": "baked_potato",
-          "pages": null
+          "name": "honeyroastedpotato"
         }
       }
     ],
