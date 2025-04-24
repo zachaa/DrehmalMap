@@ -1,9 +1,7 @@
 # Drehmal Map
-Leaflet map for Drehmal 2.2 (Minecraft 1.17)
+Leaflet map for Drehmal 2.2.2 (Minecraft 1.20.1)
 
-Intended to show all dimensions and display locations of interesting items and places.
-
-v2.2.2 (Minecraft 1.20.1) soon...
+Shows maps of all dimensions and display locations of interesting items, signs, and places.
 
 ---
 ### Link: **[Drehmal Maps](https://zachaa.github.io/DrehmalMap/)**
@@ -29,6 +27,9 @@ Includes:
 - All storage items if they have contents
     - Chests, shulker boxes, item frames, armor stands, brewing stands, ect.
     - Click to show contents
+- Signs
+    - Only signs with text.
+    - All signs appear as oak sign icons.
 - All traders
     - Click to show trades
 - All _named_ entities
@@ -36,13 +37,20 @@ Includes:
 
 All lore items include their full text except books which instead show page count.
 
+All items have their Drehmal texture or icon if it is different than the base Minecraft version. Items with custom textures/models have those shown as well.
+
+All items have their Drehmal name if it is different than the base Minecraft name. (EX: Emerald→Scale, Netherite→Celestial)
+
+---
+See a problem? Submit an issue or send me a message.
+
+---
+
 Potential Future updates, Nice things to have:
 - Soletta Stones as their own layer
-- ⭐ Signs, but only if cluster/grouping
 - Enchantments on items or in books? ('A dumb sword would' cause problems)
 - Lore books as separate web page?
-    - Include drops from bosses (Letter of Thanks drop from Abbot Balthysar: see `hi_drehmal\data\entities\loot_tables\mob\virmari.json`)
-- ⭐ Update to 1.20 (new traders and trades, some blocks updated)
+    - Include drops from bosses ('Letter of Thanks' drop from Abbot Balthysar: see `hi_drehmal\data\entities\loot_tables\mob\virmari.json`)
 - Entity icons for custom mobs
     - Potentially difficult
 - Player Heads with textures
@@ -53,11 +61,9 @@ Potential Future updates, Nice things to have:
         - then `textures` -> `SKIN` -> `url` -> then get PNG from url
 
 Issues/Todo:
-- ⭐ Uses base Minecraft names for items (ex: Emerald->Scale, Netherite->Celestial)
 - Uses base Minecraft entity pictures
 - Spelling might be wrong in some places
 - Location descriptions might be wrong, they are just my best guess for nearby lore items and assumptions.
-- Don't include invisible armor stands (named Invisible)
 
 
 ## Updating Map Tiles
@@ -93,7 +99,7 @@ To update map tiles:
 drawing polygons to export to GeoJSON
 
 [minecraft-data](https://github.com/PrismarineJS/minecraft-data)<br>
-For the raw json file of 1.17 names and displayNames
+For the raw json file of 1.20.1 names and displayNames
 
 [1.21 inventory images](https://www.okamisquadron.com/downloads/1-21-images)<br>
 resized to 32x32 for non existing inventory images<br>
