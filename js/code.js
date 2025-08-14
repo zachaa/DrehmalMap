@@ -140,6 +140,18 @@ function createDevotionMarker(element, offerings) {
                   ${devotionList}`, {'maxWidth':'600','maxHeight':'500'});
 }
 
+function createCelestialMarker(element) {
+    let celestial_icon = new Icon32({iconUrl: element.icon});
+
+    const storageText = element.detail === "" ? "Mineable Block" : element.detail;
+
+    return L.marker([element.z+0.5, element.x+0.5], {icon: celestial_icon})
+        .bindPopup(`<span class=popup_title>${element.count}× ${element.name}</span><hr>
+            <span class=popup_xyz>${element.x} ${element.y} ${element.z}</span><br>
+            ${storageText}`
+        );
+}
+
 function createMythicalMarker(element) {
     let mythical_icon = new IconMythic({iconUrl: element.icon});
 
@@ -290,10 +302,10 @@ async function createOverlays(dimension, renderer) {
         overlayLayers["Devotion"] = layerDevotion(devotion, devotionOfferings);
     }
 
-    let mythical = await readAndDimensionFilter(dimension, "data/mythical.json");
-    console.log(`Mythical: ${mythical.length}`);
-    if (mythical.length > 0) {
-        overlayLayers["Mythical"] = createLayer(mythical, createMythicalMarker);
+    let celestial = await readAndDimensionFilter(dimension, "data/celestial.json");
+    console.log(`Legendary: ${celestial.length}`);
+    if (celestial.length > 0) {
+        overlayLayers["Celestial"] = createClusterLayer(celestial, createCelestialMarker, "drehmal_images/icons/white_shulker_box.png");
     }
 
     let legendary = await readAndDimensionFilter(dimension, "data/legendary.json");
@@ -302,9 +314,12 @@ async function createOverlays(dimension, renderer) {
         overlayLayers["Legendary"] = createLayer(legendary, createLegendaryMarker);
     }
 
-    // lore (books, paper)
-    // entities?
-    // signs?
+    let mythical = await readAndDimensionFilter(dimension, "data/mythical.json");
+    console.log(`Mythical: ${mythical.length}`);
+    if (mythical.length > 0) {
+        overlayLayers["Mythical"] = createLayer(mythical, createMythicalMarker);
+    }
+
     return overlayLayers;
 }
 
