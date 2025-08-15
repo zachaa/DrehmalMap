@@ -152,6 +152,16 @@ function createCelestialMarker(element) {
         );
 }
 
+function createSolettaStoneMarker(element) {
+    let stone_icon = new IconDevotion({iconUrl: `drehmal_images/icons/${element.icon}.png`});
+
+    return L.marker([element.z+0.5, element.x+0.5], {icon: stone_icon})
+        .bindPopup(`<span class=popup_title>${element.name}</span><hr>
+            <span class=popup_xyz>${element.x} ${element.y} ${element.z}</span><br>
+            ${element.detail}`
+        );
+}
+
 function createMythicalMarker(element) {
     let mythical_icon = new IconMythic({iconUrl: element.icon});
 
@@ -303,9 +313,15 @@ async function createOverlays(dimension, renderer) {
     }
 
     let celestial = await readAndDimensionFilter(dimension, "data/celestial.json");
-    console.log(`Legendary: ${celestial.length}`);
+    console.log(`Celestial Material: ${celestial.length}`);
     if (celestial.length > 0) {
         overlayLayers["Celestial"] = createClusterLayer(celestial, createCelestialMarker, "drehmal_images/icons/white_shulker_box.png");
+    }
+
+    let solettaStones = await readAndDimensionFilter(dimension, "data/fervor_stones.json");
+    console.log(`Fervor Stones: ${solettaStones.length}`);
+    if (solettaStones.length > 0) {
+        overlayLayers["Fervor Stones"] = createLayer(solettaStones, createSolettaStoneMarker);
     }
 
     let legendary = await readAndDimensionFilter(dimension, "data/legendary.json");
