@@ -22,8 +22,13 @@ Includes:
 - Drehmal Region Shading
 - Lo'Dahr Domain Shading
 - Paths, roads, and trail lines (Drehmal only)
-- Mythical Weapons
+- Celestial crafting materials (Separate from when they are in chests)
+    - Debris, Chondrule, Alloy
+- Fervor Stones
+    - Agony, Luxury, Worry (and Soletta Forge)
 - Legendary Items (Separate from when they are in chests)
+- Mythical Weapons
+
 - All storage items if they have contents
     - Chests, shulker boxes, item frames, armor stands, brewing stands, ect.
     - Click to show contents
@@ -64,6 +69,9 @@ Issues/Todo:
 - Uses base Minecraft entity pictures
 - Spelling might be wrong in some places
 - Location descriptions might be wrong, they are just my best guess for nearby lore items and assumptions.
+- End Chests are no longer in block entities
+- Some signs in overworld have a true blank front, need to check for that as well
+- Soul soil map color is different for drehmal, I already have the correct block image, map tiles need update
 
 
 ## Updating Map Tiles
