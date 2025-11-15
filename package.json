@@ -2,7 +2,7 @@
   "name": "drehmalmap",
   "version": "1.0.0",
   "description": "Map for Drehmal: v2.2.2",
-  "main": "js/code.js",
+  "main": "js/main.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/zachaa/DrehmalMap.git"
