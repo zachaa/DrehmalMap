@@ -38,7 +38,12 @@ jobs:
       # Perform minification, overwriting original files
       - name: Minify JS, CSS, HTML
         run: |
-          terser ./js/code.js --compress keep_classnames=true,keep_fnames=true -o ./js/code.js
+          terser ./js/main.js --compress keep_classnames=true,keep_fnames=true -o ./js/main.js
+          terser ./js/map.js --compress keep_classnames=true,keep_fnames=true -o ./js/map.js
+          terser ./js/config.js --compress keep_classnames=true,keep_fnames=true -o ./js/config.js
+          terser ./js/layers.js --compress keep_classnames=true,keep_fnames=true -o ./js/layers.js
+          terser ./js/markers.js --compress keep_classnames=true,keep_fnames=true -o ./js/markers.js
+          terser ./js/popups.js --compress keep_classnames=true,keep_fnames=true -o ./js/popups.js
           terser ./js/icons.js --compress keep_classnames=true,keep_fnames=true -o ./js/icons.js
           csso ./css/style.css -o ./css/style.css
           html-minifier --collapse-boolean-attributes --collapse-whitespace --minify-css --minify-js --minify-urls --remove-attribute-quotes --remove-comments --remove-empty-attributes --remove-optional-tags --remove-redundant-attributes --remove-script-type-attributes --remove-style-link-type-attributes --remove-tag-whitespace --use-short-doctype --input-dir . --output-dir . --file-ext html
