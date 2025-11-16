@@ -150,7 +150,7 @@ function layerDevotion(devotionData, devotionOfferings) {
 /**
  * Create a list of overlay layers to use with Leaflet
  * @param {String} dimension current dimension
- * @param {L.canvas} renderer canvasRenderer for markers
+ * @param {L.Canvas} renderer canvasRenderer for markers
  * @returns {Promise<Object.<string, L.LayerGroup>>} Array of overlay layers
  */
 export async function createOverlays(dimension, renderer) {

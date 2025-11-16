@@ -186,15 +186,13 @@ footer {
   justify-content: center;
   text-align: center;
   font-size: 1.2em;
-  padding: 1em 0em;
+  padding: 1em 0;
 }
 
 /* Navigation Bar CSS */
 #current_page{
-  outline-width: 3px;
-  outline-style: solid;
-  outline-color: #ffd900;
-  outline-offset: -3px;
+    outline: #ffd900 solid 3px;
+    outline-offset: -3px;
 }
 .menu_h_bar{
   display: flex;
@@ -218,7 +216,6 @@ footer {
 .hvr-underline-from-left {
   display: inline-block;
   vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
   position: relative;
@@ -266,7 +263,6 @@ footer {
     .hvr-ripple-out {
       display: inline-block;
       vertical-align: middle;
-      -webkit-transform: perspective(1px) translateZ(0);
       transform: perspective(1px) translateZ(0);
       box-shadow: 0 0 1px rgba(0, 0, 0, 0);
       position: relative;
