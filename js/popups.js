@@ -1,9 +1,7 @@
 function imgSmallElement(icon_name) {
     const itemImage = document.createElement('img');
+    itemImage.classList.add("mc-item-icon-small");
     itemImage.src = `drehmal_images/icons/${icon_name}.png`;
-    itemImage.style.width = '16px';
-    itemImage.style.height = '16px';
-    itemImage.style.verticalAlign = 'middle';
     return itemImage;
 }
 
@@ -19,8 +17,6 @@ export function devotionItems(offerings) {
             itemImage.alt = item;
             itemImage.title = item;
             itemImage.classList.add("devotionItemImage");
-            itemImage.style.width = '32px';
-            itemImage.style.height = '32px';
             li.appendChild(itemImage);
         });
         devotionItems.appendChild(li);
