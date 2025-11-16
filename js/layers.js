@@ -21,33 +21,49 @@ import {
  * @returns {Promise<Array.<object>>} Array of objects
  */
 async function readAndDimensionFilter(dimension, filepath) {
-    let data = await d3.json(filepath);
-    return data.filter(d => d.dim === dimension);
+    try {
+        let data = await d3.json(filepath);
+        return data.filter(d => d.dim === dimension);
+    } catch (error) {
+        console.log(`Failed to load/filter data from ${filepath}`, error);
+        return [];
+    }
 }
 
 async function createGeoJsonLayer(filepath) {
-    let geoJsonData = await d3.json(filepath);
-    return L.geoJSON(geoJsonData, {
-        style: function(feature) {
-            return {color: feature.properties.color,
-                fillOpacity: 0.8
+    try {
+        let geoJsonData = await d3.json(filepath);
+        return L.geoJSON(geoJsonData, {
+            style: function (feature) {
+                return {
+                    color: feature.properties.color,
+                    fillOpacity: 0.8
+                }
+            },
+            onEachFeature: function onEachFeature(feature, layer) {
+                layer.bindPopup(`<span class=popup_title>${feature.properties.name}</span>`)
             }
-        },
-        onEachFeature: function onEachFeature(feature, layer) {
-            layer.bindPopup(`<span class=popup_title>${feature.properties.name}</span>`)
-        }
-    })
+        });
+    } catch (error) {
+        console.log(`Failed to create geoJson layer from ${filepath}`, error);
+        return L.layerGroup();
+    }
 }
 
 async function createGeoJsonPathLayer(filepath) {
-    let geoJSONData = await d3.json(filepath);
-    return L.geoJSON(geoJSONData, {
-        style: {
-            color: "#000000",
-            weight: 3,
-            opacity: 1.0
-        }
-    });
+    try {
+        let geoJSONData = await d3.json(filepath);
+        return L.geoJSON(geoJSONData, {
+            style: {
+                color: "#000000",
+                weight: 3,
+                opacity: 1.0
+            }
+        });
+    } catch (error) {
+        console.log(`Failed to create geoJson layer from ${filepath}`, error);
+        return L.layerGroup();
+    }
 }
 
 /**
