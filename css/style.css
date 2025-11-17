@@ -283,3 +283,25 @@ footer {
       animation-name: hvr-ripple-out;
     }
 }
+
+/* MousePosition and ZoomDisplay css moved here */
+.leaflet-container .leaflet-control-mouseposition {
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 0 5px #bbb;
+    padding: 0 5px;
+    margin:0;
+    color: #333;
+    font: 11px/1.5 "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+
+.leaflet-control-zoom-display {
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    width: 30px;
+    height: 24px;
+    line-height: 24px;
+    display: block;
+    text-align: center;
+    color: black;
+    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
