@@ -40,8 +40,8 @@ jobs:
       - name: Bundle and Minify JS, CSS, HTML
         run: |
           esbuild ./js/main.js --bundle --minify --outfile=./js/main.js --allow-overwrite
-          terser ./js/L.Control.MousePosition.js --compress keep_classnames=true,keep_fnames=true -o ./js/main.js
-          terser ./js/L.Control.ZoomDisplay.js --compress keep_classnames=true,keep_fnames=true -o ./js/map.js
+          terser ./js/L.Control.MousePosition.js --compress keep_classnames=true,keep_fnames=true -o ./js/L.Control.MousePosition.js
+          terser ./js/L.Control.ZoomDisplay.js --compress keep_classnames=true,keep_fnames=true -o ./js/L.Control.ZoomDisplay.js
           csso ./css/style.css -o ./css/style.css
           html-minifier --collapse-boolean-attributes --collapse-whitespace --minify-css --minify-js --minify-urls --remove-attribute-quotes --remove-comments --remove-empty-attributes --remove-optional-tags --remove-redundant-attributes --remove-script-type-attributes --remove-style-link-type-attributes --remove-tag-whitespace --use-short-doctype --input-dir . --output-dir . --file-ext html
 
