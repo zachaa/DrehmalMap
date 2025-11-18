@@ -874,8 +874,8 @@
         "y": 82,
         "z": -574,
         "dim": "overworld",
-        "name": "Celestial Alloy",
-        "icon": "drehmal_images/icons/netherite_ingot.png",
+        "name": "Block of Celestial Alloy",
+        "icon": "drehmal_images/icons/netherite_block.png",
         "detail": "Chest",
         "count": 576
     },
@@ -894,8 +894,8 @@
         "y": 122,
         "z": 61,
         "dim": "lodahr",
-        "name": "Celestial Alloy",
-        "icon": "drehmal_images/icons/netherite_ingot.png",
+        "name": "Block of Celestial Alloy",
+        "icon": "drehmal_images/icons/netherite_block.png",
         "detail": "Runic Vessel",
         "count": 1664
     },
@@ -904,8 +904,8 @@
         "y": 95,
         "z": 124,
         "dim": "space",
-        "name": "Celestial Alloy",
-        "icon": "drehmal_images/icons/netherite_ingot.png",
+        "name": "Block of Celestial Alloy",
+        "icon": "drehmal_images/icons/netherite_block.png",
         "detail": "Runic Vessel",
         "count": 576
     },

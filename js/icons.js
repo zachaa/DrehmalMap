@@ -1,4 +1,4 @@
-var Icon64 = L.Icon.extend({
+export let Icon64 = L.Icon.extend({
     options: {
         iconSize:     [64, 64],
         iconAnchor:   [32, 32],
@@ -7,7 +7,7 @@ var Icon64 = L.Icon.extend({
     }
 });
 
-var Icon32 = L.Icon.extend({
+export let Icon32 = L.Icon.extend({
     options: {
         iconSize:     [32, 32],
         iconAnchor:   [16, 16],
@@ -16,7 +16,7 @@ var Icon32 = L.Icon.extend({
     }
 });
 
-var Icon16 = L.Icon.extend({
+export let Icon16 = L.Icon.extend({
     options: {
         iconSize:     [16, 16],
         iconAnchor:   [8, 8],
@@ -25,7 +25,7 @@ var Icon16 = L.Icon.extend({
     }
 });
 
-var IconDevotion = L.Icon.extend({
+export let IconDevotion = L.Icon.extend({
     options: {
         iconSize:     [32, 32],
         iconAnchor:   [16, 16],
@@ -34,7 +34,7 @@ var IconDevotion = L.Icon.extend({
     }
 });
 
-var IconMythic = L.Icon.extend({
+export let IconMythic = L.Icon.extend({
     options: {
         iconSize:     [32, 32],
         iconAnchor:   [16, 16],
@@ -43,7 +43,7 @@ var IconMythic = L.Icon.extend({
     }
 });
 
-var IconLegendary = L.Icon.extend({
+export let IconLegendary = L.Icon.extend({
     options: {
         iconSize:     [32, 32],
         iconAnchor:   [16, 16],
@@ -52,7 +52,7 @@ var IconLegendary = L.Icon.extend({
     }
 });
 
-let TowerIcon = new L.Icon({
+export let TowerIcon = new L.Icon({
         iconUrl: "drehmal_images/icons/custom/Tower.png",
         iconSize:     [16, 16],
         iconAnchor:   [8, 8],
@@ -60,7 +60,7 @@ let TowerIcon = new L.Icon({
         className: "mc-icon"
 });
 
-let LodahrPortalIcon = new L.Icon({
+export let LodahrPortalIcon = new L.Icon({
         iconUrl: "drehmal_images/icons/custom/portal.png",
         iconSize:     [32, 32],
         iconAnchor:   [16, 16],
@@ -68,7 +68,7 @@ let LodahrPortalIcon = new L.Icon({
         className: "mc-icon"
 });
 
-var IconTrader = L.Icon.extend({
+export let IconTrader = L.Icon.extend({
     options: {
         iconSize:     [32, 32],
         iconAnchor:   [16, 16],
@@ -77,7 +77,7 @@ var IconTrader = L.Icon.extend({
     }
 });
 
-var IconEntity = L.Icon.extend({
+export let IconEntity = L.Icon.extend({
     options: {
         iconSize:     [32, 32],
         iconAnchor:   [16, 16],

@@ -16,6 +16,13 @@ html, body {
   image-rendering: pixelated;
 }
 
+.mc-item-icon-small {
+    image-rendering: pixelated;
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+}
+
 .mc-icon-entity {
   image-rendering: pixelated;
   box-shadow: 0 0 2px 2px rgb(104, 255, 114);
@@ -114,6 +121,8 @@ html, body {
 
 .devotionItemImage {
   image-rendering: pixelated;
+  width: 32px;
+  height: 32px;
   vertical-align: middle;
 }
 
@@ -164,39 +173,6 @@ ul.tradeList li img {
   padding-inline-start: 0.2em; /*Indent space*/
 }
 
-/* Map Legend ================================ */
-.legend {
-  /* color: #EEE;
-  font-family: Arial, Helvetica, sans-serif; */
-  font-size: 0.9em;
-  padding: 2px 8px;
-  background: #111;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
-  border-radius: 5px;
-  border: 1px solid #aaa;
-}
-
-h3.legend_title {
-  text-align: center;
-  font-weight: bold;
-  padding: 0;
-  margin: 0;
-}
-
-.legend_row {
-  padding: 4px, 2px;
-}
-
-.legend_color {
-  float: left;
-  width: 15px;
-  height: 15px;
-}
-
-.legend_text {
-  padding: 0px 2px 0px 20px;
-}
-
 /* Other page css */
 header {
   text-shadow: 0 0 5px #FFF, 0 0 15px #ffcd18, 0 0 25px #ffcd18;
@@ -210,15 +186,13 @@ footer {
   justify-content: center;
   text-align: center;
   font-size: 1.2em;
-  padding: 1em 0em;
+  padding: 1em 0;
 }
 
 /* Navigation Bar CSS */
 #current_page{
-  outline-width: 3px;
-  outline-style: solid;
-  outline-color: #ffd900;
-  outline-offset: -3px;
+    outline: #ffd900 solid 3px;
+    outline-offset: -3px;
 }
 .menu_h_bar{
   display: flex;
@@ -242,7 +216,6 @@ footer {
 .hvr-underline-from-left {
   display: inline-block;
   vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
   position: relative;
@@ -290,7 +263,6 @@ footer {
     .hvr-ripple-out {
       display: inline-block;
       vertical-align: middle;
-      -webkit-transform: perspective(1px) translateZ(0);
       transform: perspective(1px) translateZ(0);
       box-shadow: 0 0 1px rgba(0, 0, 0, 0);
       position: relative;
@@ -310,4 +282,26 @@ footer {
       -webkit-animation-name: hvr-ripple-out;
       animation-name: hvr-ripple-out;
     }
+}
+
+/* MousePosition and ZoomDisplay css moved here */
+.leaflet-container .leaflet-control-mouseposition {
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 0 5px #bbb;
+    padding: 0 5px;
+    margin:0;
+    color: #333;
+    font: 11px/1.5 "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+
+.leaflet-control-zoom-display {
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    width: 30px;
+    height: 24px;
+    line-height: 24px;
+    display: block;
+    text-align: center;
+    color: black;
+    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
 }
