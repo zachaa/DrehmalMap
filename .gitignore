@@ -11,6 +11,7 @@ images/
 images_raw/
 tools/
 
+main2.js
 *.py[icod]
 *.psd
 *.ai

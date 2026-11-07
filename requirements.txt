@@ -1,2 +1,0 @@
-mcworldlib>=2023.7.13
-nbtlib>=2.0.4
