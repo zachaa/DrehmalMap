@@ -10,7 +10,7 @@ DREHMAL_MC_NAME_OVERRIDES = {
 	"nether_bricks": "Taihryte Bricks",
     "nether_brick_fence": "Taihryte Brick Fence",
     "nether_brick_stairs": "Taihryte Brick Stairs",
-    "nether_wart": "Crucible Wart",
+    # "nether_wart": "Crucible Wart",
     "warped_wart_block": "Aventurine Pileus Block",
     "warped_stem": "Aventurine Stem",
     "stripped_warped_stem": "Stripped Aventurine Stem",
@@ -115,13 +115,13 @@ DREHMAL_MC_NAME_OVERRIDES = {
 	"cracked_nether_bricks": "Cracked Taihryte Bricks",
 	"chiseled_nether_bricks": "Chiseled Taihryte Bricks",
     # Items
-	"spectral_arrow": "Truesight Arrow",
+	"spectral_arrow": "Truesight Arrow",  # Entity
 	"emerald": "Scale",
 	"enchanted_golden_apple": "Fruit of the Primal Tree",
-	"ender_pearl": "Primal Pearl",
+	"ender_pearl": "Primal Pearl",  # Entity
 	"ghast_tear": "Quicksilver Tear",
-	"nether_wart": "Crucible Wart",
-	"end_crystal": "Unstable Primal Catalyst",
+	"nether_wart": "Crucible Wart",  # Block
+	"end_crystal": "Unstable Primal Catalyst",  # Entity
 	"ender_eye": "Oculus of Nothing",
 	"bat_spawn_egg": "Masayoshi",
 	"bee_spawn_egg": "Peace Treaty",
@@ -201,9 +201,9 @@ DREHMAL_MC_NAME_OVERRIDES = {
     # Entities
 	"cave_spider": "Arahk",
 	"elder_guardian": "Dahrkin Negator",
-	"end_crystal": "Unstable Primal Catalyst",
+	# "end_crystal": "Unstable Primal Catalyst",
 	"ender_dragon": "Tethlaen, Lost to Nothing",
-	"ender_pearl": "Thrown Primal Pearl",
+	# "ender_pearl": "Thrown Primal Pearl",
 	"enderman": "Primal Walker",
 	"endermite": "Null Pest",
 	"evoker_fangs": "Mihkmari Arcanist Fangs",
@@ -221,7 +221,7 @@ DREHMAL_MC_NAME_OVERRIDES = {
 	"polar_bear": "Faehrbear",
 	"shulker": "Null Clam",
 	"shulker_bullet": "Null Clam Bullet",
-	"spectral_arrow": "Truesight Arrow",
+	# "spectral_arrow": "Truesight Arrow",
 	"strider": "Laikin",
 	"iron_golem": "Runic Golem",
 	"vindicator": "Mihkmari Warrior",

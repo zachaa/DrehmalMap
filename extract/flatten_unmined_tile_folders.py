@@ -1,6 +1,6 @@
-from pathlib import Path
 import shutil
 import subprocess
+from pathlib import Path
 
 top_level_paths = [
     Path(r"C:\Users\Zachary\Coding\VSCode\DrehmalMap\images\maps\overworld\tiles\zoom.2"),
@@ -71,7 +71,7 @@ def move_all_png_files(path_list):
 
 
 def optimize_pngs(path: Path):
-    oxipng_path = Path(__file__).parents[1] / "tools/oxipng-9.1.4-x86_64-pc-windows-msvc/oxipng.exe"
+    oxipng_path = Path(__file__).parents[1] / "tools/oxipng-10.0.0-x86_64-pc-windows-msvc/oxipng.exe"
     if not oxipng_path.exists():
         print("oxipng not found")
         return
